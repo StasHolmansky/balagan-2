@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Forum';
+    src: url('Forum.eot');
+    src: local('Forum'),
+        url('Forum.eot?#iefix') format('embedded-opentype'),
+        url('Forum.woff2') format('woff2'),
+        url('Forum.woff') format('woff'),
+        url('Forum.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
