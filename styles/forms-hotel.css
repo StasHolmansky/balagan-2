@@ -1,5 +1,89 @@
-body {
-  background-color: black;
+@import '/styles/null.css';
+.forms-hotel {
+  color: black;
+  background-color: #fff;
+  background-color: transparent;
+  background-image: url("/images/forms-hotel/bg_top_inner.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 1111px;
+}
+
+.nav-container {
+  position: relative;
+  width: 1400px;
+  height: 71px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+
+.nav-wrapper {
+  width: 1348px;
+  height: 63.56px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  padding-left: 30px;
+}
+
+.nav-links {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:not(:last-child) {
+  margin-right: 40px;
+}
+
+.nav-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 156px;
+  height: 100%;
+  padding-right: 22px;
+}
+.nav-button .svg {
+  position: absolute;
+}
+.nav-button .svg-top {
+  position: absolute;
+  top: 7%;
+}
+.nav-button .svg-bottom {
+  position: absolute;
+  bottom: 7%;
+}
+.nav-button .nav-button-cta {
+  position: absolute;
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 /*# sourceMappingURL=forms-hotel.css.map */
