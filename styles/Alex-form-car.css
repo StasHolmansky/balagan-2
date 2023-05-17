@@ -1,0 +1,156 @@
+.container {
+  max-width: 375px;
+  height: 100%;
+  margin: 0 15px;
+}
+section {
+  background: #e2d3ce;
+}
+
+/* Title */
+.title {
+  /* background-image: url("../images/Alex-form-car/sky.png"); */
+  height: 77px;
+}
+.title h1 {
+  font-family: "Forum";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  color: #0c0b10;
+}
+
+/* Car */
+.car img {
+  border-radius: 5px;
+}
+
+/*Paragraph */
+.paragraph h3 {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 32px;
+  color: #0c0b10;
+  padding: 20px 0 30px 0;
+}
+.paragraph__text {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.deals__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 35px;
+  padding-top: 30px;
+}
+.deals__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.deals__item svg {
+  margin-bottom: 10px;
+}
+.deals__item:nth-last-child(-n + 2) {
+  margin-bottom: 40px;
+}
+.deals__item p {
+  font-family: "Manrope";
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #000000;
+  width: 155px;
+}
+/* Form */
+.form {
+  display: flex;
+  height: 1824px;
+  background: #ffffff;
+  border-radius: 10px;
+
+  flex-direction: column;
+  align-items: center;
+}
+.form-location {
+  margin-left: 21px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 179.8%;
+  color: #79655e;
+}
+.form-heading {
+  margin-left: 21px;
+  margin-bottom: 8px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 179.8%;
+  color: #79655e;
+}
+.form__accordion {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+}
+.form__accordion-icon {
+  display: flex;
+}
+.form__accordion-icon svg {
+  margin-right: 13px;
+}
+.form__accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1.60979px solid #e2d3ce;
+  border-radius: 74px;
+  height: 55px;
+  padding: 0 21px 0 29px;
+}
+.form__accordion-icon {
+  display: flex;
+}
+.form__accordion-title span {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #79655e;
+  border-top: transparent;
+  border-right: transparent;
+  transform: rotate(-45deg);
+}
+
+.dates-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+}
+.form-dates {
+  margin-left: 21px;
+  margin-top: 25px;
+  margin-bottom: 8px;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 179.8%;
+  color: #79655e;
+}
