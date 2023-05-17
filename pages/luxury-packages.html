@@ -1,22 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>luxury-packages</title>
-    <link rel="stylesheet" href="./styles/null.css">
-    <link rel="stylesheet" href="./styles/header-footer.css">
-    <link rel="stylesheet" href="./styles/main-page.css">
+    <link rel="stylesheet" href="../styles/null.css">
+    <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/main-page.css">
+    <link rel="stylesheet" href="../fonts/manrope/stylesheet.css">
+	<link rel="stylesheet" href="../fonts/forum/stylesheet.css">
     <link rel="stylesheet" href="../styles/luxury-packages.css">
     <script defer src="./js/header-footer.js"></script>
     <script defer src="./js/main-page.js"></script>
 </head>
+
 <body>
-   
+
     <main>
-       
+        <div class="wraperr">
+            <section class="luxury_packages">
+                <h1 class="luxury_packages_title">Luxury packages</h1>
+                <section class="luxury_packages_form">
+                    <h2 class="luxury_packages_form_title">Find your journey</h3>
+                        <form action="#" method="get">
+                            <div class="">
+                                <div class="">
+                                    <img src="" alt="">
+                                    <!-- <h3>Luxury Tours</h3> -->
+                                </div>
+                                <div class="">
+                                    <img src="" alt="">
+                                    <label for="destinations_tour">Luxury Tours</label>
+                                    <select name="destinations" id="destinations_tour">
+                                        <option value="Romantic">Romantic Winter Destinations</option>
+                                        <option value="New">New destinations for 2022</option>
+                                        <option value="Best Winter">Best Winter Destinations</option>
+                                        <option value="healt">Your health is matter</option>
+                                        <option value="extraordinary places">The world's most extraordinary places</option>
+                                        <option value="Experiences">Experiences Away From Crowd</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="tour_date">
+                                <img src="" alt="">
+                                <label for="calendar">When</label>
+                                <input id="calendar" type="date" name="calendar">
+                            </div>
+                            <div class="quantity_tеravellers">
+                                <img src="" alt="">
+                                <input id="tеravellers_counter" type="number" size="1" name="num" min="1" max="10" value="1">
+                                <label for="tеravellers_counter">Persons</label>
+                                <!-- <select>
+                                    <option value="quantity">1 Persons</option>
+                                    <option value="quantity">3 Persons</option>
+                                    <option value="quantity">4 Persons</option>
+                                    <option value="quantity">5 Persons</option>
+                                </select> -->
+                            </div>
+                            
+                            <div class="">
+                                <input id="group_type" type="checkbox" name="group" value="yes">
+                                <label for="tour_type">Group tours</label>
+
+                                <input id="customise_type" checked type="checkbox" name="customise" value="yes">
+                                <label for="customise_type">Customise tours</label>
+
+                            </div>
+                        </form>
+                </section>
+            </section>
+        </div>
     </main>
-    
+
 </body>
+
 </html>
