@@ -1,0 +1,166 @@
+
+
+html {
+    font-size: 10px;   
+}
+
+body {
+    background-image: url('../images/contact/background-top.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #E2D3CE;
+}
+
+.section-main {
+    background-image: url('../images/contact/clouds.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-contact {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 58px;
+    text-align: center;
+    color: #0C0B10;
+    margin-bottom: 31px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.block {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(65px);
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+}
+
+.phone-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 48px 119px 54px;
+}
+
+.address-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 26px 109px 53px;
+}
+
+.block__title {
+    font-family: 'Forum';
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+}
+
+.phone-number {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 40px;
+    text-align: center;
+    color: #0C0B10;
+    margin-bottom: 15px;
+}
+
+.block-subtitle {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #0C0B10;
+    margin-bottom: 16px;
+}
+
+.block-btn {
+    background: #0C0B10;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 74px;
+    padding: 15px 59px;
+}
+
+.block-address {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 44px;
+    text-align: center;
+    color: #0C0B10;
+    margin-bottom: 20px;
+}
+
+.email {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 179.8%;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 7px;
+}
+
+.email-address-block {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 101.2%;
+    text-align: center;
+    color: #000000;
+}
+
+.map {
+    position: relative;
+    height: 621px;
+}
+
+.border {
+    display: block;
+    position: absolute;
+    background-image: url('../images/contact/border.png');
+    width: 1070px;
+    height: 621px;
+    margin: 0 20px;
+}
+
+.map-image {
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 39px;
+}
+
+.icon-location {
+    position: absolute;
+    top: 233px;
+    left: 527px;
+    bottom: 281px;
+}
