@@ -145,7 +145,7 @@ body {
 .border {
     display: block;
     position: absolute;
-    background-image: url('../images/contact/border.png');
+    background-image: url('../images/contact/border.svg');
     width: 1070px;
     height: 621px;
     margin: 0 20px;
