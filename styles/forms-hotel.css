@@ -1,89 +1,200 @@
-@import '/styles/null.css';
+@import "https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap";
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+nav, section, footer, header, aside, main, details, hgroup, figure, figcaption, article {
+  display: block;
+}
+
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: #0000;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a, a:visited, a:hover, a:link {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+  background-color: #0000;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  border-style: none;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+[hidden] {
+  display: none;
+}
+
+body {
+  flex-direction: column;
+  display: flex;
+}
+
+main {
+  flex-grow: 1;
+}
+
 .forms-hotel {
-  color: black;
-  background-color: #fff;
-  background-color: transparent;
-  background-image: url("/images/forms-hotel/bg_top_inner.png");
-  background-size: contain;
+  color: #000;
+  background-color: #0000;
+  background-image: url("bg_top_inner.71c9d8e9.png");
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .container {
   width: 1111px;
 }
 
-.nav-container {
-  position: relative;
+.forms-nav-container {
   width: 1400px;
   height: 71px;
-  margin: 0 auto;
+  margin: 0 auto 15px;
   padding-top: 24px;
+  position: relative;
 }
 
-.nav-wrapper {
+.forms-nav-wrapper {
   width: 1348px;
   height: 63.56px;
-  margin: 0 auto;
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  display: flex;
 }
 
-.nav-logo {
+.forms-nav-logo {
   padding-left: 30px;
 }
 
-.nav-links {
-  font-family: "Forum";
+.forms-nav-links {
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: #000;
+  font-family: Forum;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
   line-height: 18px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #000000;
 }
 
-.nav-list {
-  display: flex;
+.forms-nav-list {
   align-items: center;
+  display: flex;
 }
 
-.nav-link:not(:last-child) {
+.forms-nav-link:hover {
+  color: #ff0;
+}
+
+.forms-nav-link:not(:last-child) {
   margin-right: 40px;
 }
 
-.nav-button {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.forms-nav-button {
   width: 156px;
   height: 100%;
+  justify-content: center;
+  align-items: center;
   padding-right: 22px;
+  display: flex;
+  position: relative;
 }
-.nav-button .svg {
+
+.forms-nav-button .forms-svg {
   position: absolute;
 }
-.nav-button .svg-top {
+
+.forms-nav-button .forms-svg-top {
   position: absolute;
   top: 7%;
 }
-.nav-button .svg-bottom {
+
+.forms-nav-button .forms-svg-bottom {
   position: absolute;
   bottom: 7%;
 }
-.nav-button .nav-button-cta {
-  position: absolute;
-  font-family: "Forum";
+
+.forms-nav-button .forms-nav-button-cta {
+  text-align: center;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: #000;
+  font-family: Forum;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
   line-height: 18px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #000000;
+  position: absolute;
 }
 
-/*# sourceMappingURL=forms-hotel.css.map */
+.forms-nav-button .forms-nav-button-cta:hover {
+  color: #ff0;
+}
+
+.forms-title {
+  text-transform: capitalize;
+  margin: 0 auto 50px;
+  font-family: Forum;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px;
+}
+
+/*# sourceMappingURL=forms-hotel.b1276d39.css.map */
