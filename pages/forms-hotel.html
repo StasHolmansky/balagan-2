@@ -388,9 +388,10 @@
       <div class="forms__right">
         <div class="forms__right__container">
           <form action="submit">
+
             <div class="forms__right__item-long">
-              <label for="location">Location</label>
-              <select name="location" id="location">
+              <label class='forms__right__label' for="location">Location</label>
+              <select class="forms-long" name="location" id="location">
                 <option value="istanbul">Instanbul</option>
                 <option value="ankara">Ankara</option>
                 <option value="batumi">Batumi</option>
@@ -398,40 +399,67 @@
               </select>
             </div>
             <div class="forms__right__item-short">
-              <label for="dates">Dates:</label>
+              <label class='forms__right__label' for="dates">Dates</label>
                 <div class="forms__right__item-short-wrapper">
-                  <input type="date" name="dates" id="dates">
-                  <input type="date" name="dates" id="dates">
+                  <input class="forms-short" type="date" name="dates">
+                  <input class="forms-short" type="date" name="dates">
                 </div>
             </div>
             <div class="forms__right__item-short">
-              <label for="guests">Guests</label>
-              <select>
-                <option value="adults" selected>Adults</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-              <select>
-                <option value="kids" selected>Kids (0-10 y.o)</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
+              <label class='forms__right__label' for="guests">Guests</label>
+
+              <div class="forms__right__item-short-wrapper">
+                <select class="forms-short">
+                  <option value="adults" selected>Adults</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+
+                <select class="forms-short">
+                  <option value="kids" selected>Kids (0-10 y.o)</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+
             </div>
-            <div class="forms__right__item-short">
-              <label for="rooms">Number of rooms</label>
-              <select name="rooms">
-                <option value="1" selected>1</option>
-                <option value="2" selected>2</option>
-                <option value="3" selected>3</option>
-                <option value="4" selected>4</option>
-              </select>
-              <label for="budget">Budget</label>
-              <input type="text">
+
+            <div class="forms__right__item-short flex-direction-row">
+              <div class="width210px">
+                <label class='forms__right__label' for="rooms">Number of rooms<label>
+                  <select class="forms-short" name="rooms">
+                    <option value="1" selected>1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4" selected>4</option>
+                  </select>
+              </div>
+
+              <div class="width210px">
+                <label class='forms__right__label' for="budget">Budget</label>
+                <input class="forms-short" type="text">
+              </div>
             </div>
+
+            <div class="forms__right__item-long">
+              <label class='forms__right__label' for="name">Name</label>
+              <input class="forms-long" type="text" placeholder="Enter your name">
+            </div>
+
+            <div class="forms__right__item-long">
+              <label class='forms__right__label' for="email">Email</label>
+              <input class="forms-long" type="email" placeholder="Enter your email">
+            </div>
+
+            <div class="forms__right__item-long">
+              <label class='forms__right__label' for="special-requests">Special requests</label>
+              <textarea class="forms__special-requests" name="special-requests" cols="30" rows="10" placeholder="Flowers and a bottle of wine upon arrival..."></textarea>
+            </div>
+
           </form>
         </div>
       </div>
