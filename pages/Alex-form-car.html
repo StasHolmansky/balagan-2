@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../styles/Alex-form-car.css" />
     <script defer src="./js/header-footer.js"></script>
     <script defer src="./js/main-page.js"></script>
+    <script defer src="../js/Alex-form-car.js"></script>
   </head>
   <body>
     <main>
@@ -101,7 +102,7 @@
       </section>
       <section>
         <div class="container">
-          <div class="form">
+          <div class="form__location-box">
             <div class="form__accordion">
               <p class="form-location">Location from</p>
               <div class="form__accordion-title">
@@ -155,7 +156,144 @@
                 <span></span>
               </div>
             </div>
+            <div class="form__model">
+              <p class="form-heading">Model of supercar</p>
+              <div class="form__accordion-title">
+                <div class="form__accordion-icon">
+                  <svg width="17" height="17">
+                    <use
+                      href="../images/Alex-form-car/svg/symbol-defs.svg#icon-calendar"
+                    ></use>
+                  </svg>
+                  <p>26-04-22</p>
+                </div>
+                <span></span>
+              </div>
+            </div>
+            <div class="form__pick-up">
+              <div class="Pick-up__box1">
+                <p class="form-heading">Pick-up location</p>
+                <div class="form__accordion-title">
+                  <div class="form__accordion-icon">
+                    <svg width="17" height="17">
+                      <use
+                        href="../images/Alex-form-car/svg/symbol-defs.svg#icon-diamond"
+                      ></use>
+                    </svg>
+                    <p>Choose</p>
+                  </div>
+                  <span></span>
+                </div>
+                <p class="form-heading">Pick up time</p>
+                <div class="form__accordion-title">
+                  <div class="form__accordion-icon">
+                    <p>09:00</p>
+                  </div>
+                  <span></span>
+                </div>
+              </div>
+              <div class="Pick-up__box2">
+                <p class="form-heading">Drop off location</p>
+                <div class="form__accordion-title">
+                  <div class="form__accordion-icon">
+                    <svg width="17" height="17">
+                      <use
+                        href="../images/Alex-form-car/svg/symbol-defs.svg#icon-diamond"
+                      ></use>
+                    </svg>
+                    <p>Choose</p>
+                  </div>
+                  <span></span>
+                </div>
+                <p class="form-heading">Drop off time</p>
+                <div class="form__accordion-title">
+                  <div class="form__accordion-icon">
+                    <p>09:00</p>
+                  </div>
+                  <span></span>
+                </div>
+              </div>
+              <div class="form__number">
+                <p class="form-heading">Number of people</p>
+                <div class="form__accordion-title">
+                  <div class="form__accordion-icon">
+                    <p>2</p>
+                  </div>
+                  <span></span>
+                </div>
+                <p class="form-heading">Driver</p>
+                <div class="outer-container">
+                  <div class="inner-container">
+                    <p class="inner__text-1 active">Yes</p>
+                  </div>
+                  <div class="inner">
+                    <p class="inner__text-2">No</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form__request">
+              <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" />
+                <label for="email">Email</label>
+                <input type="text" id="email" />
+                <label for="text"> Special requests</label>
+                <textarea name="" id="text" cols="30" rows="10"></textarea>
+              </form>
+            </div>
+
+            <div class="rectangle">
+              <svg class="icon-decor" width="48" height="20">
+                <use
+                  href="../images/Alex-form-car/svg/symbol-defs.svg#icon-decor-up"
+                ></use>
+              </svg>
+
+              <div class="rectangle__input">
+                <div
+                  style="
+                    width: 234px;
+                    height: 61px;
+                    border: 1px solid #0c0b10;
+                    border-radius: 98.1972px;
+                    position: absolute;
+                    left: 33px;
+                    top: -7px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  Make A Request
+                </div>
+              </div>
+            </div>
+
+            <svg width="48" height="20">
+              <use
+                href="../images/Alex-form-car/svg/symbol-defs.svg#icon-decor-down"
+              ></use>
+            </svg>
+            <div class="form__btn">
+              <p>or</p>
+              <button>call me back</button>
+              <button>email me back</button>
+            </div>
           </div>
+        </div>
+      </section>
+      <section>
+        <div class="svg">
+          <svg width="48" height="20">
+            <use
+              href="../images/Alex-form-car/svg/symbol-defs.svg#icon-decor-up"
+            ></use>
+          </svg>
+        </div>
+        <div class="element"></div>
+        <div class="container">
+          <div class="bg__img"></div>
         </div>
       </section>
     </main>

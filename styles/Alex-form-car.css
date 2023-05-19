@@ -1,7 +1,7 @@
 .container {
-  max-width: 375px;
+  width: 345px;
   height: 100%;
-  margin: 0 15px;
+  margin: 0 auto;
 }
 section {
   background: #e2d3ce;
@@ -76,9 +76,9 @@ section {
   width: 155px;
 }
 /* Form */
-.form {
+.form__location-box {
   display: flex;
-  height: 1824px;
+  height: 100%;
   background: #ffffff;
   border-radius: 10px;
 
@@ -153,4 +153,202 @@ section {
   font-size: 16px;
   line-height: 179.8%;
   color: #79655e;
+}
+.form__model {
+  max-width: 300px;
+  width: 100%;
+  margin-top: 30px;
+}
+.form__pick-up {
+  max-width: 300px;
+  width: 100%;
+  margin-top: 30px;
+}
+.Pick-up__box1 {
+  margin-bottom: 39px;
+}
+
+.outer-container {
+  display: flex;
+  border: 1.60979px solid #e2d3ce;
+  border-radius: 74px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  border-radius: 74px;
+  height: 55px;
+  transition: transform 0.3s;
+  width: 50%;
+}
+
+.inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 74px;
+  height: 55px;
+  background: #e2d3ce;
+  width: 50%;
+  transition: transform 0.3s;
+}
+
+.inner.transition {
+  transition: background 0.3s;
+}
+
+.inner-container.transition {
+  transition: background 0.3s;
+}
+
+.form__request {
+  max-width: 300px;
+  width: 100%;
+}
+.inner-container .inner__text-1 {
+  color: #79655e;
+}
+
+.inner-container .inner__text-1.active {
+  color: #000000;
+}
+.inner .inner__text-2 {
+  color: #79655e;
+}
+label {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 179.8%;
+  color: #79655e;
+}
+.inner .inner__text-2.active {
+  color: #000000;
+}
+input {
+  display: flex;
+  border: 1.60979px solid #e2d3ce;
+  border-radius: 74px;
+  max-width: 300px;
+  width: 100%;
+  height: 55px;
+  padding: 20px;
+}
+textarea {
+  border: 1.60979px solid #e2d3ce;
+  border-radius: 20px;
+  padding: 20px;
+}
+.rectangle {
+  position: relative;
+  background: #0c0b10;
+  border-radius: 74px;
+  max-width: 300px;
+  width: 100%;
+  margin-top: 45px;
+}
+
+.icon-decor {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.rectangle__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  font-family: "Forum";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.form__btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-bottom: 32px;
+}
+
+.form__btn p {
+  font-family: "Forum";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0c0b10;
+  margin-bottom: 22px;
+}
+
+.form__btn button {
+  font-family: "Forum";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  /* Style */
+
+  color: #0c0b10;
+  border: 1px solid #0c0b10;
+  border-radius: 62px;
+  width: 300px;
+  height: 55px;
+}
+button + button {
+  margin-top: 17px;
+}
+.svg {
+  display: flex;
+  justify-content: center;
+  fill: #fff;
+}
+.svg::before {
+  border: 1px solid #fff;
+}
+.element {
+  position: relative;
+  width: 100%;
+  border: 1px solid #fff;
+}
+
+.element::before,
+.element::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #fff;
+}
+
+.element::before {
+  transform: translateY(-50%);
+}
+
+.element::after {
+  transform: translateY(50%);
+}
+
+.bg__img {
+  height: 811px;
+  margin-top: 18px;
+  background-repeat: no-repeat;
+  background-image: url("../images/Alex-form-car/image-bg.png");
 }
