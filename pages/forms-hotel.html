@@ -447,7 +447,7 @@
 
             <div class="forms__right__item-long">
               <label class='forms__right__label' for="location">Location</label>
-              <select class="forms-long" name="location" id="location">
+              <select class="forms-long" name="location" id="location" data-location>
                 <option value="istanbul">Instanbul</option>
                 <option value="ankara">Ankara</option>
                 <option value="batumi">Batumi</option>
@@ -457,15 +457,15 @@
             <div class="forms__right__item-short">
               <label class='forms__right__label' for="dates">Dates</label>
                 <div class="forms__right__item-short-wrapper">
-                  <input class="forms-short" type="date" name="dates">
-                  <input class="forms-short" type="date" name="dates">
+                  <input class="forms-short" type="date" name="dates" data-calendar>
+                  <input class="forms-short" type="date" name="dates" data-calendar>
                 </div>
             </div>
             <div class="forms__right__item-short">
               <label class='forms__right__label' for="guests">Guests</label>
 
               <div class="forms__right__item-short-wrapper">
-                <select class="forms-short">
+                <select class="forms-short"  data-adult>
                   <option value="adults" selected>Adults</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -473,7 +473,7 @@
                   <option value="4">4</option>
                 </select>
 
-                <select class="forms-short">
+                <select class="forms-short" data-kid>
                   <option value="kids" selected>Kids (0-10 y.o)</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
