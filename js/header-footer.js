@@ -1,8 +1,7 @@
 window.addEventListener("load", () => {
     const main = document.querySelector("main");
-
+    const body = document.body;
     const page = window.location.pathname;
-
     if (page !== "/index.html" && page !== "/") {
         main.insertAdjacentHTML(
             "beforebegin",
@@ -11,7 +10,7 @@ window.addEventListener("load", () => {
             <div class="nav" id="nav">
                 <div class="call__btn call__btn-md">Call Me</div>
                 <div class="main__logo">
-                    <a href="./" class="main__logo-link">
+                    <a href="/" class="main__logo-link">
                         <img
                             class="main__logo-img"
                             src="../images/header-footer/logo.svg"
@@ -104,7 +103,7 @@ window.addEventListener("load", () => {
         <div class="footer__wrapper">
             <div class="footer__top">
                 <div class="main__logo">
-                    <a href="./" class="main__logo-link">
+                    <a href="/" class="main__logo-link">
                         <img
                             class="main__logo-footer"
                             src="../images/header-footer/logo.svg"
@@ -399,5 +398,6 @@ window.addEventListener("load", () => {
         navBurger.classList.toggle("_active");
         navMenu.classList.toggle("_active");
         navList.classList.toggle("_active");
+        body.classList.toggle("_lock")
     });
 });
