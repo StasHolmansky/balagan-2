@@ -1,0 +1,31 @@
+// ПЕРЕМЕННЫЕ================================================
+$maxWCont: 1140;
+$maxWW: 100%;
+// margin========
+$mt: margin-top;
+$mr: margin-right;
+$mb: margin-bottom;
+$ml: margin-left;
+// padding=========
+$pt: padding-top;
+$pr: padding-right;
+$pb: padding-bottom;
+$pl: padding-left;
+// ==========================================================
+// ОТЗЫВЧИВЫЙ АДАПТИВ========================================
+@mixin singleVar($property, $maxW, $minW, $type){
+	@if $type==1 {
+		#{$property}: $maxW+px;
+		@media(max-width: #{$maxWCont + px}){
+		#{$property}: calc(#{$minW + px} + (#{$maxW} - #{$minW}) * (100vw - 375px)/(#{$maxWCont} - 375));}
+} @else {
+		#{$property}: calc(#{$minW + px} + (#{$maxW} - #{$minW}) * (100vw - 375px)/(#{$maxWCont} - 375));}
+}
+@mixin unitVar($property, $maxW, $minW, $unit){
+	// #{$property}: #{$maxW+$unit};
+	// 	@media(max-width: #{$maxWCont + $unit}){
+		#{$property}: calc(#{$minW + $unit} + (#{$maxW} - #{$minW}) * (100vw - 375px)/(#{$maxWCont} - 375));
+}
+// @mixin groupVar($property, $maxW, $minW, $type){
+// }
+// ==========================================================
