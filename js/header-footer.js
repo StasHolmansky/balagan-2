@@ -2,7 +2,7 @@ window.addEventListener("load", () => {
     const main = document.querySelector("main");
     const body = document.body;
     const page = window.location.pathname;
-    if (page !== "/index.html" && page !== "/") {
+    if ((page !== "/balagan-2/index.html" && page !== "/balagan-2/") || page !== "./index.html" && page !== "/" ) {
         main.insertAdjacentHTML(
             "beforebegin",
             `
