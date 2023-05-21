@@ -115,12 +115,12 @@ window.addEventListener("load", () => {
             <div class="footer__middle">
                 <ul class="footer__middle-list footer__middle-first">
                     <li class="footer__middle-item">
-                        <a href="./pages/luxury-packages.html"
+                        <a href="luxury-packages.html"
                             >Luxury packages</a
                         >
                     </li>
                     <li class="footer__middle-item">
-                        <a href="./pages/book.html">Book with us</a>
+                        <a href="book.html">Book with us</a>
                     </li>
                 </ul>
                 <div class="call__btn call__btn-footer">
@@ -174,12 +174,12 @@ window.addEventListener("load", () => {
                 </div>
                 <ul class="footer__middle-list footer__middle-second">
                     <li class="footer__middle-item">
-                        <a href="./pages/why-lux-trips.html"
+                        <a href="why-lux-trips.html"
                             >Why Lux Trips</a
                         >
                     </li>
                     <li class="footer__middle-item">
-                        <a href="./pages/contact.html">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
