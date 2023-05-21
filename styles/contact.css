@@ -15,6 +15,7 @@ body {
     background-image: url('../images/contact/clouds.png');
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 170px;
 }
 
 .container-contact {
@@ -105,6 +106,12 @@ body {
     color: #FFFFFF;
     border-radius: 74px;
     padding: 15px 59px;
+    transition: all .3s ease;
+}
+
+.block-btn:hover {
+    background: #ffffff;
+    color: #000000;
 }
 
 .block-address {
@@ -137,13 +144,18 @@ body {
     line-height: 101.2%;
     text-align: center;
     color: #000000;
+    transition: all .3s ease;
+}
+
+.email-address-block:hover {
+    color: #474747;
 }
 
 .map {
     position: relative;
     width: 100%;
     height: 621px;
-    z-index: 999;
+    z-index: 1;
     overflow: hidden;
 }
 
@@ -202,6 +214,10 @@ body {
 }
 
 @media(max-width: 550px) {
+    .section-main {
+        margin-bottom: 108px;
+    }
+    
     .section-title {
         font-size: 3.5rem;
         line-height: 38px;
