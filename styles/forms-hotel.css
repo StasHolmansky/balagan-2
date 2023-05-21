@@ -1,9 +1,12 @@
 @import '/styles/null.css';
+.header {
+  background: url("/images/forms-hotel/bg_top_clouds.png");
+}
+
 .forms-hotel {
   color: black;
-  background-color: #E2D3CE;
-  background-image: url("/images/forms-hotel/bg_top_inner.png");
-  background-size: contain;
+  background-color: #4c8fcd;
+  background: url("/images/forms-hotel/bg_top_clouds.png");
   background-repeat: no-repeat;
 }
 @media (max-width: 1439px) {
@@ -122,6 +125,7 @@
   line-height: 58px;
   text-transform: capitalize;
   margin-bottom: 50px;
+  margin-top: 113px;
 }
 
 .forms {
