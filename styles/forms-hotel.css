@@ -177,9 +177,6 @@
   display: flex;
   gap: 41px;
 }
-.forms__left__benefits-item svg {
-  border-right: 1px solid red;
-}
 .forms__left__benefits-item:last-child {
   gap: 43px;
   left: -15px;
@@ -236,7 +233,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
   z-index: 1;
 }
 .forms__right-request-wrapper p {
@@ -300,7 +296,6 @@
   padding-top: 12px;
   padding-bottom: 16px;
   margin-bottom: 27px;
-  border: 1px solid red;
 }
 .forms__right-cta {
   display: flex;
