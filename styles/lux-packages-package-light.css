@@ -1,0 +1,18 @@
+body {
+  background-color: #e2d3ce;
+}
+
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80vw;
+  border: 2px solid black;
+  margin-right: auto;
+  margin-left: auto;
+}
