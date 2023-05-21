@@ -1,13 +1,8 @@
 @import '/styles/null.css';
-.header {
-  background: url("/images/forms-hotel/bg_top_clouds.png");
-}
-
 .forms-hotel {
+  position: relative;
   color: black;
-  background-color: #4c8fcd;
-  background: url("/images/forms-hotel/bg_top_clouds.png");
-  background-repeat: no-repeat;
+  background-color: #E2D3CE;
 }
 @media (max-width: 1439px) {
   .forms-hotel {
@@ -18,6 +13,16 @@
   .forms-hotel {
     background-size: cover;
   }
+}
+.forms-hotel-clouds {
+  position: absolute;
+  width: 100%;
+  height: 475px;
+  background-color: #E2D3CE;
+  background-image: url("/images/forms-hotel/bg_top_clouds.png"), url("/images/forms-hotel/bg_top_inner.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .container {
