@@ -134,6 +134,7 @@
   width: 540px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .forms__left__image-wrapper {
   margin-bottom: 32px;
@@ -158,6 +159,10 @@
   line-height: 179.8%;
   color: #000000;
   margin-bottom: 118px;
+}
+.forms__left__benefits-wrapper {
+  position: absolute;
+  bottom: 12%;
 }
 .forms__left__benefits {
   position: relative;
