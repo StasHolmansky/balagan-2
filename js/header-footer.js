@@ -203,7 +203,7 @@ window.addEventListener("load", () => {
             <div class="nav" id="nav">
                 <div class="call__btn call__btn-md">Call Me</div>
                 <div class="main__logo">
-                    <a href="../index.html" class="main__logo-link">
+                    <a href="./index.html" class="main__logo-link">
                         <img
                             class="main__logo-img"
                             src="./images/header-footer/logo.svg"
@@ -296,7 +296,7 @@ window.addEventListener("load", () => {
                 <div class="footer__wrapper">
                     <div class="footer__top">
                         <div class="main__logo">
-                            <a href="../index.html" class="main__logo-link">
+                            <a href="./index.html" class="main__logo-link">
                                 <img
                                     class="main__logo-footer"
                                     src="./images/header-footer/logo.svg"
