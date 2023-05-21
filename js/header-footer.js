@@ -10,7 +10,7 @@ window.addEventListener("load", () => {
             <div class="nav" id="nav">
                 <div class="call__btn call__btn-md">Call Me</div>
                 <div class="main__logo">
-                    <a href="/" class="main__logo-link">
+                    <a href="../index.html" class="main__logo-link">
                         <img
                             class="main__logo-img"
                             src="../images/header-footer/logo.svg"
@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
                     </a>
                 </div>
                 <ul class="nav__list" id="nav__list">
-                    <li class="nav__item"><a href="./">Home</a></li>
+                    <li class="nav__item"><a href="../index.html">Home</a></li>
                     <li class="nav__item">
                         <a href="./luxury-packages.html"
                             >Luxury packages</a
@@ -103,7 +103,7 @@ window.addEventListener("load", () => {
         <div class="footer__wrapper">
             <div class="footer__top">
                 <div class="main__logo">
-                    <a href="/" class="main__logo-link">
+                    <a href="../index.html" class="main__logo-link">
                         <img
                             class="main__logo-footer"
                             src="../images/header-footer/logo.svg"
@@ -115,12 +115,12 @@ window.addEventListener("load", () => {
             <div class="footer__middle">
                 <ul class="footer__middle-list footer__middle-first">
                     <li class="footer__middle-item">
-                        <a href="./luxury-packages.html"
+                        <a href="./pages/luxury-packages.html"
                             >Luxury packages</a
                         >
                     </li>
                     <li class="footer__middle-item">
-                        <a href="./book.html">Book with us</a>
+                        <a href="./pages/book.html">Book with us</a>
                     </li>
                 </ul>
                 <div class="call__btn call__btn-footer">
@@ -174,12 +174,12 @@ window.addEventListener("load", () => {
                 </div>
                 <ul class="footer__middle-list footer__middle-second">
                     <li class="footer__middle-item">
-                        <a href="./why-lux-trips.html"
+                        <a href="./pages/why-lux-trips.html"
                             >Why Lux Trips</a
                         >
                     </li>
                     <li class="footer__middle-item">
-                        <a href="./contact.html">Contact</a>
+                        <a href="./pages/contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -203,7 +203,7 @@ window.addEventListener("load", () => {
             <div class="nav" id="nav">
                 <div class="call__btn call__btn-md">Call Me</div>
                 <div class="main__logo">
-                    <a href="./" class="main__logo-link">
+                    <a href="../index.html" class="main__logo-link">
                         <img
                             class="main__logo-img"
                             src="./images/header-footer/logo.svg"
@@ -296,7 +296,7 @@ window.addEventListener("load", () => {
                 <div class="footer__wrapper">
                     <div class="footer__top">
                         <div class="main__logo">
-                            <a href="./" class="main__logo-link">
+                            <a href="../index.html" class="main__logo-link">
                                 <img
                                     class="main__logo-footer"
                                     src="./images/header-footer/logo.svg"
