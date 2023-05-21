@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
                     <a href="./" class="main__logo-link">
                         <img
                             class="main__logo-img"
-                            src="./images/header-footer/logo.svg"
+                            src="../images/header-footer/logo.svg"
                             alt="logo"
                         />
                     </a>
@@ -107,7 +107,7 @@ window.addEventListener("load", () => {
                     <a href="./" class="main__logo-link">
                         <img
                             class="main__logo-footer"
-                            src="./images/header-footer/logo.svg"
+                            src="../images/header-footer/logo.svg"
                             alt="logo"
                         />
                     </a>

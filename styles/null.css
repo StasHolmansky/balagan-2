@@ -20,10 +20,6 @@ body {
 }
 
 body {
-    background-image: url(../images/header-footer/sky-footer.png);
-    background-color: #e5d5d0;
-    background-position: bottom;
-    background-repeat: no-repeat;
     line-height: 1;
     font-size: 16px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;

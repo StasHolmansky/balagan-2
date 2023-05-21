@@ -8,7 +8,7 @@
 }
 
 main {
-    margin-top: 150px;
+    padding-top: 150px;
 }
 /* --------------------------------------------------------- main__logo styles start --------------------------------------------------------- */
 .main__logo {
@@ -118,7 +118,7 @@ main {
 .nav__menu {
     position: absolute;
     top: 0;
-    left: -100%;
+    left: -150%;
     width: 100%;
     height: 100vh;
     background-color: #e5d5d0;
@@ -234,6 +234,13 @@ main {
 /* --------------------------------------------------------- call__btn styles end --------------------------------------------------------- */
 
 /* --------------------------------------------------------- Footer styles start --------------------------------------------------------- */
+.footer {
+    background-image: url(../images/header-footer/sky-footer.png);
+    background-color: #e5d5d0;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .footer__wrapper {
     width: 100%;
     max-width: 1440px;
