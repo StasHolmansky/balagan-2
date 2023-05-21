@@ -18,11 +18,12 @@
   position: absolute;
   width: 100%;
   height: 475px;
+  top: 0;
   background-color: #E2D3CE;
   background-image: url("/images/forms-hotel/bg_top_clouds.png"), url("/images/forms-hotel/bg_top_inner.png");
   background-size: contain;
   background-repeat: no-repeat;
-  z-index: -1;
+  z-index: -2;
 }
 
 .container {
