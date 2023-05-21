@@ -1,7 +1,6 @@
 @import '/styles/null.css';
 .forms-hotel {
   position: relative;
-  color: black;
   background-color: #E2D3CE;
 }
 @media (max-width: 1439px) {
@@ -172,7 +171,7 @@
 }
 .forms__left__benefits-wrapper {
   position: absolute;
-  bottom: 12%;
+  bottom: 6%;
 }
 .forms__left__benefits {
   position: relative;
@@ -200,6 +199,7 @@
   border-radius: 10px;
 }
 .forms__right__label {
+  position: relative;
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
@@ -207,6 +207,35 @@
   line-height: 179.8%;
   color: #79655E;
   padding-left: 29px;
+}
+.forms__right__label[data-location=""]::before {
+  content: url("/images/forms-hotel/rhombus.svg");
+  position: absolute;
+  top: 44px;
+  left: 28px;
+  pointer-events: none;
+}
+.forms__right__label[data-guests=""]::before {
+  content: url("/images/forms-hotel/adult.svg");
+  position: absolute;
+  top: 42px;
+  left: 28px;
+  pointer-events: none;
+}
+.forms__right__label[data-guests=""]::after {
+  content: url("/images/forms-hotel/kid.svg");
+  position: absolute;
+  top: 44px;
+  left: 258px;
+  pointer-events: none;
+}
+.forms__right__label[data-dates=""]::before {
+  content: "-";
+  position: absolute;
+  top: 44px;
+  left: 218px;
+  pointer-events: none;
+  color: #79655E;
 }
 .forms__right .flex-direction-row {
   flex-direction: row;
@@ -334,12 +363,14 @@
   padding-left: 51px;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-right: 21px;
+  padding-right: 51px;
 }
 .forms .forms-long > option {
   color: inherit;
 }
 .forms .forms-short {
+  display: flex;
+  flex-direction: row-reverse;
   border: 1.60979px solid #E2D3CE;
   border-radius: 74px;
   height: 55px;
@@ -356,6 +387,7 @@
   padding-left: 51px;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-right: 51px;
 }
 .forms .width210px {
   width: 210px;

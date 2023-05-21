@@ -446,8 +446,9 @@
           <form action="submit">
 
             <div class="forms__right__item-long">
-              <label class='forms__right__label' for="location">Location</label>
-              <select class="forms-long" name="location" id="location" data-location>
+              <label class='forms__right__label' for="location" data-location>Location</label>
+              <select class="forms-long" name="location" id="location">
+                <option value="">Choose</option>
                 <option value="istanbul">Instanbul</option>
                 <option value="ankara">Ankara</option>
                 <option value="batumi">Batumi</option>
@@ -455,17 +456,17 @@
               </select>
             </div>
             <div class="forms__right__item-short">
-              <label class='forms__right__label' for="dates">Dates</label>
+              <label class='forms__right__label' for="dates" data-dates>Dates</label>
                 <div class="forms__right__item-short-wrapper">
                   <input class="forms-short" type="date" name="dates" data-calendar>
                   <input class="forms-short" type="date" name="dates" data-calendar>
                 </div>
             </div>
             <div class="forms__right__item-short">
-              <label class='forms__right__label' for="guests">Guests</label>
+              <label class='forms__right__label' for="guests" data-guests>Guests</label>
 
               <div class="forms__right__item-short-wrapper">
-                <select class="forms-short"  data-adult>
+                <select class="forms-short">
                   <option value="adults" selected>Adults</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -473,7 +474,7 @@
                   <option value="4">4</option>
                 </select>
 
-                <select class="forms-short" data-kid>
+                <select class="forms-short">
                   <option value="kids" selected>Kids (0-10 y.o)</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
