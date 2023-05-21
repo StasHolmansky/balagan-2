@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '/styles/null.css';
 .forms-hotel {
   position: relative;
@@ -132,12 +133,19 @@
   margin-bottom: 50px;
   margin-top: 113px;
 }
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .forms__main-title {
+    font-size: 55px;
+    margin-top: 100px;
+  }
+}
 
 .forms {
   display: flex;
   justify-content: center;
   background-color: transparent;
   gap: 30px;
+  /* --------------------------------------------------------- Adaptive styles start --------------------------------------------------------- */
 }
 .forms__left {
   width: 540px;
@@ -145,8 +153,25 @@
   flex-direction: column;
   position: relative;
 }
+@media (max-width: 1125px) {
+  .forms__left {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .forms__left__image-wrapper {
   margin-bottom: 32px;
+}
+@media (max-width: 1125px) {
+  .forms__left__image-wrapper {
+    margin: 0px auto 20px auto;
+  }
 }
 .forms__left__image {
   border-radius: 10px;
@@ -160,6 +185,18 @@
   color: #0C0B10;
   margin-bottom: 32px;
 }
+@media (max-width: 1279px) {
+  .forms__left__title {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 1125px) {
+  .forms__left__title {
+    font-size: 28px;
+    margin: 0 auto 0 auto;
+  }
+}
 .forms__left__description {
   font-family: "Manrope";
   font-style: normal;
@@ -169,12 +206,40 @@
   color: #000000;
   margin-bottom: 118px;
 }
+@media (max-width: 1125px) {
+  .forms__left__description {
+    margin: 0 auto 0 auto;
+    font-size: 16px;
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+}
 .forms__left__benefits-wrapper {
   position: absolute;
   bottom: 6%;
 }
+@media (max-width: 1279px) {
+  .forms__left__benefits-wrapper {
+    bottom: 13%;
+  }
+}
+@media (max-width: 1125px) {
+  .forms__left__benefits-wrapper {
+    position: relative;
+  }
+}
 .forms__left__benefits {
   position: relative;
+}
+@media (max-width: 1125px) {
+  .forms__left__benefits {
+    position: relative;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+  }
 }
 .forms__left__benefits-item {
   font-family: "Manrope";
@@ -190,6 +255,30 @@
   gap: 43px;
   left: -15px;
   position: absolute;
+}
+@media (max-width: 1125px) {
+  .forms__left__benefits-item:last-child {
+    gap: 1%;
+    left: initial;
+    position: initial;
+  }
+}
+@media (max-width: 1125px) {
+  .forms__left__benefits-item .package-deals {
+    width: 10%;
+    margin-right: 26px;
+  }
+}
+@media (max-width: 1125px) {
+  .forms__left__benefits-item {
+    position: relative;
+    font-size: 16px;
+    line-height: 60px;
+  }
+  .forms__left__benefits-item svg[class=forms__left__benefits-svg] {
+    width: 8%;
+    gap: 1%;
+  }
 }
 .forms__right {
   background-color: #fff;
@@ -391,6 +480,39 @@
 }
 .forms .width210px {
   width: 210px;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .forms {
+    /* Ваши стили для небольших десктопных экранов */
+  }
+  .forms {
+    gap: 20px;
+  }
+}
+@media (max-width: 1125px) {
+  .forms {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .forms {
+    /* Ваши стили для небольших десктопных экранов */
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .forms {
+    /* Ваши стили для планшетов */
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .forms {
+    /* Ваши стили для средних устройств */
+  }
+}
+@media (max-width: 479px) {
+  .forms {
+    /* Ваши стили для очень маленьких устройств */
+  }
 }
 
 /*# sourceMappingURL=forms-hotel.css.map */
