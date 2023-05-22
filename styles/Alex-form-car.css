@@ -123,6 +123,7 @@ section {
   border-radius: 74px;
   height: 55px;
   padding: 0 21px 0 29px;
+  width: 300px;
 }
 .form__accordion-icon {
   display: flex;
@@ -288,9 +289,6 @@ textarea {
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
-  /* Style */
-
   color: #0c0b10;
   border: 1px solid #0c0b10;
   border-radius: 62px;
@@ -311,30 +309,6 @@ button + button {
   background-repeat: no-repeat;
   background-position-x: center;
 }
-
-/* .element {
-  position: relative;
-  width: 100%;
-  border: 1px solid #fff;
-}
-
-.element::before,
-.element::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  border-top: 1px solid #fff;
-}
-
-.element::before {
-  transform: translateY(-50%);
-}
-
-.element::after {
-  transform: translateY(50%);
-} */
 
 .bg__img {
   display: flex;
@@ -373,27 +347,16 @@ button + button {
 }
 .bg__img-btn1 {
   font-family: "Manrope";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 179.8%;
-  /* identical to box height, or 29px */
-
   text-align: center;
-
-  /* Style */
-
   color: #0c0b10;
   width: 312px;
   height: 55px;
-
   background: rgba(255, 255, 255, 0.14);
-  /* #FFFFFF */
-
   border: 1px solid #ffffff;
   backdrop-filter: blur(10px);
-  /* Note: backdrop-filter has minimal browser support */
-
   border-radius: 95px;
 }
 .bg__img-subscribe {
@@ -414,4 +377,81 @@ button + button {
 }
 
 @media only screen and (min-width: 768px) {
+  .container {
+    width: 708px;
+  }
+  .title h1 {
+    font-size: 60px;
+  }
+  .car {
+    display: flex;
+    justify-content: center;
+  }
+  .paragraph {
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .form__accordion-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  .form__location-box {
+    display: block;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form__model {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .form__model-accordion {
+    display: flex;
+    justify-content: center;
+  }
+  .form__model .form__accordion-title {
+    width: 625px;
+  }
+  .form__model .form-heading {
+    margin-left: 56px;
+  }
+  .Pick-up__box1 {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  .Pick-up__box2 {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  .Pick-up__box1 .form__accordion-title {
+    width: 400px;
+  }
+  .Pick-up__box2 .form__accordion-title {
+    width: 400px;
+  }
+  .pick__up-time .form__accordion-title {
+    width: 200px;
+  }
+
+  .form__pick-up {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .form__number {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  .outer-container {
+    max-width: 100%;
+    width: 300px;
+  }
 }

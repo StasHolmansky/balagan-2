@@ -11,19 +11,27 @@
     <link rel="stylesheet" href="../styles/header-footer.css" />
     <link rel="stylesheet" href="../styles/main-page.css" />
     <link rel="stylesheet" href="../styles/Alex-form-car.css" />
+    <link rel="stylesheet" href="../styles/header-footer.css" />
     <script defer src="./js/header-footer.js"></script>
     <script defer src="./js/main-page.js"></script>
     <script defer src="../js/Alex-form-car.js"></script>
+    <script defer src="../js/header-footer.js"></script>
   </head>
   <body>
-    <main>
+    <main class="forms-car--book">
       <section class="title">
         <h1>Book Supercars</h1>
       </section>
       <section>
         <div class="container">
           <div class="car">
-            <img src="../images/Alex-form-car/car-mobile.jpg" alt="" />
+            <picture>
+              <source
+                srcset="../images/Alex-form-car/car-mobile.jpg"
+                media="(max-width:375px)"
+              />
+              <img src="../images/Alex-form-car/car-img.jpg" alt="" />
+            </picture>
           </div>
         </div>
       </section>
@@ -103,131 +111,150 @@
       <section>
         <div class="container">
           <div class="form__location-box">
-            <div class="form__accordion">
-              <p class="form-location">Location from</p>
-              <div class="form__accordion-title">
-                <div class="form__accordion-icon">
-                  <svg width="17" height="17">
-                    <use
-                      href="../images/Alex-form-car/svg/symbol-defs.svg#icon-diamond"
-                    ></use>
-                  </svg>
-                  <p>Choose</p>
+            <div class="form__accordion-box">
+              <div class="form__accordion">
+                <p class="form-location">Location from</p>
+                <div class="form__accordion-title">
+                  <div class="form__accordion-icon">
+                    <svg width="17" height="17">
+                      <use
+                        href="../images/Alex-form-car/svg/symbol-defs.svg#icon-diamond"
+                      ></use>
+                    </svg>
+                    <p>Choose</p>
+                  </div>
+                  <span></span>
                 </div>
-                <span></span>
-              </div>
-              <p class="form-heading">to</p>
-              <div class="form__accordion-title">
-                <div class="form__accordion-icon">
-                  <svg width="17" height="17">
-                    <use
-                      href="../images/Alex-form-car/svg/symbol-defs.svg#icon-diamond"
-                    ></use>
-                  </svg>
-                  <p>Choose</p>
-                </div>
-                <span></span>
-              </div>
-            </div>
 
-            <div class="dates-form">
-              <p class="form-dates">Dates from</p>
-              <div class="form__accordion-title">
-                <div class="form__accordion-icon">
-                  <svg width="17" height="17">
-                    <use
-                      href="../images/Alex-form-car/svg/symbol-defs.svg#icon-calendar"
-                    ></use>
-                  </svg>
-                  <p>14-04-22</p>
+                <p class="form-heading">to</p>
+                <div class="form__accordion-title">
+                  <div class="form__accordion-icon">
+                    <svg width="17" height="17">
+                      <use
+                        href="../images/Alex-form-car/svg/symbol-defs.svg#icon-diamond"
+                      ></use>
+                    </svg>
+                    <p>Choose</p>
+                  </div>
+                  <span></span>
                 </div>
-                <span></span>
               </div>
-              <p class="form-heading">to</p>
-              <div class="form__accordion-title">
-                <div class="form__accordion-icon">
-                  <svg width="17" height="17">
-                    <use
-                      href="../images/Alex-form-car/svg/symbol-defs.svg#icon-calendar"
-                    ></use>
-                  </svg>
-                  <p>26-04-22</p>
+
+              <div class="dates-form">
+                <p class="form-dates">Dates from</p>
+                <div class="form__accordion-title">
+                  <div class="form__accordion-icon">
+                    <svg width="17" height="17">
+                      <use
+                        href="../images/Alex-form-car/svg/symbol-defs.svg#icon-calendar"
+                      ></use>
+                    </svg>
+                    <p>14-04-22</p>
+                  </div>
+                  <span></span>
                 </div>
-                <span></span>
+                <p class="form-heading">to</p>
+                <div class="form__accordion-title">
+                  <div class="form__accordion-icon">
+                    <svg width="17" height="17">
+                      <use
+                        href="../images/Alex-form-car/svg/symbol-defs.svg#icon-calendar"
+                      ></use>
+                    </svg>
+                    <p>26-04-22</p>
+                  </div>
+                  <span></span>
+                </div>
               </div>
             </div>
             <div class="form__model">
               <p class="form-heading">Model of supercar</p>
-              <div class="form__accordion-title">
-                <div class="form__accordion-icon">
-                  <svg width="17" height="17">
-                    <use
-                      href="../images/Alex-form-car/svg/symbol-defs.svg#icon-calendar"
-                    ></use>
-                  </svg>
-                  <p>26-04-22</p>
+              <div class="form__model-accordion">
+                <div class="form__accordion-title">
+                  <div class="form__accordion-icon">
+                    <svg width="17" height="17">
+                      <use
+                        href="../images/Alex-form-car/svg/symbol-defs.svg#icon-calendar"
+                      ></use>
+                    </svg>
+                    <p>26-04-22</p>
+                  </div>
+                  <span></span>
                 </div>
-                <span></span>
               </div>
             </div>
             <div class="form__pick-up">
-              <div class="Pick-up__box1">
-                <p class="form-heading">Pick-up location</p>
-                <div class="form__accordion-title">
-                  <div class="form__accordion-icon">
-                    <svg width="17" height="17">
-                      <use
-                        href="../images/Alex-form-car/svg/symbol-defs.svg#icon-diamond"
-                      ></use>
-                    </svg>
-                    <p>Choose</p>
+              <div class="Pick-up__box">
+                <div class="Pick-up__box1">
+                  <div>
+                    <p class="form-heading">Pick-up location</p>
+                    <div class="form__accordion-title">
+                      <div class="form__accordion-icon">
+                        <svg width="17" height="17">
+                          <use
+                            href="../images/Alex-form-car/svg/symbol-defs.svg#icon-diamond"
+                          ></use>
+                        </svg>
+                        <p>Choose</p>
+                      </div>
+                      <span></span>
+                    </div>
                   </div>
-                  <span></span>
+                  <div class="pick__up-time">
+                    <p class="form-heading">Pick up time</p>
+                    <div class="form__accordion-title">
+                      <div class="form__accordion-icon">
+                        <p>09:00</p>
+                      </div>
+                      <span></span>
+                    </div>
+                  </div>
                 </div>
-                <p class="form-heading">Pick up time</p>
-                <div class="form__accordion-title">
-                  <div class="form__accordion-icon">
-                    <p>09:00</p>
+                <div class="Pick-up__box2">
+                  <div>
+                    <p class="form-heading">Drop off location</p>
+                    <div class="form__accordion-title">
+                      <div class="form__accordion-icon">
+                        <svg width="17" height="17">
+                          <use
+                            href="../images/Alex-form-car/svg/symbol-defs.svg#icon-diamond"
+                          ></use>
+                        </svg>
+                        <p>Choose</p>
+                      </div>
+                      <span></span>
+                    </div>
                   </div>
-                  <span></span>
-                </div>
-              </div>
-              <div class="Pick-up__box2">
-                <p class="form-heading">Drop off location</p>
-                <div class="form__accordion-title">
-                  <div class="form__accordion-icon">
-                    <svg width="17" height="17">
-                      <use
-                        href="../images/Alex-form-car/svg/symbol-defs.svg#icon-diamond"
-                      ></use>
-                    </svg>
-                    <p>Choose</p>
+                  <div class="pick__up-time">
+                    <p class="form-heading">Drop off time</p>
+                    <div class="form__accordion-title">
+                      <div class="form__accordion-icon">
+                        <p>09:00</p>
+                      </div>
+                      <span></span>
+                    </div>
                   </div>
-                  <span></span>
-                </div>
-                <p class="form-heading">Drop off time</p>
-                <div class="form__accordion-title">
-                  <div class="form__accordion-icon">
-                    <p>09:00</p>
-                  </div>
-                  <span></span>
                 </div>
               </div>
               <div class="form__number">
-                <p class="form-heading">Number of people</p>
-                <div class="form__accordion-title">
-                  <div class="form__accordion-icon">
-                    <p>2</p>
+                <div>
+                  <p class="form-heading">Number of people</p>
+                  <div class="form__accordion-title">
+                    <div class="form__accordion-icon">
+                      <p>2</p>
+                    </div>
+                    <span></span>
                   </div>
-                  <span></span>
                 </div>
-                <p class="form-heading">Driver</p>
-                <div class="outer-container">
-                  <div class="inner-container">
-                    <p class="inner__text-1 active">Yes</p>
-                  </div>
-                  <div class="inner">
-                    <p class="inner__text-2">No</p>
+                <div>
+                  <p class="form-heading">Driver</p>
+                  <div class="outer-container">
+                    <div class="inner-container">
+                      <p class="inner__text-1 active">Yes</p>
+                    </div>
+                    <div class="inner">
+                      <p class="inner__text-2">No</p>
+                    </div>
                   </div>
                 </div>
               </div>
