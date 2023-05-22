@@ -329,9 +329,9 @@ border-radius: 8px;
 
 }
 
-.products-assortment-img {}
 
-.products-photo {}
+
+
 
 .products-assortment-content {
     max-width: 251px;
@@ -368,7 +368,7 @@ border-radius: 8px;
     color: #FFFFFF;
 }
 
-.price {}
+
 
 .products-title {
     font-family: 'Manrope';
@@ -626,9 +626,7 @@ left: 400px;
     .wrap_title {
         margin: 3px 0 40px 0;
     }
-    .luxury_packages {
-        /* margin: 0px 0 20px 0; */
-    }
+   
     .luxury_packages_form {
         
         top: 13px;
