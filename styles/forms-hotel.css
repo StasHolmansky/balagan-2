@@ -25,6 +25,17 @@
   background-repeat: no-repeat;
   z-index: -2;
 }
+@media (min-width: 1280px) {
+  .forms-hotel-clouds {
+    background-size: cover;
+  }
+}
+@media (min-width: 2370px) {
+  .forms-hotel-clouds {
+    background-size: cover;
+    height: 40%;
+  }
+}
 
 .container {
   width: 1111px;
