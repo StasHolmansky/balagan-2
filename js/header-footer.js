@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
         return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
     }
 
-    if (hasClass(main, 'index') && page !== "./index.html" && page !== "/" ) {
+    if (hasClass(main, 'index') === false && page !== "/index.html" && page !== "/" ) {
         console.log("Its not main page");
         main.insertAdjacentHTML(
             "beforebegin",
