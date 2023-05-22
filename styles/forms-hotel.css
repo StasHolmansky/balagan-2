@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import '/styles/null.css';
+@import '../styles/null.css';
 .forms-hotel {
   position: relative;
   background-color: #E2D3CE;
@@ -161,6 +161,11 @@
     margin-bottom: 30px;
   }
 }
+@media (max-width: 650px) {
+  .forms__main-title {
+    font-size: 2em;
+  }
+}
 
 .forms {
   display: flex;
@@ -192,11 +197,23 @@
 }
 @media (max-width: 1125px) {
   .forms__left__image-wrapper {
+    display: flex;
+    margin: 0px auto 20px auto;
+  }
+}
+@media (max-width: 550px) {
+  .forms__left__image-wrapper {
+    display: flex;
     margin: 0px auto 20px auto;
   }
 }
 .forms__left__image {
   border-radius: 10px;
+}
+@media (max-width: 1125px) {
+  .forms__left__image {
+    margin: 0px auto 20px auto;
+  }
 }
 .forms__left__title {
   font-family: "Forum";
@@ -244,6 +261,20 @@
     width: 80%;
   }
 }
+@media (max-width: 1125px) {
+  .forms__left__description {
+    margin: 0 auto 0 auto;
+    font-size: 16px;
+    padding: 20px;
+    margin-bottom: 50px;
+    width: 80%;
+  }
+}
+@media (max-width: 650px) {
+  .forms__left__description {
+    font-size: 0.9em;
+  }
+}
 .forms__left__benefits-wrapper {
   position: absolute;
   bottom: 6%;
@@ -255,8 +286,21 @@
     padding: 0 20px;
   }
 }
+@media (max-width: 550px) {
+  .forms__left__benefits-wrapper {
+    position: relative;
+    margin: 0 auto;
+  }
+}
 .forms__left__benefits {
   position: relative;
+}
+@media (max-width: 800px) {
+  .forms__left__benefits-title {
+    font-size: 0.9rem;
+    padding-right: 5px;
+    width: 60%;
+  }
 }
 .forms__left__benefits-svg1 {
   background-image: url("/images/forms-hotel/forms__left-benefits/svg1.svg");
@@ -326,6 +370,11 @@
     grid-template-columns: 350px 350px;
   }
 }
+@media (max-width: 850px) {
+  .forms__left__benefits {
+    grid-template-columns: 50% 50%;
+  }
+}
 .forms__left__benefits-item {
   font-family: "Manrope";
   font-style: normal;
@@ -340,6 +389,13 @@
 @media (max-width: 1125px) {
   .forms__left__benefits-item {
     line-height: 1;
+  }
+}
+@media (max-width: 800px) {
+  .forms__left__benefits-item {
+    font-size: 0.9rem;
+    gap: 10px;
+    justify-content: space-evenly;
   }
 }
 .forms__right {
@@ -546,6 +602,11 @@
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 51px;
+}
+@media (max-width: 650px) {
+  .forms .forms__special-requests {
+    height: 8rem;
+  }
 }
 .forms .width210px {
   width: 210px;

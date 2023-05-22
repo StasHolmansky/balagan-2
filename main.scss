@@ -142,6 +142,9 @@
   font-size: 48px;
   margin-bottom: 30px;
   }
+  @media (max-width:650px ){
+    font-size: 2em;
+    }
 }
 
 // hero
@@ -173,6 +176,11 @@
     &__left__image-wrapper{
       margin-bottom: 32px;
       @media (max-width:1125px ){
+        display: flex;
+        margin: 0px auto 20px auto;
+      }
+      @media (max-width:550px ){
+        display: flex;
         margin: 0px auto 20px auto;
       }
     }
@@ -181,6 +189,9 @@
 
 		&__left__image {
       border-radius: 10px;
+      @media (max-width:1125px ){
+        margin: 0px auto 20px auto;
+      }
 		}
 
 		// .forms__title
@@ -225,6 +236,16 @@
         margin-bottom: 50px;
         width: 80%;
       }
+      @media (max-width:1125px ){
+        margin: 0 auto 0 auto;
+        font-size: 16px;  
+        padding: 20px;
+        margin-bottom: 50px;
+        width: 80%;
+      }
+      @media (max-width:650px ){
+        font-size: 0.9em;
+      }
 		}
 
     // .forms__left__benefits-wrapper
@@ -237,6 +258,10 @@
         margin: 0 auto;
         padding: 0 20px;
       }
+      @media (max-width:550px ){
+        position: relative;
+        margin: 0 auto;
+      }
     }
 
 
@@ -245,6 +270,11 @@
 		&__left__benefits {
       position: relative;
       &-title{
+        @media (max-width:800px ){
+          font-size: 0.9rem;
+          padding-right: 5px;
+          width: 60%;
+        }
       }
       &-svg1{
         background-image: url('/images/forms-hotel/forms__left-benefits/svg1.svg');
@@ -310,6 +340,10 @@
         grid-template-columns: 350px 350px;
 
       }
+      @media (max-width:850px ){
+        grid-template-columns: 50% 50%;
+
+      }
 		}
 
 		// .forms__benefits-item
@@ -327,6 +361,12 @@
       @media (max-width:1125px ){
         line-height: 1;
       }
+      @media (max-width:800px ){
+        font-size: 0.9rem;
+        gap: 10px;
+        justify-content: space-evenly;
+      }
+
 		}
 
 
@@ -582,6 +622,9 @@
       padding-top: 15px;
       padding-bottom: 15px;
       padding-right: 51px;
+      @media (max-width:650px ){
+        height: 8rem;
+      }
     }
     
     .width210px{
