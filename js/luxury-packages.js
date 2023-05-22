@@ -89,7 +89,10 @@ $(function() {
 // --Load more--
 
 
+
+
 document.querySelector('.btn').addEventListener('click', function() {
-    document.querySelector('.wrap_btn').style.display = 'none';
+    document.querySelector('.wrap_btn').classList.add('hidden');
 });
+
 
