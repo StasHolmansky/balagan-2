@@ -2,7 +2,13 @@ window.addEventListener("load", () => {
     const main = document.querySelector("main");
     const body = document.body;
     const page = window.location.pathname;
-    if (page !== "/balagan-2/index.html" && page !== "/balagan-2/" && page !== "./index.html" && page !== "/" ) {
+
+    function hasClass(element, className) {
+        return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
+    }
+
+    if (hasClass(main, 'index') && page !== "./index.html" && page !== "/" ) {
+        console.log("Its not main page");
         main.insertAdjacentHTML(
             "beforebegin",
             `
