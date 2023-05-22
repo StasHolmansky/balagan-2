@@ -30,6 +30,11 @@
   width: 1111px;
   margin: 0 auto;
 }
+@media (max-width: 1125px) {
+  .container {
+    width: auto;
+  }
+}
 
 .forms-nav-container {
   position: relative;
@@ -195,6 +200,7 @@
   .forms__left__title {
     font-size: 28px;
     margin: 0 auto 0 auto;
+    width: 80%;
   }
 }
 .forms__left__description {
@@ -212,6 +218,7 @@
     font-size: 16px;
     padding: 20px;
     margin-bottom: 15px;
+    width: 80%;
   }
 }
 .forms__left__benefits-wrapper {
@@ -226,6 +233,7 @@
 @media (max-width: 1125px) {
   .forms__left__benefits-wrapper {
     position: relative;
+    margin: 0 auto;
   }
 }
 .forms__left__benefits {
@@ -234,10 +242,9 @@
 @media (max-width: 1125px) {
   .forms__left__benefits {
     position: relative;
-    position: relative;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     padding: 0 20px;
   }
 }
