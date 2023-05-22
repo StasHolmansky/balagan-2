@@ -19,7 +19,7 @@ $(function() {
 // --Load more--
 
  // При нажатии на "Показать еще", появляются все card
- const btn = document.querySelector('.btn');
+ const btn = document.querySelector('.btn_products');
  const cards = Array.from(document.querySelectorAll('.directions_item'));
  
  
@@ -91,7 +91,7 @@ $(function() {
 
 
 
-document.querySelector('.btn').addEventListener('click', function() {
+document.querySelector('.btn_products').addEventListener('click', function() {
     document.querySelector('.wrap_btn').classList.add('hidden');
 });
 

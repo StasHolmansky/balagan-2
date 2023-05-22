@@ -593,7 +593,7 @@ left: 400px;
     
   
 
-  .btn{
+  .btn_products{
     max-width: 330px;
     width: 100%;
     min-height: 55px;
@@ -755,7 +755,7 @@ color: #FFFFFF;
          
     }
 
-    .btn {
+    .btn_products {
          padding-top: 35px;
          
          position: static;
