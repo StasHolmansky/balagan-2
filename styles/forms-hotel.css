@@ -294,6 +294,13 @@
   flex-direction: column;
   border-radius: 10px;
 }
+@media (max-width: 1125px) {
+  .forms__right {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
 .forms__right__label {
   position: relative;
   font-family: "Manrope";
