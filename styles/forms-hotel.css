@@ -147,7 +147,7 @@
   line-height: 58px;
   text-transform: capitalize;
   margin-bottom: 50px;
-  margin-top: 113px;
+  text-align: center;
 }
 @media (min-width: 1031px) and (max-width: 1279px) {
   .forms__main-title {
@@ -241,6 +241,12 @@
   .forms__left__title {
     width: 70%;
     text-align: center;
+  }
+}
+@media (max-width: 550px) {
+  .forms__left__title {
+    width: auto;
+    font-size: 23px;
   }
 }
 .forms__left__description {
@@ -438,6 +444,11 @@
   top: 44px;
   left: 28px;
   pointer-events: none;
+}
+@media (max-width: 300px) {
+  .forms__right__label[data-location=""]::before {
+    left: 8%;
+  }
 }
 .forms__right__label[data-guests=""]::before {
   content: url("../images/forms-hotel/adult.svg");
@@ -641,6 +652,7 @@
 @media (max-width: 550px) {
   .forms__right-cta {
     width: 100%;
+    font-size: 14px;
   }
 }
 .forms__right-cta:hover {
@@ -658,10 +670,14 @@
   padding-left: 51px;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-right: 51px;
 }
 .forms .forms-long > option {
   color: inherit;
+}
+@media (max-width: 300px) {
+  .forms .forms-long {
+    padding-left: 27px;
+  }
 }
 .forms .forms-short {
   display: flex;
