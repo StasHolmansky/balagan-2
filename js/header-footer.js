@@ -1,16 +1,11 @@
 window.addEventListener("load", () => {
-    const main = document.querySelector("main");
-    const body = document.body;
-    const page = window.location.pathname;
-
-    function hasClass(element, className) {
-        return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
-    }
-
-    if (hasClass(main, 'index') === false && page !== "/index.html" && page !== "/" ) {
-        main.insertAdjacentHTML(
-            "beforebegin",
-            `
+  const main = document.querySelector("main");
+  const body = document.body;
+  const page = window.location.pathname;
+  if (page !== "/index.html" && page !== "/") {
+    main.insertAdjacentHTML(
+      "beforebegin",
+      `
             <header class="header">
             <div class="nav" id="nav">
                 <div class="call__btn call__btn-md">Call Me</div>
@@ -23,28 +18,26 @@ window.addEventListener("load", () => {
                         />
                     </a>
                 </div>
-                <div class="nav__menu" id="nav__menu">
-                    <ul class="nav__list" id="nav__list">
-                        <li class="nav__item"><a href="../index.html">Home</a></li>
-                        <li class="nav__item">
-                            <a href="./luxury-packages.html"
-                                >Luxury packages</a
-                            >
-                        </li>
-                        <li class="nav__item">
-                            <a href="./book.html">Book with us</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="./why-lux-trips.html">Why Lux Trips</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="./contact.html">Contact</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="./client.html">Client Area</a>
-                        </li>
-                    </ul>
-                </div>    
+                <ul class="nav__list" id="nav__list">
+                    <li class="nav__item"><a href="../index.html">Home</a></li>
+                    <li class="nav__item">
+                        <a href="./luxury-packages.html"
+                            >Luxury packages</a
+                        >
+                    </li>
+                    <li class="nav__item">
+                        <a href="./book.html">Book with us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./why-lux-trips.html">Why Lux Trips</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./client.html">Client Area</a>
+                    </li>
+                </ul>
                 <div class="call__btn">
                     <svg
                         class="call__btn-top"
@@ -97,14 +90,15 @@ window.addEventListener("load", () => {
                 <div class="nav__burger" id="nav__burger">
                     <div class="nav__burger-btn"></div>
                 </div>
+                <div class="nav__menu" id="nav__menu"></div>
             </div>
         </header>
     `
-        );
+    );
 
-        main.insertAdjacentHTML(
-            "afterend",
-            `
+    main.insertAdjacentHTML(
+      "afterend",
+      `
         <footer class="footer">
         <div class="footer__wrapper">
             <div class="footer__top">
@@ -121,12 +115,12 @@ window.addEventListener("load", () => {
             <div class="footer__middle">
                 <ul class="footer__middle-list footer__middle-first">
                     <li class="footer__middle-item">
-                        <a href="luxury-packages.html"
+                        <a href="./pages/luxury-packages.html"
                             >Luxury packages</a
                         >
                     </li>
                     <li class="footer__middle-item">
-                        <a href="book.html">Book with us</a>
+                        <a href="./pages/book.html">Book with us</a>
                     </li>
                 </ul>
                 <div class="call__btn call__btn-footer">
@@ -180,12 +174,12 @@ window.addEventListener("load", () => {
                 </div>
                 <ul class="footer__middle-list footer__middle-second">
                     <li class="footer__middle-item">
-                        <a href="why-lux-trips.html"
+                        <a href="./pages/why-lux-trips.html"
                             >Why Lux Trips</a
                         >
                     </li>
                     <li class="footer__middle-item">
-                        <a href="contact.html">Contact</a>
+                        <a href="./pages/contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -212,16 +206,16 @@ window.addEventListener("load", () => {
             </div>
 	    </div>       
         `
-        );
-    } else {
-        main.insertAdjacentHTML(
-            "beforebegin",
-            `
+    );
+  } else {
+    main.insertAdjacentHTML(
+      "beforebegin",
+      `
             <header class="header">
             <div class="nav" id="nav">
                 <div class="call__btn call__btn-md">Call Me</div>
                 <div class="main__logo">
-                    <a href="./index.html" class="main__logo-link">
+                    <a href="../index.html" class="main__logo-link">
                         <img
                             class="main__logo-img"
                             src="./images/header-footer/logo.svg"
@@ -229,28 +223,26 @@ window.addEventListener("load", () => {
                         />
                     </a>
                 </div>
-                <div class="nav__menu" id="nav__menu">
-                    <ul class="nav__list" id="nav__list">
-                        <li class="nav__item"><a href="./index.html">Home</a></li>
-                        <li class="nav__item">
-                            <a href="./pages/luxury-packages.html"
-                                >Luxury packages</a
-                            >
-                        </li>
-                        <li class="nav__item">
-                            <a href="./pages/book.html">Book with us</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="./pages/why-lux-trips.html">Why Lux Trips</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="./pages/contact.html">Contact</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="./pages/client.html">Client Area</a>
-                        </li>
-                    </ul>
-                </div>    
+                <ul class="nav__list" id="nav__list">
+                    <li class="nav__item"><a href="./">Home</a></li>
+                    <li class="nav__item">
+                        <a href="./pages/luxury-packages.html"
+                            >Luxury packages</a
+                        >
+                    </li>
+                    <li class="nav__item">
+                        <a href="./pages/book.html">Book with us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./pages/why-lux-trips.html">Why Lux Trips</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./pages/contact.html">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./pages/client.html">Client Area</a>
+                    </li>
+                </ul>
                 <div class="call__btn">
                     <svg
                         class="call__btn-top"
@@ -303,14 +295,15 @@ window.addEventListener("load", () => {
                 <div class="nav__burger" id="nav__burger">
                     <div class="nav__burger-btn"></div>
                 </div>
+                <div class="nav__menu" id="nav__menu"></div>
             </div>
         </header>
         `
-        );
+    );
 
-        main.insertAdjacentHTML(
-            "afterend",
-            `
+    main.insertAdjacentHTML(
+      "afterend",
+      `
         <footer class="footer">
         <div class="footer__wrapper">
             <div class="footer__top">
@@ -404,66 +397,64 @@ window.addEventListener("load", () => {
                 </div>
             </div>
             </div>
-        </footer>  
-        <div class="modal" id="modal">
-            <div class="modal__frame" id="modal__frame"></div>
-            <div class="modal__menu" id="modal__menu">
-                <div class="modal__close" id="modal__close"></div>
-                <div class="modal__title">Contact</div>
-                <form action="#" class="modal__form">
-                    <input type="text" placeholder="Name" class="modal__text">
-                    <input type="tel" placeholder="Phone" class="modal__tel">
-                    <input type="button" value="Call me back" class="modal__btn" id="modal__btn">
-                </form>
-            </div>
-	    </div>      
+        </footer>        
         `
-        );
+    );
+  }
+
+  const navBurger = document.getElementById("nav__burger");
+  const navMenu = document.getElementById("nav__menu");
+  const navList = document.getElementById("nav__list");
+
+  navBurger.addEventListener("click", () => {
+    navBurger.classList.toggle("_active");
+    navMenu.classList.toggle("_active");
+    navList.classList.toggle("_active");
+    body.classList.toggle("_lock");
+  });
+  navBurger.addEventListener("click", () => {
+    navBurger.classList.toggle("_active");
+    navMenu.classList.toggle("_active");
+    navList.classList.toggle("_active");
+    body.classList.toggle("_lock");
+  });
+
+  const currentPage = window.location.pathname;
+  const menuItems = document.querySelectorAll(".nav__item");
+
+  menuItems.forEach((item) => {
+    const link = item.children[0].pathname;
+    if (link === currentPage) {
+      item.classList.add("_active");
     }
+  });
 
-    const navBurger = document.getElementById("nav__burger");
-    const navMenu = document.getElementById("nav__menu");
-    const navList = document.getElementById("nav__list");
+  const modal = document.getElementById("modal");
+  const modalFrame = document.getElementById("modal__frame");
+  const modalMenu = document.getElementById("modal__menu");
+  const modalClose = document.getElementById("modal__close");
+  const modalBtn = document.getElementById("modal__btn");
+  const callBtn = document.querySelectorAll(".call__btn");
 
-    navBurger.addEventListener("click", () => {
-        navBurger.classList.toggle("_active");
-        navMenu.classList.toggle("_active");
-        navList.classList.toggle("_active");
-        body.classList.toggle("_lock")
+  document.addEventListener("click", (close) => {
+    if (
+      close.target === modalClose ||
+      close.target === modal ||
+      close.target === modalBtn
+    ) {
+      modal.classList.remove("_active");
+      modalFrame.classList.remove("_active");
+      modalMenu.classList.remove("_active");
+      body.classList.remove("_lock");
+    }
+  });
+
+  callBtn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      modal.classList.add("_active");
+      modalFrame.classList.add("_active");
+      modalMenu.classList.add("_active");
+      body.classList.add("_lock");
     });
-
-    const currentPage = window.location.pathname;
-    const menuItems = document.querySelectorAll('.nav__item');
-
-    menuItems.forEach(item => {
-        const link = item.children[0].pathname;
-        if (link === currentPage) {
-            item.classList.add('_active');
-        }
-    });
-
-    const modal = document.getElementById("modal")
-    const modalFrame = document.getElementById("modal__frame")
-    const modalMenu = document.getElementById("modal__menu")
-    const modalClose = document.getElementById("modal__close")
-    const modalBtn = document.getElementById("modal__btn")
-    const callBtn = document.querySelectorAll(".call__btn")
-
-    document.addEventListener('click', (close) => {
-        if (close.target === modalClose || close.target === modal || close.target === modalBtn) {
-            modal.classList.remove("_active");
-            modalFrame.classList.remove("_active")
-            modalMenu.classList.remove('_active');
-            body.classList.remove("_lock");
-        }
-    })
-
-    callBtn.forEach((btn) => {
-        btn.addEventListener('click', () => {
-            modal.classList.add("_active");
-            modalFrame.classList.add("_active")
-            modalMenu.classList.add('_active');
-            body.classList.add("_lock");
-        })
-    })
+  });
 });
