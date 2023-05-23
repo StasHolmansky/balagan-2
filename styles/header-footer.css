@@ -294,6 +294,149 @@ main {
 }
 /* --------------------------------------------------------- Footer styles end --------------------------------------------------------- */
 
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+.modal._active {
+    z-index: 110;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.modal__menu {
+    max-width: 920px;
+    max-height: 525px;
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(226, 211, 206, 0.2);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all .5s ease;
+}
+.modal__menu._active {
+    top: 50%;
+}
+.modal__frame {
+    content: "";
+    max-width: 885px;
+    max-height: 540px;
+    width: 90%;
+    height: 100%;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s ease;
+}
+.modal__frame._active {
+    top: 50%;
+}
+.modal__close {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    align-self: end;
+    cursor: pointer;
+}
+.modal__close::before,
+.modal__close::after {
+    display: block;
+    content: '';
+    width: 80%;
+    border: 1px solid #000000;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.modal__close::after {
+    transform: rotate(45deg);
+}
+.modal__close::before {
+    transform: rotate(-45deg);
+}
+.modal__title {
+    margin: 26px 0 0 0;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 58px;
+    text-align: center;
+    color: #0C0B10;
+}
+.modal__form {
+    margin: 32px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    width: 100%;
+    padding: 0 5px;
+    position: relative;
+}
+.modal__text,
+.modal__tel {
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(10px);
+    border-radius: 95px;
+    padding: 13px 20px;
+    text-align: center;
+    color: #0C0B10;
+    width: 100%;
+}
+.modal__tel {
+    margin: 14px 0 0 0;
+}
+.modal__btn {
+    margin: 53px 0 0 0;
+    background: #0C0B10;
+    border-radius: 74px;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 14px 0;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.modal__form::after {
+    content: '';
+    display: block;
+    max-height: 61px;
+    width: 88%;
+    height: 100%;
+    border: 1px solid #0C0B10;
+    border-radius: 98.1972px;
+    position: absolute;
+    bottom: 0;
+}
+
+
 /* --------------------------------------------------------- Adaptive styles start --------------------------------------------------------- */
 @media (min-width: 1024px) and (max-width: 1279px) {
     /* Ваши стили для небольших десктопных экранов */
