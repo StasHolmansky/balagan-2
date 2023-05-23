@@ -1,5 +1,23 @@
 body {
   background-color: #e2d3ce;
+  background-image: url("../images/contact/background-top.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* width */
+html::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+/* Track */
+html::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+
+/* Handle */
+html::-webkit-scrollbar-thumb {
+  background: var(--brown-color);
 }
 
 :root {
@@ -12,20 +30,11 @@ body {
 
 /*-----------------------------main-----------------------------*/
 .main-lux-p-p-light {
-  position: relative;
-  width: 100%;
-}
-
-.main-lux-p-p-light > .sky-bg {
-  position: absolute;
-  top: 0;
-  height: 30vh;
-  width: 100%;
-  background: url(../images/lux-p-p-light/sky.png);
-  background-position: top;
+  background-image: url("../images/contact/clouds.png");
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
+  font-family: "Forum";
+  font-style: normal;
 }
 
 .wrapper-lppl {
@@ -35,6 +44,15 @@ body {
   width: clamp(35rem, 80%, 130rem);
   margin-right: auto;
   margin-left: auto;
+}
+
+button {
+  transition: 1s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 1rem 0.2rem black;
 }
 
 /*-----------------------navigator--------------------------*/
@@ -54,6 +72,14 @@ body {
 
 .section-navigation ul li {
   transition: 0.4s linear;
+  position: relative;
+}
+
+.section-navigation ul li:hover::after {
+  position: absolute;
+  content: url("../svg/lux-p-p-light/link-decoration.svg");
+  right: 50%;
+  top: 100%;
 }
 
 .section-navigation ul li:hover {
@@ -61,6 +87,41 @@ body {
 }
 
 /*------------------------------------------------------------*/
+
+/*-------------------------Button Container---------------------------------*/
+
+.section .container-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section .container-button img:first-of-type {
+  width: clamp(4rem, 4vw, 6rem);
+}
+
+.section .container-button img:last-of-type {
+  width: clamp(2rem, 4vw, 4rem);
+}
+
+.section .container-button button {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  border-radius: 4rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.section input:focus {
+  box-shadow: 0 0 1rem 0.5rem white;
+}
+
+.section-7 .container-form form input:focus {
+  box-shadow: 0 0 1rem 0.1rem black;
+}
+
+/*----------------------------------------------------------*/
 
 /*-----------------------------section-1-----------------------------*/
 .section-1 {
@@ -93,10 +154,12 @@ body {
   font-size: clamp(2.5rem, 4vw, 6rem);
   color: initial;
   text-align: center;
+  font-style: italic;
 }
 
 .section-1 > .container {
   background-image: url(../images/lux-p-p-light/star-light-horizontal.png);
+  box-shadow: 0 0 1rem 0.2rem white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -104,12 +167,11 @@ body {
   filter: contrast(120%) saturate(150%);
   display: grid;
   grid-template-columns: 1fr 1fr auto 25%;
-  grid-template-rows: 1fr auto auto 21%;
+  grid-template-rows: 1fr auto auto auto;
   padding: 0 clamp(1rem, 5vw, 5rem);
   border-radius: 1rem;
   position: relative;
-  row-gap: 1rem;
-  column-gap: 1rem;
+  gap: 1rem;
 }
 
 .section-1 > .container .name-location {
@@ -120,8 +182,9 @@ body {
 .section-1 > .container > h2 {
   grid-column: 1/3;
   grid-row: 4/5;
-  /* font-size: 6rem; */
-  font-size: clamp(1.4rem, 3.5vw, 6rem);
+  font-size: clamp(2rem, 3.5vw, 6rem);
+  align-self: end;
+  transform: translateY(50%);
 }
 
 .section-1 > .container > .snake-rhombs {
@@ -133,7 +196,12 @@ body {
 .section-1 > .container .name-location {
   grid-column: 1/2;
   grid-row: 3/4;
-  font-size: 1.8rem;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  animation: text-color 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .section-1 > .container .name-location::before {
@@ -145,6 +213,8 @@ body {
   grid-row: 4/5;
   font-size: 1.2rem;
   text-transform: uppercase;
+  align-self: end;
+  transform: translateY(50%);
 }
 
 .section-1 > .container p > span {
@@ -161,39 +231,28 @@ body {
   font-size: clamp(1rem, 2vw, 1.6rem);
   border-radius: 3rem;
   justify-self: center;
-  align-self: start;
+  align-self: end;
+  transform: translateY(50%);
+  font-weight: bold;
 }
 
-/*-----------------------------Button "BOOK NOW"-----------------------------*/
-
-.section-1 > .container > .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  position: absolute;
-  bottom: -8%;
-  right: 40%;
+.section-1 > .container > button:first-of-type:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 1rem 0.2rem white;
+  transform: translateY(0);
 }
 
-.section-1 > .container > .container > button {
+.section-1 .container-button {
+  grid-row: 5/6;
+  grid-column: 1/5;
+  transform: translateY(50%);
+}
+
+.section-1 .container-button button {
+  color: black;
   background-color: var(--white-color);
-  color: initial;
-  padding: 1.5rem 5rem;
-  border-radius: 3rem;
-  text-transform: uppercase;
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  padding: 1.5rem clamp(3rem, 4vw, 6rem);
 }
-
-.section-1 > .container > .container > img:first-of-type {
-  width: clamp(4rem, 4vw, 6rem);
-}
-
-.section-1 > .container > .container > img:last-of-type {
-  width: clamp(2rem, 4vw, 4rem);
-}
-
-/*----------------------------------------------------------------------------*/
 
 .snake-rhombs {
   display: flex;
@@ -220,6 +279,20 @@ body {
 .section-2 > .col-1 {
   justify-self: center;
   grid-row: 1/3;
+}
+
+.section-2 .col-1 img {
+  border-radius: 1rem;
+}
+
+.section-2 .col-1 .container-button {
+  transform: translateY(-130%);
+}
+
+.section-2 .col-1 .container-button button {
+  background-color: var(--white-color);
+  color: initial;
+  padding: 1rem 5rem;
 }
 
 .section-2 > .col-2 {
@@ -311,12 +384,22 @@ body {
 .section-3 .main-content > .col-1 {
   display: flex;
   flex-direction: column;
+  counter-reset: number;
 }
 
 .section-3 .main-content > .col-1 .rhomb-part {
   display: flex;
   align-items: center;
   gap: 1rem;
+  position: relative;
+}
+
+.section-3 .main-content > .col-1 .rhomb-part::after {
+  counter-increment: number;
+  content: counter(number);
+  position: absolute;
+  left: 7.5%;
+  font-size: clamp(3rem, 4vw, 4rem);
 }
 
 .section-3 .main-content > .col-1 .rhomb-part > p {
@@ -354,15 +437,15 @@ body {
 }
 
 .section-3 .main-content > .col-2 .part-2 {
-  margin-top: 30rem;
+  margin-top: 40rem;
 }
 
 .section-3 .main-content > .col-2 .part-3 {
-  margin-top: 30rem;
+  margin-top: 40rem;
 }
 
 .section-3 .main-content > .col-2 .part-4 {
-  margin-top: 10rem;
+  margin-top: 15rem;
 }
 
 .section-3 .main-content > .col-2 .part-2 > .included-section p:last-of-type {
@@ -406,28 +489,11 @@ body {
   width: 70%;
 }
 
-.section-3 .end-content > .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
+/*Container-Button*/
 
-.section-3 .end-content > .container button {
-  text-transform: uppercase;
+.section-3 .end-content > .container-button button {
   background-color: black;
   color: white;
-  padding: 1.5rem 3rem;
-  border-radius: 4rem;
-  letter-spacing: 2px;
-}
-
-.section-3 .end-content > .container img:first-of-type {
-  width: clamp(4rem, 4vw, 6rem);
-}
-
-.section-3 .end-content > .container img:last-of-type {
-  width: clamp(2rem, 4vw, 4rem);
 }
 
 /*-----------------------------section-4-----------------------------*/
@@ -540,6 +606,7 @@ body {
   height: auto;
   object-fit: cover;
   border-radius: 1rem;
+  filter: contrast(120%) saturate(150%);
 }
 
 .section-6 .container-gallery img:nth-child(1) {
@@ -648,6 +715,7 @@ body {
 }
 
 .section-7 .card > .col-1 p:last-of-type {
+  font-weight: bold;
   font-size: 1.8rem;
   line-height: 1.6;
 }
@@ -709,21 +777,11 @@ body {
   gap: 1rem;
 }
 
-.section-7 > .container button {
-  text-transform: uppercase;
+/*Container-Button*/
+
+.section-7 > .container-button button {
   background-color: black;
   color: white;
-  padding: 1.5rem 3rem;
-  border-radius: 4rem;
-  letter-spacing: 2px;
-}
-
-.section-7 > .container img:first-of-type {
-  width: clamp(4rem, 4vw, 6rem);
-}
-
-.section-7 > .container img:last-of-type {
-  width: clamp(2rem, 4vw, 4rem);
 }
 
 /*-----------------------------section-8-----------------------------*/
@@ -786,7 +844,7 @@ body {
   grid-template-rows: 1fr auto auto 1fr;
   padding: clamp(1rem, 10vw, 6rem) clamp(1rem, 20vw, 8rem);
   row-gap: 1rem;
-  filter: drop-shadow(0 0 2rem var(--brown-color));
+  filter: drop-shadow(0 0 1rem var(--brown-color));
 }
 
 .section-9 .container h2 {
@@ -812,6 +870,8 @@ body {
   border-radius: 4rem;
   padding: 1.4rem 2rem;
   margin-top: 0.8rem;
+  backdrop-filter: blur(10px);
+  z-index: -1;
 }
 
 .section-9 .container > input::placeholder {
@@ -819,29 +879,15 @@ body {
 }
 
 .section-9 .container .container-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
   grid-column: 2/3;
   grid-row: 3/4;
+  justify-self: start;
 }
 
 .section-9 .container .container-button button {
-  text-transform: uppercase;
   background-color: var(--white-color);
   color: black;
-  padding: 1.5rem 6rem;
-  border-radius: 4rem;
-  letter-spacing: 2px;
-}
-
-.section-9 .container .container-button img:first-of-type {
-  width: clamp(4rem, 4vw, 6rem);
-}
-
-.section-9 .container .container-button img:last-of-type {
-  width: clamp(2rem, 4vw, 4rem);
+  padding: 1.5rem 8rem;
 }
 
 /*--------------------------------Adaptive Section----------------------------------*/
@@ -904,13 +950,33 @@ body {
 }
 
 @media (1024px < width < 1279px) {
+  .section-3 .main-content > .col-1 .rhomb-part::after {
+    left: 11%;
+  }
 }
 
 @media (768px < width < 1023px) {
+  .section-3
+    .main-content
+    > .col-1
+    img[src="../images/lux-p-p-light/line.png"] {
+    width: 1px;
+    margin-left: 3.2rem;
+    height: clamp(100rem, 50%, 200rem);
+  }
+  .section-3 .main-content > .col-1 .rhomb-part::after {
+    left: 14%;
+  }
 }
 @media (480px <= width < 767px) {
   .snake-rhombs {
     display: none;
+  }
+
+  .section-1 > .container p {
+    transform: translateY(-100%);
+    grid-column: 1/2;
+    grid-row: 5/6;
   }
 
   .section-1 > .container > button:first-of-type {
@@ -919,6 +985,19 @@ body {
 
   .section-3 .main-content > .col-1 .rhomb-part > p {
     display: none;
+  }
+
+  .section-3
+    .main-content
+    > .col-1
+    img[src="../images/lux-p-p-light/line.png"] {
+    width: 1px;
+    margin-left: 3.2rem;
+    height: clamp(100rem, 50%, 200rem);
+  }
+
+  .section-3 .main-content > .col-1 .rhomb-part::after {
+    left: 23%;
   }
 
   .section-5 .container .row {
@@ -935,12 +1014,31 @@ body {
     display: none;
   }
 
+  .section-1 > .container p {
+    transform: translateY(-100%);
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
   .section-1 > .container > button:first-of-type {
     padding: 0.5rem 1rem;
   }
 
+  .section-3
+    .main-content
+    > .col-1
+    img[src="../images/lux-p-p-light/line.png"] {
+    width: 1px;
+    margin-left: 3.2rem;
+    height: clamp(100rem, 50%, 200rem);
+  }
+
   .section-3 .main-content > .col-1 .rhomb-part > p {
     display: none;
+  }
+
+  .section-3 .main-content > .col-1 .rhomb-part::after {
+    left: 28%;
   }
 
   .section-5 .container .row {
@@ -950,5 +1048,27 @@ body {
 
   .section-7 .container-snakes-rhomb .snake-rhomb-1::after {
     content: none;
+  }
+}
+
+@keyframes text-color {
+  0% {
+    color: #e55807;
+  }
+
+  25% {
+    color: #e8aa42;
+  }
+
+  50% {
+    color: #47a992;
+  }
+
+  75% {
+    color: #b799ff;
+  }
+
+  100% {
+    color: #79e0ee;
   }
 }

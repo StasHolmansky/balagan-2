@@ -29,6 +29,7 @@ array_small_snakes.push(snake_rhomb_2_small);
 array_small_snakes.push(snake_rhomb_3_small);
 array_small_snakes.push(snake_rhomb_4_small);
 
+generateSectionNavigation();
 createSmallRhomb();
 createMidAllBrownRhomb(snake_rhomb_1);
 createMidAllBrownRhomb(snake_rhomb_2);
@@ -132,4 +133,29 @@ function createMidSmallBrownRhomb(snake) {
   }
 }
 
-function generateSectionNavigation() {}
+function generateSectionNavigation() {
+  const section = document.querySelectorAll(".section");
+  let array_section_class = [];
+  array_section_class.push(section);
+
+  for (let i = 0; i < array_section_class.length; i++) {
+    for (let j = 0; j < array_section_class[i].length - 2; j++) {
+      // console.log(array_section_class[i][j]);
+      array_section_class[i][j].insertAdjacentHTML(
+        "afterend",
+        `<section class="section-navigation">
+              <ul>
+                <li><a href="#information">information</a></li>
+                <li><a href="#luxury-tour-plan">luxury tour plan</a></li>
+                <li><a href="#location">location</a></li>
+                <li><a href="#travel-tips">travel Tips</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#reviews">reviews</a></li>
+                <li><a href="#cancellation-policy">cancellation policy</a></li>
+              </ul>
+            </section>
+      `
+      );
+    }
+  }
+}
