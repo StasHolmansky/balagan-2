@@ -15,7 +15,7 @@
     height: 475px;
     top:0;
     background-color: #E2D3CE;
-    background-image: url('/images/forms-hotel/bg_top_clouds.png'), url('/images/forms-hotel/bg_top_inner.png');
+    background-image: url('../images/forms-hotel/bg_top_clouds.png'), url('../images/forms-hotel/bg_top_inner.png');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -2;
@@ -277,7 +277,7 @@
         }
       }
       &-svg1{
-        background-image: url('/images/forms-hotel/forms__left-benefits/svg1.svg');
+        background-image: url('../images/forms-hotel/forms__left-benefits/svg1.svg');
         width: 50px;
         height: 50px;
         background-repeat: no-repeat;
@@ -285,7 +285,7 @@
         background-size: contain;
       }
       &-svg2{
-        background-image: url('/images/forms-hotel/forms__left-benefits/svg2.svg');
+        background-image: url('../images/forms-hotel/forms__left-benefits/svg2.svg');
         width: 50px;
         height: 50px;
         background-repeat: no-repeat;
@@ -293,7 +293,7 @@
         background-size: contain;
       }
       &-svg3{
-        background-image: url('/images/forms-hotel/forms__left-benefits/svg3.svg');
+        background-image: url('../images/forms-hotel/forms__left-benefits/svg3.svg');
         width: 50px;
         height: 50px;
         background-repeat: no-repeat;
@@ -304,7 +304,7 @@
         }
       }
       &-svg4{
-        background-image: url('/images/forms-hotel/forms__left-benefits/svg4.svg');
+        background-image: url('../images/forms-hotel/forms__left-benefits/svg4.svg');
         width: 50px;
         height: 50px;
         background-repeat: no-repeat;
@@ -312,7 +312,7 @@
         background-size: contain;
       }
       &-svg5{
-        background-image: url('/images/forms-hotel/forms__left-benefits/svg5.svg');
+        background-image: url('../images/forms-hotel/forms__left-benefits/svg5.svg');
         width: 50px;
         height: 50px;
         background-repeat: no-repeat;
@@ -320,7 +320,7 @@
         background-size: contain;
       }
       &-svg6{
-        background-image: url('/images/forms-hotel/forms__left-benefits/svg6.svg');
+        background-image: url('../images/forms-hotel/forms__left-benefits/svg6.svg');
         width: 50px;
         height: 50px;
         background-repeat: no-repeat;
@@ -407,7 +407,7 @@
             padding-left: 29px;
             &[data-location=''] {
               &::before{
-              content: url('/images/forms-hotel/rhombus.svg');
+              content: url('../images/forms-hotel/rhombus.svg');
               position: absolute;
               top: 44px;
               left: 28px;
@@ -416,7 +416,7 @@
             }
             &[data-guests=''] {
               &::before{
-              content: url('/images/forms-hotel/adult.svg');
+              content: url('../images/forms-hotel/adult.svg');
               position: absolute;
               top: 42px;
               left: 28px;
@@ -427,7 +427,7 @@
               }
             }
             &::after{
-              content: url('/images/forms-hotel/kid.svg');
+              content: url('../images/forms-hotel/kid.svg');
               position: absolute;
               top: 44px;
               left: 258px;
