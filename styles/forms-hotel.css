@@ -706,6 +706,9 @@
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
   .forms {
+    /* Ваши стили для небольших десктопных экранов */
+  }
+  .forms {
     gap: 20px;
   }
 }
@@ -714,6 +717,25 @@
     flex-direction: column;
   }
 }
-
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .forms {
+    /* Ваши стили для небольших десктопных экранов */
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .forms {
+    /* Ваши стили для планшетов */
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .forms {
+    /* Ваши стили для средних устройств */
+  }
+}
+@media (max-width: 479px) {
+  .forms {
+    /* Ваши стили для очень маленьких устройств */
+  }
+}
 
 /*# sourceMappingURL=forms-hotel.css.map */
