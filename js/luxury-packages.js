@@ -24,9 +24,9 @@ $(function() {
  
  
  window.addEventListener('resize', event => {
-     if (event.target.window.innerWidth > 989) response1();
-     if (event.target.window.innerWidth <= 989 && event.target.window.innerWidth > 659) response2();
-     if (event.target.window.innerWidth <= 659) response3();
+     if (event.target.window.innerWidth > 1120) response1();
+     if (event.target.window.innerWidth <= 1120 && event.target.window.innerWidth > 659) response2();
+     if (event.target.window.innerWidth <= 767) response3();
  })
  
  function openCatalog() {
@@ -37,7 +37,7 @@ $(function() {
  }
  
  function response1() {
-     if (window.innerWidth > 989) {
+     if (window.innerWidth > 1120) {
  
          cards.forEach((item, index) => {
              item.classList.add('hidden')
@@ -54,13 +54,13 @@ $(function() {
  
  
  function response2() {
-     if (window.innerWidth <= 989 && window.innerWidth > 659) {
+     if (window.innerWidth <= 1119 && window.innerWidth > 767) {
  
          cards.forEach((item, index) => {
              item.classList.add('hidden')
-             if (index <= 5) {
+             if (index <= 7) {
                  item.classList.remove('hidden')
-             } else if (index > 5) {
+             } else if (index > 7) {
                  btn.classList.remove('hidden');
              }
              openCatalog()
