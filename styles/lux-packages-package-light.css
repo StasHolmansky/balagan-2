@@ -395,8 +395,12 @@
   counter-increment: number;
   content: counter(number);
   position: absolute;
-  left: 7.5%;
+  left: 7%;
   font-size: clamp(3rem, 4vw, 4rem);
+}
+
+.section-3 .main-content > .col-1 .rhomb-part:last-child::after {
+  content: "8";
 }
 
 .section-3 .main-content > .col-1 .rhomb-part > p {
@@ -839,7 +843,7 @@
   display: grid;
   grid-template-columns: 60rem repeat(auto-fit, minmax(30rem, 1fr)) 1fr;
   grid-template-rows: 1fr auto auto 1fr;
-  padding: clamp(1rem, 10vw, 6rem) clamp(1rem, 20vw, 8rem);
+  padding: clamp(1rem, 5vw, 6rem) clamp(1rem, 5vw, 8rem);
   row-gap: 1rem;
   filter: drop-shadow(0 0 1rem var(--brown-color));
 }
@@ -940,6 +944,7 @@
   .section-9 .container .container-button {
     grid-column: 1/2;
     grid-row: 4/5;
+    justify-self: center;
   }
 }
 
