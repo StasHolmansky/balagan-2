@@ -38,7 +38,7 @@ body{
 }
 
 .luxury_packages_title {
-
+    font-family: 'Forum';
     font-style: normal;
     font-weight: 400;
     font-size: 60px;
@@ -58,7 +58,7 @@ body{
 }
 
 .luxury_packages_form_title {
-
+    font-family: 'Forum';
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -612,7 +612,7 @@ left: 400px;
     position: absolute;
     display: flex;
     align-items: center;
-    top: 2225px;
+    top: 2234px;
    
     background: linear-gradient(180deg, rgba(226, 211, 206, 0) 0%, rgba(226, 211, 206, 0.84) 52.77%, #E2D3CE 94.27%);
 }
