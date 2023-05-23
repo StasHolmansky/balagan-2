@@ -2,7 +2,12 @@ window.addEventListener("load", () => {
     const main = document.querySelector("main");
     const body = document.body;
     const page = window.location.pathname;
-    if (page !== "/balagan-2/index.html" && page !== "/balagan-2/" && page !== "/index.html" && page !== "/" ) {
+
+    function hasClass(element, className) {
+        return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
+    }
+
+    if (hasClass(main, 'index') === false && page !== "/index.html" && page !== "/" ) {
         main.insertAdjacentHTML(
             "beforebegin",
             `
@@ -18,26 +23,28 @@ window.addEventListener("load", () => {
                         />
                     </a>
                 </div>
-                <ul class="nav__list" id="nav__list">
-                    <li class="nav__item"><a href="../index.html">Home</a></li>
-                    <li class="nav__item">
-                        <a href="./luxury-packages.html"
-                            >Luxury packages</a
-                        >
-                    </li>
-                    <li class="nav__item">
-                        <a href="./book.html">Book with us</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./why-lux-trips.html">Why Lux Trips</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./contact.html">Contact</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./client.html">Client Area</a>
-                    </li>
-                </ul>
+                <div class="nav__menu" id="nav__menu">
+                    <ul class="nav__list" id="nav__list">
+                        <li class="nav__item"><a href="../index.html">Home</a></li>
+                        <li class="nav__item">
+                            <a href="./luxury-packages.html"
+                                >Luxury packages</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a href="./book.html">Book with us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./why-lux-trips.html">Why Lux Trips</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./client.html">Client Area</a>
+                        </li>
+                    </ul>
+                </div>    
                 <div class="call__btn">
                     <svg
                         class="call__btn-top"
@@ -90,7 +97,6 @@ window.addEventListener("load", () => {
                 <div class="nav__burger" id="nav__burger">
                     <div class="nav__burger-btn"></div>
                 </div>
-                <div class="nav__menu" id="nav__menu"></div>
             </div>
         </header>
     `
@@ -211,26 +217,28 @@ window.addEventListener("load", () => {
                         />
                     </a>
                 </div>
-                <ul class="nav__list" id="nav__list">
-                    <li class="nav__item"><a href="./index.html">Home</a></li>
-                    <li class="nav__item">
-                        <a href="./pages/luxury-packages.html"
-                            >Luxury packages</a
-                        >
-                    </li>
-                    <li class="nav__item">
-                        <a href="./pages/book.html">Book with us</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./pages/why-lux-trips.html">Why Lux Trips</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./pages/contact.html">Contact</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./pages/client.html">Client Area</a>
-                    </li>
-                </ul>
+                <div class="nav__menu" id="nav__menu">
+                    <ul class="nav__list" id="nav__list">
+                        <li class="nav__item"><a href="./index.html">Home</a></li>
+                        <li class="nav__item">
+                            <a href="./pages/luxury-packages.html"
+                                >Luxury packages</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a href="./pages/book.html">Book with us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./pages/why-lux-trips.html">Why Lux Trips</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./pages/contact.html">Contact</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./pages/client.html">Client Area</a>
+                        </li>
+                    </ul>
+                </div>    
                 <div class="call__btn">
                     <svg
                         class="call__btn-top"
@@ -283,7 +291,6 @@ window.addEventListener("load", () => {
                 <div class="nav__burger" id="nav__burger">
                     <div class="nav__burger-btn"></div>
                 </div>
-                <div class="nav__menu" id="nav__menu"></div>
             </div>
         </header>
         `
@@ -399,5 +406,15 @@ window.addEventListener("load", () => {
         navMenu.classList.toggle("_active");
         navList.classList.toggle("_active");
         body.classList.toggle("_lock")
+    });
+
+    const currentPage = window.location.pathname;
+    const menuItems = document.querySelectorAll('.nav__item');
+
+    menuItems.forEach(item => {
+        const link = item.children[0].pathname;
+        if (link === currentPage) {
+            item.classList.add('_active');
+        }
     });
 });
