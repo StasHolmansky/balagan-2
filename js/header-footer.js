@@ -397,7 +397,19 @@ window.addEventListener("load", () => {
                 </div>
             </div>
             </div>
-        </footer>        
+        </footer>     
+        <div class="modal" id="modal">
+            <div class="modal__frame" id="modal__frame"></div>
+            <div class="modal__menu" id="modal__menu">
+                <div class="modal__close" id="modal__close"></div>
+                <div class="modal__title">Contact</div>
+                <form action="#" class="modal__form">
+                    <input type="text" placeholder="Name" class="modal__text">
+                    <input type="tel" placeholder="Phone" class="modal__tel">
+                    <input type="button" value="Call me back" class="modal__btn" id="modal__btn">
+                </form>
+            </div>
+        </div>     
         `
     );
   }
