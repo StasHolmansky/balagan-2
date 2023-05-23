@@ -1,22 +1,22 @@
-body {
-  background-color: #e2d3ce;
+.body-lux-p-p-light {
   background-image: url("../images/contact/background-top.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #e2d3ce;
 }
 
 /* width */
-html::-webkit-scrollbar {
+:root::-webkit-scrollbar {
   width: 1.2rem;
 }
 
 /* Track */
-html::-webkit-scrollbar-track {
+:root::-webkit-scrollbar-track {
   background: var(--white-color);
 }
 
 /* Handle */
-html::-webkit-scrollbar-thumb {
+:root::-webkit-scrollbar-thumb {
   background: var(--brown-color);
 }
 
@@ -30,9 +30,6 @@ html::-webkit-scrollbar-thumb {
 
 /*-----------------------------main-----------------------------*/
 .main-lux-p-p-light {
-  background-image: url("../images/contact/clouds.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   font-family: "Forum";
   font-style: normal;
 }
@@ -46,11 +43,11 @@ html::-webkit-scrollbar-thumb {
   margin-left: auto;
 }
 
-button {
+.section button {
   transition: 1s;
 }
 
-button:hover {
+.section button:hover {
   transform: scale(1.1);
   box-shadow: 0 0 1rem 0.2rem black;
 }
@@ -77,7 +74,7 @@ button:hover {
 
 .section-navigation ul li:hover::after {
   position: absolute;
-  content: url("../svg/lux-p-p-light/link-decoration.svg");
+  content: url("../images/svg/lux-p-p-light/link-decoration.svg");
   right: 50%;
   top: 100%;
 }
@@ -205,7 +202,7 @@ button:hover {
 }
 
 .section-1 > .container .name-location::before {
-  content: url(../svg/lux-p-p-light/location-marker.svg);
+  content: url(../images/svg/lux-p-p-light/location-marker.svg);
 }
 
 .section-1 > .container p {
@@ -314,7 +311,7 @@ button:hover {
 }
 
 .section-2 > .col-2 .list > ul li::before {
-  content: url(../svg/lux-p-p-light/component-1.svg);
+  content: url(../images/svg/lux-p-p-light/component-1.svg);
   margin-right: 1rem;
 }
 
@@ -427,12 +424,12 @@ button:hover {
 }
 
 .section-3 :where(.included-section, .extras-section) ul li::before {
-  content: url(../svg/lux-p-p-light/component-1.svg);
+  content: url(../images/svg/lux-p-p-light/component-1.svg);
   margin-right: 1rem;
 }
 
 .section-3 .included-section:nth-child(4) ul li::before {
-  content: url(../svg/lux-p-p-light/cross.svg);
+  content: url(../images/svg/lux-p-p-light/cross.svg);
   margin-right: 1rem;
 }
 
@@ -535,7 +532,7 @@ button:hover {
   position: absolute;
   top: 35%;
   right: 49%;
-  content: url(../svg/lux-p-p-light/brown-rhomb.svg);
+  content: url(../images/svg/lux-p-p-light/brown-rhomb.svg);
 }
 
 /*-----------------------------section-5-----------------------------*/
