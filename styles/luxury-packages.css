@@ -1,10 +1,10 @@
 body{
     background-image: url(..//images/luxury-packages/bg_top_inner.png);
-    background-position:top;
+    background-position: 0px -152px;
     background-repeat: no-repeat;
-      
-  
-
+    background-attachment: fixed;
+    background-size: auto 100%;
+    
 }
 
 
@@ -18,6 +18,7 @@ body{
     background:linear-gradient(180deg, #E2D3CE -6%, #C9C8D8 16.73%, #D4D8C6 30.37%, #E2D3CE 61%);
     background-repeat: no-repeat;
     background-position: 0px 329px;
+
    
 }
 
@@ -472,8 +473,19 @@ border-radius: 8px;
 
 
 /* --Subscribe-- */
-.subscribe {
-   
+
+.subscribe{
+min-height: 622px;
+display: flex;
+align-items: center;
+background-image: url(../images/luxury-packages/border_Subscribe.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.subscribe_wrapper {
+    max-width: 1110px;
+    width: 100%;
     height:565px;
 
     background-image: url(../images/luxury-packages/Subscribe.png);
@@ -485,7 +497,12 @@ border-radius: 8px;
     justify-content: center;
 
 border-radius: 10px;
+
 }
+
+
+
+
 
 
 .subscribe_txt {
@@ -625,9 +642,13 @@ left: 400px;
 
   @media (min-width: 767px) and (max-width: 1120px) {
     .container {
-
-        padding-left: calc(50% - 400px);
-        padding-right: calc(50% - 400px);
+        
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+        
+        /* padding-left: calc(50% - 400px);
+        padding-right: calc(50% - 400px); */
     }
    
     .form_wrap {
@@ -670,7 +691,7 @@ left: 400px;
     
     .quantity_tеravellers{
        
-        grid-template-columns: 15px 92px;
+        grid-template-columns: 15px 92px; 
         grid-template-rows: none;
         gap: none;
        
@@ -679,7 +700,8 @@ left: 400px;
         grid-column:none;
     }
     .directions_products {
-        margin: 0px 0 55px 0;
+        /* margin: 0px 0 55px 0; */
+        padding-top: 57px;
     }
 
     .directions_list {
@@ -702,6 +724,15 @@ left: 400px;
         max-width: 765px;
         justify-content: center;
     }
+    /* .subscribe {
+        min-height: 622px;
+       max-width: 800px;
+       width: 100%;
+    } */
+
+    .subscribe {
+        background-size: auto;
+    }
     input[type="email"] {
         max-width: 283px;
         
@@ -713,7 +744,7 @@ left: 400px;
     
   }
 
-  @media (min-width: 480px) and (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 767px) {
     .container {
 
         /* padding-left: calc(50% -172px);
