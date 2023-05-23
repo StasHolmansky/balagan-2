@@ -1,22 +1,22 @@
 * {
-    padding: 0;
-    margin: 0;
-    border: none;
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 *,
 *::before,
 *::after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: auto;
-    min-height: 100vh;
-    width: 100%;
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
 }
 
 body {
@@ -30,7 +30,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 body._lock {
-    overflow: hidden;
+  overflow: hidden;
 }
 nav,
 section,
@@ -43,49 +43,49 @@ hgroup,
 figure,
 figcaption,
 article {
-    display: block;
+  display: block;
 }
 input,
 textarea,
 button,
 select {
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
 }
 input::-ms-clear {
-    display: none;
+  display: none;
 }
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 :focus,
 :active {
-    outline: none;
+  outline: none;
 }
 a,
 a:visited,
 a:hover,
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 a {
-    color: inherit;
-    background-color: transparent;
+  color: inherit;
+  background-color: transparent;
 }
 ul,
 ul li {
-    list-style: none;
+  list-style: none;
 }
 img {
-    vertical-align: top;
-    border-style: none;
+  vertical-align: top;
+  border-style: none;
 }
 img,
 svg {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 h1,
 h2,
@@ -94,20 +94,20 @@ h4,
 h5,
 h6,
 p {
-    font-size: inherit;
-    font-weight: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 [hidden] {
-    display: none;
+  display: none;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    flex-grow: 1;
+  flex-grow: 1;
 }

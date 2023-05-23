@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="book your hotel">
+    <title>Forms hotel</title>
+    <link rel="stylesheet" href="../styles/null.css" />
+    <link rel="stylesheet" href="../fonts/manrope/stylesheet.css">
+    <link rel="stylesheet" href="../fonts/forum/stylesheet.css">
+    <link rel="stylesheet" href="../styles/header-footer.css" />
+    <link rel="stylesheet" href="../styles/main-page.css">
+    <link rel="stylesheet" href="../styles/forms-hotel.css">
+    <script defer src="../js/header-footer.js"></script>
+    <script defer src="../js/main-page.js"></script>
+  </head>
+  <body class="forms-hotel">
+
+    <main>
+
+    <div class="forms-hotel-clouds"></div>
+   
+    <!-- title -->
+    <h1 class="forms__main-title">Books Hotels</h1>
+
+    <!-- hero -->
+    <section class="container">
+      <!-- #region left -->
+      <div class="forms">
+      <div class="forms__left">
+        <div class="forms__left__image-wrapper">
+          <img width="540px" height="191px" class="forms__left__image" src="../images/forms-hotel/hero.png" alt="Ringbell on reception">
+        </div>
+        <div class="forms__left__title">
+          Do you need to organize an event, a leisure getaway or a business trip?  
+        </div>
+        <div class="forms__left__description">
+          We will do it for you! Our exclusive offers in globally renowned hotels and local boutique accommodations will bring your stay to another level. Absolute discretion and highest level comfort and professionalism paired with attention to your every wish are our primary guidelines in selecting the hotel for your next trip. 
+
+        </div>
+
+        <div class="forms__left__benefits-wrapper">
+          <div class="forms__left__benefits">
+            <div class="forms__left__benefits-item">
+              <div  class="forms__left__benefits-svg1">
+              </div>
+              <div  class="forms__left__benefits-title">Dedicated 24/7 Travel Advisor</div>
+            </div>
+
+            <div class="forms__left__benefits-item">
+              <div  class="forms__left__benefits-svg2">
+              </div>
+              <div  class="forms__left__benefits-title">Personalized itinerary</div>
+            </div>
+
+            <div class="forms__left__benefits-item">
+              <div  class="forms__left__benefits-svg3">
+              </div>
+              <div  class="forms__left__benefits-title">Exclusive services (e.g.event manager, nanny, etc.)</div>
+            </div>
+
+            <div class="forms__left__benefits-item">
+              <div  class="forms__left__benefits-svg4">
+              </div>
+              <div  class="forms__left__benefits-title">Accidental damage</div>
+            </div>
+
+            <div class="forms__left__benefits-item">
+              <div  class="forms__left__benefits-svg5">
+              </div>
+              <div  class="forms__left__benefits-title">Travel insurance</div>
+            </div>
+
+            <div class="forms__left__benefits-item">
+              <div  class="forms__left__benefits-svg6">
+              </div>
+              <div  class="forms__left__benefits-title">Package deals</div>
+            </div>
+
+        
+
+          </div>
+        </div>
+      </div>
+      <!-- #endregion left -->
+
+      <div class="forms__right">
+        <div class="forms__right__container">
+          <form action="submit">
+
+            <div class="forms__right__item-long">
+              <label class='forms__right__label' for="location" data-location>Location</label>
+                <select class="forms-long" name="location" id="location">
+                  <option value="">Choose</option>
+                  <option value="istanbul">Instanbul</option>
+                  <option value="ankara">Ankara</option>
+                  <option value="batumi">Batumi</option>
+                  <option value="los-angeles">Los Angeles</option>
+                </select>
+            </div>
+
+            <div class="forms__right__item-short">
+              <label class='forms__right__label' for="dates" data-dates>Dates</label>
+                <div class="forms__right__item-short-wrapper">
+                  <input class="forms-short" type="date" name="dates" data-calendar>
+                  <input class="forms-short" type="date" name="dates" data-calendar>
+                </div>
+            </div>
+
+            <div class="forms__right__item-short">
+              <label class='forms__right__label' for="guests" data-guests>Guests</label>
+
+              <div class="forms__right__item-short-wrapper">
+                <select class="forms-short" name="adults">
+                  <option value="adults" selected>Adults</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+
+                <select class="forms-short" name="kids">
+                  <option value="kids" selected>Kids (0-10 y.o)</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+
+            </div>
+
+             <div class="forms__right__item-short flex-direction-row">
+              <div>
+                <label class='forms__right__label' for="rooms">Number of rooms<label>
+                  <select class="forms-short" name="rooms">
+                    <option value="1" >1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3" >3</option>
+                    <option value="4" >4</option>
+                  </select>
+              </div>
+
+              <div>
+                <label class='forms__right__label' for="budget">Budget</label>
+                <input class="forms-short" type="text" name="budget" required>
+              </div>
+            </div>
+
+             <div class="forms__right__item-long">
+              <label class='forms__right__label' for="name">Name</label>
+              <input class="forms-long" type="text" placeholder="Enter your name" name="name" required>
+            </div> 
+
+             <div class="forms__right__item-long">
+              <label class='forms__right__label' for="email">Email</label>
+              <input class="forms-long" type="email" placeholder="Enter your email" name="email" required>
+            </div> 
+
+             <div class="forms__right__item-long">
+              <label class='forms__right__label' for="special-requests">Special requests</label>
+              <textarea class="forms__special-requests" name="special-requests" cols="30" rows="10" placeholder="Flowers and a bottle of wine upon arrival..."></textarea>
+            </div>
+
+            <div class="forms__right__item-long">
+              <div class="forms__right-request-wrapper">
+                <img class="forms__right-svg-border" src="../images/forms-hotel/forms__right-border.svg" alt="svg-border">
+                <img class="forms__right-svg-bottom" src="../images/forms-hotel/forms__right-bottom.svg" alt="svg-bottom">
+                <img class="forms__right-svg-top" src="../images/forms-hotel/forms__right-top.svg" alt="svg-top">
+                <div class="forms__right-request-wrapper-btn">
+                  <button>Make a request</button>
+                </div>
+              </div>
+              <span class="forms__right-or">OR</span>
+              <div class="forms__right-cta-wrapper">
+                <a href="#" class="forms__right-cta">
+                  <div>call me back</div>
+                </a>
+                <a href="#" class="forms__right-cta">
+                  <div>email me back</div>
+                </a>
+              </div>
+            </div>
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+    </section>
+
+  </main>
+  </body>
+</html>
+
+<!-- sass --watch main.scss:styles/forms-hotel.css -->
+<!-- https://www.figma.com/file/yXoJMcyLoqqCdgoW18SGJu/travel-(Copy)-(Copy)?type=design&node-id=417-1296&t=QQHefCn5CfUvcB7D-0 -->
