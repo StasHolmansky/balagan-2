@@ -342,7 +342,9 @@
       }
       @media (max-width:850px ){
         grid-template-columns: 50% 50%;
-
+      }
+      @media (max-width:550px ){
+        grid-template-columns: 1fr;
       }
 		}
 
@@ -385,6 +387,9 @@
         margin: 0 auto;
         padding: 0 20px;
       }
+      @media (max-width:550px ){
+        width: auto;
+      }
 
 
       // label[data-adult=""]
@@ -416,6 +421,10 @@
               top: 42px;
               left: 28px;
               pointer-events: none;
+              @media (max-width:550px){
+                top: 153%;
+                left: 7%;
+              }
             }
             &::after{
               content: url('/images/forms-hotel/kid.svg');
@@ -423,6 +432,14 @@
               top: 44px;
               left: 258px;
               pointer-events: none;
+              @media (max-width:550px){
+                top: 150%;
+                left: 56%;
+              }
+              @media (max-width:450px){
+                top: 419%;
+                left: 7%;
+              }
             }
             }
             &[data-dates=''] {
@@ -433,6 +450,9 @@
               left: 218px;
               pointer-events: none;
               color: #79655E;
+              @media (max-width:550px ){
+                display: none;
+              }
             }
             }
           }
@@ -440,12 +460,16 @@
           .flex-direction-row{
             flex-direction: row;
             justify-content: space-between;
+            @media (max-width:550px){
+            justify-content: space-evenly;
+            flex-direction: column;
+            }
           }
 
 
-          //  .forms__container
+          //  .forms__right__container
           &__container{
-            width: 445px;
+            width: auto;
             margin: 0 auto;
             // outline: 1px solid black;
           }
@@ -462,6 +486,10 @@
             &:last-child{
             margin-bottom: 0px;
             }
+            @media (max-width:550px){
+              width: auto;
+              justify-content: center;
+            }
           }
 
           // .forms__right__item-short
@@ -470,7 +498,10 @@
             flex-direction: column;
             // outline: 1px solid black;
             margin-bottom: 13px;
-
+            @media (max-width:550px){
+            justify-content: space-evenly;
+              
+            }
           }
 
           // .forms__right__item-short-wrapper
@@ -478,6 +509,12 @@
             display: flex;
             justify-content: space-between;
             // outline: 1px solid black;
+            @media (max-width:550px){
+              justify-content: space-evenly;
+            }
+            @media (max-width:450px){
+              flex-direction: column;
+            }
           }
 
 
@@ -485,13 +522,16 @@
         
             &-request-wrapper {
               position: relative;
-              width: 444px;
+              width: auto;
               height: 98.70px;
               display: flex;
               justify-content: center;
               align-items: center;
               // border: 1px solid red;
               z-index: 1;
+              @media (max-width:550px){
+                width: auto;
+              }
               p {
                 padding-top: 10px;
               }
@@ -528,6 +568,9 @@
               border-radius: 74px;
               transition: all 0.3s  ease;
               z-index: 1;
+              @media (max-width:550px){
+                width: 100%;
+              }
               & > button {
                 width: 100%;
                 height: 100%;
@@ -561,9 +604,13 @@
               padding-bottom: 16px;
               margin-bottom: 27px;
               // border: 1px solid red;
+              @media (max-width:550px){
+                width: auto;
+                justify-content: space-evenly;
+              }
             }
         
-            // .forms-cta
+            // .forms__right-cta
         
             &-cta {
               display: flex;
@@ -576,6 +623,9 @@
               height: 55px;
               text-transform: uppercase;
               transition: all 0.3s  ease;
+              @media (max-width:550px){
+                width: 100%;
+              }
 
               &:hover{
                 background-color: #39354c;
@@ -613,6 +663,12 @@
       padding-top: 15px;
       padding-bottom: 15px;
       padding-right: 21px;
+      @media (max-width:550px){
+        width: 100%;
+      }
+      @media (max-width:450px){
+        margin-bottom: 20px;
+      }
     }
     .forms__special-requests{
       border: 1.60979px solid #E2D3CE;
@@ -625,10 +681,9 @@
       @media (max-width:650px ){
         height: 8rem;
       }
-    }
-    
-    .width210px{
-      width: 210px;
+      @media (max-width:550px ){
+        width: 100%;
+      }
     }
     @media (min-width: 1024px) and (max-width: 1279px) {
       /* Ваши стили для небольших десктопных экранов */
