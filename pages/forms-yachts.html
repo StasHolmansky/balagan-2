@@ -4,53 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forms Villa Page</title>
+    <title>Forms Yachts Page</title>
     <link rel="stylesheet" href="../styles/null.css" />
     <link rel="stylesheet" href="../fonts/manrope/stylesheet.css" />
     <link rel="stylesheet" href="../fonts/forum/stylesheet.css" />
     <link rel="stylesheet" href="../styles/header-footer.css" />
-    <link rel="stylesheet" href="../styles/forms-villa.css" />
+    <link rel="stylesheet" href="../styles/forms-yachts.css" />
     <script defer src="../js/header-footer.js"></script>
-    <script defer src="../js/forms-villa.js"></script>
+    <script defer src="../js/forms-yachts.js"></script>
   </head>
   <body class="body-forms-villa">
     <main class="main-forms-villa">
       <h1>Book Villas/Chalets</h1>
       <div class="container-columns">
         <div class="col-1">
-          <img src="../images/forms-villa/villa.png" alt="villa" />
+          <img src="../images/forms-yachts/ship.png" alt="ship" />
+          <p>Our experts will select the best option for your sea adventure</p>
           <p>
-            Our handpicked prestigious villas and chalets meet the highest
-            standard of quality and design to satisfy your every wish.
-          </p>
-          <p>
-            Modern villas that offer breathtaking panoramic sea views with
-            endless deep blue waves or traditionally charming chalets with a
-            warm jacuzzi outside, set on top of a snowy mountain, looking out to
-            a lush countryside, are ready to welcome you at the destination of
-            your choice. <br /><br />
-            No location is outside of our reach! Whether you prefer the finest
-            luxury destinations like St. Moritz, Zermatt, Ibiza and Mykonos or
-            wish to explore exotic spots of South Africa, Thailand or Australia,
-            Lux Trips will tailor your accommodation with personalized services
-            to ensure an exceptional stay for each member of your group.
+            Lux Trips offers unparalleled yacht and boat charter experiences
+            thanks to our network of the leading players in yachting activities.
+            Our experts will select the best option for your sea adventure to
+            create your dream getaway.
+            <br /><br />
+            For instance, a private luxury yacht to visit the Balearic islands,
+            an explorer for a cruise of the endless Mediterranean sea, or a
+            sailing boat for a romantic weekend or family holiday on Lago di
+            Garda. Onboard entertainment (e.g. jetski, karaoke, etc.) and highly
+            qualified personnel are at your service.
           </p>
           <div class="list"></div>
         </div>
         <div class="col-2">
           <form action="#">
-            <label for="location">
-              <span>Location</span>
-              <select name="locations" id="locations">
-                <option value="" disabled selected>&#9826;&nbsp;Choose</option>
-                <option value="coast-west">&#9826;&nbsp;Coast-West</option>
-                <option value="coast-east">&#9826;&nbsp;Coast-East</option>
-                <option value="coast-north">&#9826;&nbsp;Coast-North</option>
-                <option value="coast-south">&#9826;&nbsp;Coast-South</option>
-              </select>
-            </label>
-
             <div class="container">
+              <label for="location-start">
+                <span>Location from</span>
+                <select name="location-start" id="location-start">
+                  <option value="" disabled selected>
+                    &#9826;&nbsp;Choose
+                  </option>
+                  <option value="coast-west">&#9826;&nbsp;Coast-West</option>
+                  <option value="coast-east">&#9826;&nbsp;Coast-East</option>
+                  <option value="coast-north">&#9826;&nbsp;Coast-North</option>
+                  <option value="coast-south">&#9826;&nbsp;Coast-South</option>
+                </select>
+              </label>
+
+              <p>&#8594;</p>
+
+              <label for="location-end">
+                <span>to</span>
+                <select name="location-end" id="location-end">
+                  <option value="" disabled selected>
+                    &#9826;&nbsp;Choose
+                  </option>
+                  <option value="coast-west">&#9826;&nbsp;Coast-West</option>
+                  <option value="coast-east">&#9826;&nbsp;Coast-East</option>
+                  <option value="coast-north">&#9826;&nbsp;Coast-North</option>
+                  <option value="coast-south">&#9826;&nbsp;Coast-South</option>
+                </select>
+              </label>
+
               <label for="date-start">
                 <span>Dates</span>
                 <select name="date-start" id="date-start">
@@ -58,19 +72,23 @@
                   <option value="date-1">&#128467;&nbsp;16-04-22</option>
                 </select>
               </label>
+
               <p>&#8594;</p>
+
               <label for="date-end">
                 <select name="date-end" id="date-end">
                   <option value="date-2">&#128467;&nbsp;26-04-22</option>
                   <option value="date-2">&#128467;&nbsp;28-04-22</option>
                 </select>
               </label>
+
               <label for="guests">
                 <span>Guests</span>
                 <select name="guests" id="guests">
                   <option value="adults">&#128100;&nbsp;Adults</option>
                 </select>
               </label>
+
               <label for="kids">
                 <select name="kids" id="kids">
                   <option value="kids-age-1">
@@ -79,22 +97,44 @@
                   <option value="kids-age-2">Kids (11-17 y.o)</option>
                 </select>
               </label>
-              <label for="room-amount">
-                <span>Number of rooms</span>
-                <select name="room-amount" id="room-amount">
-                  <option value="rooms-2">2</option>
-                  <option value="rooms-3">3</option>
-                  <option value="rooms-4">4</option>
+
+              <label for="boat">
+                <span>Type of boat</span>
+                <select name="boat" id="boat">
+                  <option value="boat-1">Motor yacht</option>
+                  <option value="boat-2">Classic Boat</option>
                 </select>
               </label>
-              <label for="budget">
-                <span>Budget</span>
+
+              <label for="meters">
+                <span>Meters</span>
                 <input
                   type="number"
-                  id="budget"
-                  name="budget"
-                  placeholder="1000$"
+                  id="meters"
+                  name="meters"
+                  placeholder="30"
+                  max="120"
+                  min="10"
+                  required
                 />
+              </label>
+
+              <label for="cabins">
+                <span>Number of cabins</span>
+                <input
+                  type="number"
+                  id="cabins"
+                  name="cabins"
+                  placeholder="2"
+                  required
+                  max="8"
+                  min="1"
+                />
+              </label>
+
+              <label for="overnight">
+                <span>Overnight Boat</span>
+                <input type="text" id="overnight" name="overnight" />
               </label>
             </div>
 

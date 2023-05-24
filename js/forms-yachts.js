@@ -4,8 +4,9 @@ const list = document.querySelector(".list");
 const array_li_data = [
   "Dedicated 24/7 Travel Advisor",
   "Personalized itinerary",
-  "Exclusive accommodations",
   "Exclusive services (e.g. chef, nanny, etc.)",
+  "Local guides",
+  "Aquatic entertainment (e.g. jetski, etc.)",
   "Accidental damage protection",
   "Travel insurance",
   "Package deals",
