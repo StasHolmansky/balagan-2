@@ -240,7 +240,7 @@ main {
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: bottom;
 }
 .footer__wrapper {
     width: 100%;
