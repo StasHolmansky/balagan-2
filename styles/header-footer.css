@@ -235,7 +235,7 @@ main {
 /* --------------------------------------------------------- Footer styles start --------------------------------------------------------- */
 .footer {
     height: 555px;
-    background-image: url(../images/header-footer/sky-footer.png);
+    background-image: url(../images/header-footer/sky-footer.webp);
     background-color: #e5d5d0;
     background-position: bottom;
     background-size: cover;
