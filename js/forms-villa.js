@@ -1,4 +1,3 @@
-// for (let i = 0; ; i++) {}
 const ul = document.createElement("ul");
 const list = document.querySelector(".list");
 

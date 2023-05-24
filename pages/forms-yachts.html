@@ -36,18 +36,35 @@
         </div>
         <div class="col-2">
           <form action="#">
-            <label for="location">
-              <span>Location</span>
-              <select name="locations" id="locations">
-                <option value="" disabled selected>&#9826;&nbsp;Choose</option>
-                <option value="coast-west">&#9826;&nbsp;Coast-West</option>
-                <option value="coast-east">&#9826;&nbsp;Coast-East</option>
-                <option value="coast-north">&#9826;&nbsp;Coast-North</option>
-                <option value="coast-south">&#9826;&nbsp;Coast-South</option>
-              </select>
-            </label>
-
             <div class="container">
+              <label for="location-start">
+                <span>Location from</span>
+                <select name="location-start" id="location-start">
+                  <option value="" disabled selected>
+                    &#9826;&nbsp;Choose
+                  </option>
+                  <option value="coast-west">&#9826;&nbsp;Coast-West</option>
+                  <option value="coast-east">&#9826;&nbsp;Coast-East</option>
+                  <option value="coast-north">&#9826;&nbsp;Coast-North</option>
+                  <option value="coast-south">&#9826;&nbsp;Coast-South</option>
+                </select>
+              </label>
+
+              <p>&#8594;</p>
+
+              <label for="location-end">
+                <span>to</span>
+                <select name="location-end" id="location-end">
+                  <option value="" disabled selected>
+                    &#9826;&nbsp;Choose
+                  </option>
+                  <option value="coast-west">&#9826;&nbsp;Coast-West</option>
+                  <option value="coast-east">&#9826;&nbsp;Coast-East</option>
+                  <option value="coast-north">&#9826;&nbsp;Coast-North</option>
+                  <option value="coast-south">&#9826;&nbsp;Coast-South</option>
+                </select>
+              </label>
+
               <label for="date-start">
                 <span>Dates</span>
                 <select name="date-start" id="date-start">
@@ -55,19 +72,23 @@
                   <option value="date-1">&#128467;&nbsp;16-04-22</option>
                 </select>
               </label>
+
               <p>&#8594;</p>
+
               <label for="date-end">
                 <select name="date-end" id="date-end">
                   <option value="date-2">&#128467;&nbsp;26-04-22</option>
                   <option value="date-2">&#128467;&nbsp;28-04-22</option>
                 </select>
               </label>
+
               <label for="guests">
                 <span>Guests</span>
                 <select name="guests" id="guests">
                   <option value="adults">&#128100;&nbsp;Adults</option>
                 </select>
               </label>
+
               <label for="kids">
                 <select name="kids" id="kids">
                   <option value="kids-age-1">
@@ -76,22 +97,44 @@
                   <option value="kids-age-2">Kids (11-17 y.o)</option>
                 </select>
               </label>
-              <label for="room-amount">
-                <span>Number of rooms</span>
-                <select name="room-amount" id="room-amount">
-                  <option value="rooms-2">2</option>
-                  <option value="rooms-3">3</option>
-                  <option value="rooms-4">4</option>
+
+              <label for="boat">
+                <span>Type of boat</span>
+                <select name="boat" id="boat">
+                  <option value="boat-1">Motor yacht</option>
+                  <option value="boat-2">Classic Boat</option>
                 </select>
               </label>
-              <label for="budget">
-                <span>Budget</span>
+
+              <label for="meters">
+                <span>Meters</span>
                 <input
                   type="number"
-                  id="budget"
-                  name="budget"
-                  placeholder="1000$"
+                  id="meters"
+                  name="meters"
+                  placeholder="30"
+                  max="120"
+                  min="10"
+                  required
                 />
+              </label>
+
+              <label for="cabins">
+                <span>Number of cabins</span>
+                <input
+                  type="number"
+                  id="cabins"
+                  name="cabins"
+                  placeholder="2"
+                  required
+                  max="8"
+                  min="1"
+                />
+              </label>
+
+              <label for="overnight">
+                <span>Overnight Boat</span>
+                <input type="text" id="overnight" name="overnight" />
               </label>
             </div>
 
@@ -106,7 +149,7 @@
               />
             </label>
 
-            <label for="budget">
+            <label for="email">
               <span>Email</span>
               <input
                 type="email"
