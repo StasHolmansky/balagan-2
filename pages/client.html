@@ -13,105 +13,128 @@
     <link rel="stylesheet" href="../styles/client.css">
     <link rel="stylesheet" href="../fonts/forum/stylesheet.css">
     <link rel="stylesheet" href="../fonts/manrope/stylesheet.css">
-	<script defer src="./js/header-footer.js"></script>
+    <link rel="stylesheet" href="../styles/header-footer.css" />
+	<script defer src="../js/header-footer.js"></script>
 	<script defer src="./js/main-page.js"></script>
     <script defer src="../js/client.js"></script>
 </head>
 <body>
 	<main>
 
-        <section class="client">
             <div class="container">
                 <h1 class="client_title">Client Area</h1>
                 <div class="client_wrapper">
 
                     <div class="client_block-tabs">
-                        <button class="client_btn active" type="button">Personal Details</button>
-                        <button class="client_btn" type="button">Preferences</button>
-                        <button class="client_btn" type="button">Payment Details</button>
-                        <button class="client_btn" type="button">My Bookings</button>
-                        <button class="client_btn" type="button">My documents</button>
+                        <button class="client_btn" type="button" data-tab="#tab-1">Personal Details</button>
+                        <button class="client_btn" type="button" data-tab="#tab-2">Preferences</button>
+                        <button class="client_btn" type="button" data-tab="#tab-3">Payment Details</button>
+                        <button class="client_btn" type="button" data-tab="#tab-4">My Bookings</button>
+                        <button class="client_btn" type="button" data-tab="#tab-5"">My documents</button>
                     </div>  
-                    <div class="client_block-content-1 hidden">
+
+                        <div class="client_block-content " id="tab-1">
                             <div class="client_block-list">
-                                <p class="client_text">Name</p>
-                                <input type="text" id="username" placeholder="Igor Vensko" class="client_input">
+                                <form class="client_form">
+                                    <p class="client_text">Name</p>
+                                    <input name="user-name" type="text" id="username" placeholder="Igor Vensko" class="client_input">
+                                </form>
                                 <label for="username" class="client_link">
                                     Edit
                                 </label>
                             </div>
                             <div class="client_block-list">
-                                <p class="client_text">Email address</p>
-                                <input type="email" id="email" class="client_input" placeholder="igor@vensko.net">
+                                <form class="client_form">
+                                    <p class="client_text">Email address</p>
+                                    <input type="email" id="email" class="client_input" placeholder="igor@vensko.net">
+                                </form>
                                 <label for="email" class="client_link">
                                     Edit
                                 </label>
                             </div>
                             <div class="client_block-list">
-                                <p class="client_text">Phone number</p>
-                                <input type="tel" id="number" class="client_input" placeholder="+01 123 456 789">
-                                <label for="number" class="client_link">
+                                <form class="client_form">
+                                    <p class="client_text">Phone number</p>
+                                    <input type="tel" id="tel" class="client_input" placeholder="+01 123 456 789">
+                                </form>
+                                <label for="tel" class="client_link">
                                     Edit
                                 </label>
                             </div>
                             <div class="client_block-list">
-                                <p class="client_text">Date of birth</p>
-                                <input type="date" id="date" class="client_input" placeholder="Enter your date of birth">
-                                <label for="date" class="client_link">
+                                <form class="client_form">
+                                    <p class="client_text">Date of birth</p>
+                                    <input type="date" id="birth" class="client_input" placeholder="Enter your date of birth">
+                                </form>
+                                <label for="birth" class="client_link">
                                     Edit
                                 </label>
                             </div>
                             <div class="client_block-list">
-                                <p class="client_text">Nationality</p>
-                                <input type="text" id="nationality" class="client_input" placeholder="Polska">
+                                <form class="client_form">
+                                    <p class="client_text">Nationality</p>
+                                    <input type="text" id="nationality" class="client_input" placeholder="Polska">
+                                </form>
                                 <label for="nationality" class="client_link">
                                     Edit
                                 </label>
                             </div>
+
                             <div class="client_block-list">
-                                <p class="client_text">Gender</p>
-                                <input type="text" id="gender" class="client_input" placeholder="I'm a man">
+                                <form class="client_form">
+                                    <p class="client_text">Gender</p>
+                                    <input type="text" id="gender" class="client_input" placeholder="I'm a man">
+                                </form>
                                 <label for="gender" class="client_link">
                                     Edit
                                 </label>
                             </div>
+
                             <div class="client_block-list">
-                                <p class="client_text">Address</p>
-                                <input type="url" id="addres" class="client_input" placeholder="Poland, Bialsytok">
+                                <form class="client_form">
+                                    <p class="client_text">Address</p>
+                                    <input type="url" id="addres" class="client_input" placeholder="Poland, Bialsytok">
+                                </form>
                                 <label for="addres" class="client_link">
                                     Edit
                                 </label>
                             </div>
                     </div>
 
-                    <div class="client_block-content-2 hidden">
-                        <div class="client_block-list un-border">
-                            <p class="client_text">Currency</p>
-                            <input type="text" id="currency" class="client_input" placeholder="PLN Polish Zloty">
+                    <div class="client_block-content hidden" id="tab-2">
+                        <div class="client_block-list another">
+                            <form class="client_form">
+                                <p class="client_text">Currency</p>
+                                <input type="text" id="currency" class="client_input" placeholder="PLN Polish Zloty">
+                            </form>
                             <label for="currency" class="client_link">
                                 Edit
                             </label>
                         </div>
-                        <div class="client_block-list">
-                            <p class="client_text">Language</p>
-                            <input type="text" id="language" class="client_input" placeholder="American English">
+                        <div class="client_block-list another">
+                            <form class="client_form">
+                                <p class="client_text">Language</p>
+                                <input type="text" id="language" class="client_input" placeholder="American English">
+                            </form>
                             <label for="language" class="client_link">
                                 Edit
                             </label>
                         </div>
                     </div>
 
-                    <div class="client_block-content-3 hidden">
+                    <div class="client_block-content hidden" id="tab-3">
                         <div class="client_block-list ">
-                            <p class="client_text">Payment cards</p>
-                            <input type="number" id="card" class="client_input null" placeholder="Pay with new card">
+                            <form class="client_form">
+                                <p class="client_text">Payment cards</p>
+                                <input type="number" id="card" class="client_input null" placeholder="Pay with new card">
+                            </form>
                             <label for="card" class="client_link">
-                                Add card
+                                Edit
                             </label>
                         </div>
                     </div>
 
-                    <div class="client_block-content-4 hidden">
+                    <div class="client_block-content hidden" id="tab-4">
                         <div class="client_wrapper-card">
                             <div class="client_card-block">
                                 <img src="../images/client/winter.jpg" alt="winter" class="client_card-img">
@@ -122,33 +145,33 @@
                             </div>
 
                             <div class="client_card-block">
-                                <img src="../images/client/machu.jpg" alt="winter" class="client_card-img">
+                                <img src="../images/client/machu.jpg" alt="machu" class="client_card-img">
                                 <div class="client_card-item-inner">
-                                    <p class="client_card-text">Winter Park Ski Holiday</p>
+                                    <p class="client_card-text">Machu Picchu</p>
                                     <button class="client_card-button">Download PDF</button>
                                 </div>
                             </div>
 
                             <div class="client_card-block">
-                                <img src="../images/client/hvar.jpg" alt="winter" class="client_card-img">
+                                <img src="../images/client/hvar.jpg" alt="Hvar" class="client_card-img">
                                 <div class="client_card-item-inner">
-                                    <p class="client_card-text">Winter Park Ski Holiday</p>
+                                    <p class="client_card-text">Hvar</p>
                                     <button class="client_card-button">Download PDF</button>
                                 </div>
                             </div>
 
                             <div class="client_card-block">
-                                <img src="../images/client/wadi.jpg" alt="winter" class="client_card-img">
+                                <img src="../images/client/wadi.jpg" alt="Wadi" class="client_card-img">
                                 <div class="client_card-item-inner">
-                                    <p class="client_card-text">Winter Park Ski Holiday</p>
+                                    <p class="client_card-text">Wadi Musa</p>
                                     <button class="client_card-button">Download PDF</button>
                                 </div>
                             </div>
                        </div>
                     </div>
 
-                    <div class="client_block-content-5 ">
-                        <div class="client_block-list un-border">
+                    <div class="client_block-content hidden" id="tab-5">
+                        <div class="client_block-list another">
                             <form class="client_form">
                             <input type="file" id="file-2" class="client_input five" placeholder="American English">
                             <input type="reset" class="client_link btn" value="Remove">
@@ -163,7 +186,6 @@
                     </div>
 
             </div>
-        </section>
 
     </main>
 </body>

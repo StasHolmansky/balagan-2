@@ -25,36 +25,32 @@ html{
   
   body {
     background-image: url(../images/client/client_bg.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    height: 100vh;
-    line-height: 1;
+    background-color: #E2D3CE;
     font-size: 18px;
     font-weight: 400;
     font-family: "Manrope";
+    height: 100%;
   }
   
   .container {
-    max-width:1130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width:1140px;
     margin:0 auto;
-    padding:0 10px;
+    padding:0 15px;
   }
 
-
-
-/* ----------------------------------------------------- */
-
-
-  .client {
    
-  }
+/*----------------------------------------------------- */
 
   .client_title {
     font-family: 'Forum';
     font-weight: 400;
     font-size: 60px;
-    padding-top: 15px;
     text-align: center;
     word-wrap: break-word;
     max-width: 955px;
@@ -64,13 +60,14 @@ html{
 
   .client_wrapper {
     display: flex;
-    margin-bottom: 50px;
+    justify-content: center;
+    width: 100%;
+    padding-left: 10px;
   }
 
   .client_block-tabs {
    display: inline-flex;
    flex-direction: column;
-   position: absolute;
 
   }
 
@@ -106,27 +103,44 @@ html{
     display: none;
   }
 
-  .client_block-content-1 {
+  .client_block-content {
+    position: relative;
     background-color: #FFFFFF;
     border-radius: 10px;
-    position: relative;
-    content: "";
-    left: 290px;
+    right: 10px;
+    max-width: 820px;
+    width: 100%;
+    display: none;
+  }
+  .client_block-content.active {
+    display: block;
+    min-height: 475px;
+    height: 100%;
   }
 
   .client_block-list {
     display: flex;
-    margin: 0 95px;
-    border-bottom: 1px solid #E2D3CE;
-    padding-top: 40px;
+    position: relative;
+    padding: 0 95px;
     align-items: center;
-    padding-bottom: 10px;
+    margin-bottom: 47px;
+    max-width: 635px;
   }
-  .client_block-list:last-child {
-    padding-bottom: 47px;
-    border-bottom: 0;
-    padding-top: 47px;
+
+  .client_block-list:first-child {
+    margin-top: 47px;
   }
+  .client_block-list:last-child::before {
+    width: 0;
+  }
+  .client_block-list::before {
+    position: absolute;
+    content: "";
+    top: 40px;
+    width: 100%;
+    height: 1px;
+    background-color: #E2D3CE; 
+   }
 
   .client_text {
     margin-right: 105px;
@@ -145,6 +159,7 @@ html{
     font-weight: 500;
     font-size: 18px;
     line-height: 1.3;
+    font-family: "Manrope";
   }
   .client_input::placeholder {
     line-height: 1.3;
@@ -160,20 +175,17 @@ html{
     color: #4C64A1;
     font-weight: 500;
     line-height: 1.3;
+    cursor: pointer;
+    background-color: transparent;
   }
 
 
 
 
-
-  .client_block-content-2 {
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    position: relative;
-    content: "";
-    left: 290px;
-    min-height: 475px;
+  .client_block-list .client_form .client_input {
+    
   }
+  
 
   
 
@@ -182,13 +194,9 @@ html{
     padding-left: 50px;
   }
 
-
-
-
-  .un-border {
-    border-bottom: 0;
-    margin-bottom: 0;
-  }
+  .another::before {
+    display: none;
+   }
   
   .null::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -196,23 +204,12 @@ html{
 
 
   .client_block-content-3 {
+    position: relative;
     background-color: #FFFFFF;
     border-radius: 10px;
-    position: relative;
-    content: "";
-    left: 290px;
+    right: 10px;
     min-height: 475px;
-  }
-
-
-  .client_block-content-4 {
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    position: relative;
-    content: "";
-    left: 290px;
-    min-height: 815px;
-    max-width: 830px;
+    max-width: 820px;
     width: 100%;
   }
 
@@ -222,6 +219,7 @@ html{
     padding-top: 65px;
     padding-left: 95px;
     gap: 20px;
+    padding-bottom: 80px;
   }
 
   .client_card-block {
@@ -241,7 +239,7 @@ html{
     left: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0B2034 100%);
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     opacity: 0;
@@ -249,6 +247,7 @@ html{
     margin-top: 135px;
     border-radius: 10px;
     transition: 0.5s;
+    width: 200px;
   }
 
   .client_card-block:hover .client_card-item-inner {
@@ -260,7 +259,9 @@ html{
     text-align: center;
     margin-bottom: 20px;
     font-size: 21px;
-    padding-top: 50px;
+    font-family: "Forum";
+    width: 145px;
+    word-wrap: break-word;
   }
 
   .client_card-img {
@@ -274,20 +275,22 @@ html{
     border: 0;
     font-family: "Forum";
     font-size: 16px;
+    margin-bottom: 20px;
   }
 
   .client_block-content-5 {
+    position: relative;
     background-color: #FFFFFF;
     border-radius: 10px;
-    position: relative;
-    content: "";
-    left: 290px;
-    min-height: 475px;
+    max-height: 475px;
+    right: 10px;
+    max-width: 820px;
+    width: 100%;
   }
 
   .five {
-    margin-right: 465px;
-    width: 100%;
+    margin-right: 225px;
+    width: 300px;
   }
   
   .client_form {
@@ -305,4 +308,55 @@ html{
 
 
 
- 
+
+  @media (max-width: 1140px) {
+
+    .client_block-content {
+      max-width: 575px;
+    }
+
+    .client_block-list {
+      display: flex;
+      position: relative;
+      padding: 0 95px;
+      align-items: center;
+      margin-bottom: 47px;
+      max-width: 100%;
+      align-items: flex-start;
+    }
+
+    .client_block-list:first-child {
+      margin-top: 47px;
+    }
+
+  .client_block-list::before {
+    top: 70px;
+    width: 67.5%;
+   }
+
+   .client_form {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .client_input {
+    margin-right: ;
+   }
+
+  }
+  
+  @media (max-width: 920px) and (min-width: 768px){
+
+    
+
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Ваши стили для планшетов */
+  }
+  @media (min-width: 480px) and (max-width: 767px) {
+    /* Ваши стили для средних устройств */
+  }
+  @media (max-width: 479px) {
+    /* Ваши стили для очень маленьких устройств */
+  }
