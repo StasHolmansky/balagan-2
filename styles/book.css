@@ -342,9 +342,16 @@ body {
     margin: 0 auto;
   }
 
+  .subscribe__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+  }
+
   .subscribe-form__input,
   .subscribe-form__btn {
-    max-width: 418px;
+    max-width: 322px;
     margin: 0 auto;
     display: block;
   }
@@ -364,3 +371,31 @@ body {
   }
 }
 
+@media (max-width: 448px) {
+  /* Ваши стили для очень маленьких устройств */
+  .subscribe__inner{
+    padding: 64px 16px;
+  }
+  .subscribe__subtitle {
+    max-width: 50%;
+  }
+  .subscribe-form__btn span{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    left: 20px;
+    width: 280px;
+  }
+}
+
+@media (max-width: 340px){
+  .subscribe-form__input,
+  .subscribe-form__btn{
+    max-width: 312px;
+    width: 100%;
+  }
+  .subscribe-form__btn span{
+    left: 10px;
+    width: 270px;
+  }
+}
