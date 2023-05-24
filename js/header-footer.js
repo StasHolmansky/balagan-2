@@ -198,7 +198,19 @@ window.addEventListener("load", () => {
                 </div>
             </div>
             </div>
-        </footer>        
+        </footer> 
+        <div class="modal" id="modal">
+            <div class="modal__frame" id="modal__frame"></div>
+            <div class="modal__menu" id="modal__menu">
+                <div class="modal__close" id="modal__close"></div>
+                <div class="modal__title">Contact</div>
+                <form action="#" class="modal__form">
+                    <input type="text" placeholder="Name" class="modal__text">
+                    <input type="tel" placeholder="Phone" class="modal__tel">
+                    <input type="button" value="Call me back" class="modal__btn" id="modal__btn">
+                </form>
+            </div>
+	    </div>       
         `
         );
     } else {
@@ -392,7 +404,19 @@ window.addEventListener("load", () => {
                 </div>
             </div>
             </div>
-        </footer>        
+        </footer>  
+        <div class="modal" id="modal">
+            <div class="modal__frame" id="modal__frame"></div>
+            <div class="modal__menu" id="modal__menu">
+                <div class="modal__close" id="modal__close"></div>
+                <div class="modal__title">Contact</div>
+                <form action="#" class="modal__form">
+                    <input type="text" placeholder="Name" class="modal__text">
+                    <input type="tel" placeholder="Phone" class="modal__tel">
+                    <input type="button" value="Call me back" class="modal__btn" id="modal__btn">
+                </form>
+            </div>
+	    </div>      
         `
         );
     }
@@ -417,4 +441,29 @@ window.addEventListener("load", () => {
             item.classList.add('_active');
         }
     });
+
+    const modal = document.getElementById("modal")
+    const modalFrame = document.getElementById("modal__frame")
+    const modalMenu = document.getElementById("modal__menu")
+    const modalClose = document.getElementById("modal__close")
+    const modalBtn = document.getElementById("modal__btn")
+    const callBtn = document.querySelectorAll(".call__btn")
+
+    document.addEventListener('click', (close) => {
+        if (close.target === modalClose || close.target === modal || close.target === modalBtn) {
+            modal.classList.remove("_active");
+            modalFrame.classList.remove("_active")
+            modalMenu.classList.remove('_active');
+            body.classList.remove("_lock");
+        }
+    })
+
+    callBtn.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            modal.classList.add("_active");
+            modalFrame.classList.add("_active")
+            modalMenu.classList.add('_active');
+            body.classList.add("_lock");
+        })
+    })
 });
