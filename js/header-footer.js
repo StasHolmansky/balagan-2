@@ -8,7 +8,6 @@ window.addEventListener("load", () => {
     }
 
     if (hasClass(main, 'index') === false && page !== "/index.html" && page !== "/" ) {
-        console.log("Its not main page");
         main.insertAdjacentHTML(
             "beforebegin",
             `
@@ -24,26 +23,28 @@ window.addEventListener("load", () => {
                         />
                     </a>
                 </div>
-                <ul class="nav__list" id="nav__list">
-                    <li class="nav__item"><a href="../index.html">Home</a></li>
-                    <li class="nav__item">
-                        <a href="./luxury-packages.html"
-                            >Luxury packages</a
-                        >
-                    </li>
-                    <li class="nav__item">
-                        <a href="./book.html">Book with us</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./why-lux-trips.html">Why Lux Trips</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./contact.html">Contact</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./client.html">Client Area</a>
-                    </li>
-                </ul>
+                <div class="nav__menu" id="nav__menu">
+                    <ul class="nav__list" id="nav__list">
+                        <li class="nav__item"><a href="../index.html">Home</a></li>
+                        <li class="nav__item">
+                            <a href="./luxury-packages.html"
+                                >Luxury packages</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a href="./book.html">Book with us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./why-lux-trips.html">Why Lux Trips</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./client.html">Client Area</a>
+                        </li>
+                    </ul>
+                </div>    
                 <div class="call__btn">
                     <svg
                         class="call__btn-top"
@@ -96,7 +97,6 @@ window.addEventListener("load", () => {
                 <div class="nav__burger" id="nav__burger">
                     <div class="nav__burger-btn"></div>
                 </div>
-                <div class="nav__menu" id="nav__menu"></div>
             </div>
         </header>
     `
@@ -198,11 +198,22 @@ window.addEventListener("load", () => {
                 </div>
             </div>
             </div>
-        </footer>        
+        </footer> 
+        <div class="modal" id="modal">
+            <div class="modal__frame" id="modal__frame"></div>
+            <div class="modal__menu" id="modal__menu">
+                <div class="modal__close" id="modal__close"></div>
+                <div class="modal__title">Contact</div>
+                <form action="#" class="modal__form">
+                    <input type="text" placeholder="Name" class="modal__text">
+                    <input type="tel" placeholder="Phone" class="modal__tel">
+                    <input type="button" value="Call me back" class="modal__btn" id="modal__btn">
+                </form>
+            </div>
+	    </div>       
         `
         );
     } else {
-        console.log("Main page");
         main.insertAdjacentHTML(
             "beforebegin",
             `
@@ -218,26 +229,28 @@ window.addEventListener("load", () => {
                         />
                     </a>
                 </div>
-                <ul class="nav__list" id="nav__list">
-                    <li class="nav__item"><a href="./index.html">Home</a></li>
-                    <li class="nav__item">
-                        <a href="./pages/luxury-packages.html"
-                            >Luxury packages</a
-                        >
-                    </li>
-                    <li class="nav__item">
-                        <a href="./pages/book.html">Book with us</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./pages/why-lux-trips.html">Why Lux Trips</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./pages/contact.html">Contact</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./pages/client.html">Client Area</a>
-                    </li>
-                </ul>
+                <div class="nav__menu" id="nav__menu">
+                    <ul class="nav__list" id="nav__list">
+                        <li class="nav__item"><a href="./index.html">Home</a></li>
+                        <li class="nav__item">
+                            <a href="./pages/luxury-packages.html"
+                                >Luxury packages</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a href="./pages/book.html">Book with us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./pages/why-lux-trips.html">Why Lux Trips</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./pages/contact.html">Contact</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./pages/client.html">Client Area</a>
+                        </li>
+                    </ul>
+                </div>    
                 <div class="call__btn">
                     <svg
                         class="call__btn-top"
@@ -290,7 +303,6 @@ window.addEventListener("load", () => {
                 <div class="nav__burger" id="nav__burger">
                     <div class="nav__burger-btn"></div>
                 </div>
-                <div class="nav__menu" id="nav__menu"></div>
             </div>
         </header>
         `
@@ -392,7 +404,19 @@ window.addEventListener("load", () => {
                 </div>
             </div>
             </div>
-        </footer>        
+        </footer>  
+        <div class="modal" id="modal">
+            <div class="modal__frame" id="modal__frame"></div>
+            <div class="modal__menu" id="modal__menu">
+                <div class="modal__close" id="modal__close"></div>
+                <div class="modal__title">Contact</div>
+                <form action="#" class="modal__form">
+                    <input type="text" placeholder="Name" class="modal__text">
+                    <input type="tel" placeholder="Phone" class="modal__tel">
+                    <input type="button" value="Call me back" class="modal__btn" id="modal__btn">
+                </form>
+            </div>
+	    </div>      
         `
         );
     }
@@ -407,4 +431,39 @@ window.addEventListener("load", () => {
         navList.classList.toggle("_active");
         body.classList.toggle("_lock")
     });
+
+    const currentPage = window.location.pathname;
+    const menuItems = document.querySelectorAll('.nav__item');
+
+    menuItems.forEach(item => {
+        const link = item.children[0].pathname;
+        if (link === currentPage) {
+            item.classList.add('_active');
+        }
+    });
+
+    const modal = document.getElementById("modal")
+    const modalFrame = document.getElementById("modal__frame")
+    const modalMenu = document.getElementById("modal__menu")
+    const modalClose = document.getElementById("modal__close")
+    const modalBtn = document.getElementById("modal__btn")
+    const callBtn = document.querySelectorAll(".call__btn")
+
+    document.addEventListener('click', (close) => {
+        if (close.target === modalClose || close.target === modal || close.target === modalBtn) {
+            modal.classList.remove("_active");
+            modalFrame.classList.remove("_active")
+            modalMenu.classList.remove('_active');
+            body.classList.remove("_lock");
+        }
+    })
+
+    callBtn.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            modal.classList.add("_active");
+            modalFrame.classList.add("_active")
+            modalMenu.classList.add('_active');
+            body.classList.add("_lock");
+        })
+    })
 });
