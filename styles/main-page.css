@@ -2,15 +2,15 @@
   padding: 0;
 }
 
+.wrapper-a .call__btn-footer,
 .wrapper-a .footer,
 .wrapper-a .header {
   position: relative;
-  z-index: 4;
+  z-index: 5;
 }
 
 .wrapper-a .footer {
-  min-height: 555px;
-  padding-top: 140px;
+  padding-top: 100px;
 }
 
 .wrapper-a .footer:after {
@@ -3680,7 +3680,7 @@
 
 @media (max-width:1140px) {
   .wrapper-a .footer {
-    padding-top: calc(120px + (140 - 120) * (100vw - 375px)/(1140 - 375));
+    padding-top: calc(80px + (100 - 80) * (100vw - 375px)/(1140 - 375));
   }
 
   .title_h1 {
