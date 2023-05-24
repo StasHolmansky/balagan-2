@@ -5,6 +5,9 @@ html {
 body {
   font-family: "Forum";
   background-color: #e2d3ce;
+  background-image: url('../images/book/bg_top_inner.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .container {
@@ -14,7 +17,7 @@ body {
 }
 
 .head {
-  padding: 26px 0 64px;
+  padding-bottom: 103px;
 }
 
 .head__title {
@@ -53,6 +56,7 @@ body {
   width: 141px;
   height: 75px;
   background-image: url("../images/book/romb_horiz.svg");
+  background-color: transparent;
 }
 
 .card__title {
@@ -129,32 +133,65 @@ body {
 }
 
 .subscribe {
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-bottom: 96px;
+  position: relative;
+  z-index: 1;
+}
+
+.subscribe::before,
+.subscribe::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.subscribe::before {
+  max-width: 1070px;
+  width: 100%;
+  min-height: 602px;
+  background-image: url('../images/book/border.svg');
+  top: -19px;
+  background-position: center center;
+}
+
+.subscribe::after {
+  width: 48px;
+  height: 20px;
+  top: -40px;
+  background-image: url('../images/book/subscribe-layer.svg');
 }
 
 .subscribe__inner {
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 565px;
-  background-color: #C4C4C4;
   border-radius: 10px;
   position: relative;
 }
 
 .subscribe__inner::after {
+  content: "";
   position: absolute;
-  background-size: cover;
-  background-image: url('../images/book/border.svg');
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/book/subscribe-bg.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(56px);
+  z-index: -1;
 }
 
-.subscribe__content{
+.subscribe__content {
   max-width: 730px;
   width: 100%;
+  position: relative;
 }
 
 .subscribe__title {
@@ -176,13 +213,13 @@ body {
   padding-bottom: 60px;
 }
 
-.subscribe-form{
+.subscribe-form {
   max-width: 730px;
   width: 100%;
   position: relative;
 }
 
-.subscribe-form__input{
+.subscribe-form__input {
   height: 54px;
   padding: 13px 30px;
   max-width: 486px;
@@ -193,7 +230,7 @@ body {
   backdrop-filter: blur(10px);
 }
 
-.subscribe-form__input::placeholder{
+.subscribe-form__input::placeholder {
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
@@ -202,14 +239,13 @@ body {
   color: #0C0B10;
 }
 
-.subscribe-form__btn{
+.subscribe-form__btn {
   position: absolute;
   right: 18px;
   max-width: 330px;
   width: 100%;
   font-size: 24px;
   line-height: 26px;
-  text-align: center; 
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #0C0B10;
@@ -219,7 +255,7 @@ body {
 }
 
 .subscribe-form__btn::after,
-.subscribe-form__btn::before{
+.subscribe-form__btn::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -227,20 +263,21 @@ body {
   background-repeat: no-repeat;
 }
 
-.subscribe-form__btn::after{
+.subscribe-form__btn::after {
   top: -26px;
   width: 49px;
   height: 20px;
   background-image: url('../images/book/form-top.svg');
 }
-.subscribe-form__btn::before{
+
+.subscribe-form__btn::before {
   bottom: -18px;
   width: 36px;
   height: 15px;
   background-image: url('../images/book/form-bottom.svg');
 }
 
-.subscribe-form__btn span{
+.subscribe-form__btn span {
   position: absolute;
   top: -9px;
   left: 25px;
@@ -248,3 +285,82 @@ body {
   height: 61px;
   background-image: url('../images/book/form-subtract.svg');
 }
+
+
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /* Ваши стили для небольших десктопных экранов */
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  /* Ваши стили для планшетов */
+  .card__content {
+    padding: 25px 24px;
+  }
+
+  .card__descr {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 767px) {
+
+  /* Ваши стили для средних устройств */
+
+  .main{
+    padding-top: 80px;
+  }
+
+  .head__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card__title span {
+    display: none;
+  }
+
+  .card__content {
+    padding: 25px 24px;
+  }
+
+  .card__btn {
+    margin-bottom: 16px;
+  }
+
+  .subscribe__title,
+  .subscribe__subtitle {
+    text-align: center;
+  }
+
+  .subscribe__subtitle {
+    font-size: 18px;
+    max-width: 32%;
+    margin: 0 auto;
+  }
+
+  .subscribe-form__input,
+  .subscribe-form__btn {
+    max-width: 418px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .subscribe-form__input {
+    margin-bottom: 36px;
+  }
+
+  .subscribe-form__input::placeholder {
+    text-align: center;
+  }
+
+  .subscribe-form__btn {
+    position: relative;
+    right: 0;
+    padding: 16px 0;
+  }
+}
+
