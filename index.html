@@ -5,15 +5,415 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lux Trips</title>
-	<link rel="stylesheet" href="./styles/null.css" />
+	<link rel="stylesheet" href="./styles/null.css">
 	<link rel="stylesheet" href="./fonts/manrope/stylesheet.css">
 	<link rel="stylesheet" href="./fonts/forum/stylesheet.css">
-	<link rel="stylesheet" href="./styles/header-footer.css" />
+	<link rel="stylesheet" href="./styles/header-footer.css">
 	<link rel="stylesheet" href="./styles/main-page.css">
 	<script defer src="./js/header-footer.js"></script>
+	<script defer src="./js/main-catalog.JSON"></script>
 	<script defer src="./js/main-page.js"></script>
 </head>
-<body>
-	<main></main>
+<body class="wrapper-a">
+	<main class="content index">
+		<section class="main-block">
+			<div class="main-block__body">
+				<div class="main-block__content container-a">
+					<h1 class="main-block__content-title title_h1">
+						<span class="main-block__content-sup-title title_h4">the world’s most</span>
+						extra ordinary
+					</h1>
+					<h1 class="main-block__content-sub-title title_h2">Places</h1>
+				</div>
+				<div class="main-block__parallax">
+					<div class="main-block__parallax-romb main-block__parallax-romb_01"></div>
+					<div class="main-block__parallax-romb main-block__parallax-romb_02"></div>
+					<div class="main-block__parallax-romb main-block__parallax-romb_03"></div>
+					<div class="main-block__parallax-main"></div>
+					<div class="main-block__parallax-tailand"></div>
+					<div class="main-block__parallax-lackes"></div>
+					<div class="main-block__parallax-mountain"></div>
+					<div class="main-block__parallax-cloud1"></div>
+					<div class="main-block__parallax-cloud2"></div>
+				</div>
+			</div>
+		</section>
+		<div class="content-block">
+			<div class="main-form">
+				<div class="main-form__container container-a">
+					<button class="main-form__btn btn__decor btn__decor_w"><span>find your journey</span></button>
+					<div class="main-form__form-wrapper">
+						<form action="#" class="main-form__form">
+						<label class="main-form__label" for="Destination">
+							<span class="main-form__label-text main-form__label-text_01">Destination</span>
+							<input class="main-form__label-input" id="Destination" name="place" type="text" minlength="2" maxlength="30" placeholder="Where are you going?" required>
+						</label>
+						<label class="main-form__label" for="travel-type">
+							<span class="main-form__label-text main-form__label-text_02">Travel type</span>
+							<select class="main-form__label-select" name="travel-type" id="travel-type">
+								<option value="1Adventure Travel" selected>1 Adventure Travel</option>
+								<option value="2Adventure Travel">2 Adventure Travel</option>
+								<option value="3Adventure Travel">3 Adventure Travel</option>
+								<option value="4Adventure Travel">4 Adventure Travel</option>
+							</select>
+						</label>
+						<label class="main-form__label" for="date">
+							<span class="main-form__label-text main-form__label-text_03">When</span>
+							<input class="main-form__label-input" name="date" id="date" type="date" required>
+						</label>
+						<label class="main-form__label" for="Travellers">
+							<span class="main-form__label-text main-form__label-text_04">Travellers</span>
+							<select class="main-form__label-select" name="Travellers" id="Travellers">
+								<option value="1" selected>1 Person</option>
+								<option value="2">2 Persons</option>
+								<option value="3">3 Persons</option>
+								<option value="4">4 Persons</option>
+							</select>
+						</label>
+						<button class="main-form__form-btn" type="button"><span>Find</span></button>
+					</form>
+					</div>
+				</div>
+			</div>
+			<section class="main-slider">
+				<div class="main-slider__container container-a">
+					<h2 class="main-slider__title title_h3">Top Rated Experiences</h2>
+					<fieldset class="main-slider__filter">
+						<label for="f01" class="main-slider__filter-btn add-active">
+							World
+							<input id="f01" type="radio" name="filter" value="all" checked>
+						</label>
+						<label for="f02" class="main-slider__filter-btn add-active">
+							Africa
+							<input id="f02" type="radio" name="filter" value="africa" disabled>
+						</label>
+						<label for="f03" class="main-slider__filter-btn add-active">
+							Asia
+							<input id="f03" type="radio" name="filter" value="asia">
+						</label>
+						<label for="f04" class="main-slider__filter-btn add-active">
+							Europe
+							<input id="f04" type="radio" name="filter" value="Europe">
+						</label>
+						<label for="f05" class="main-slider__filter-btn add-active">
+							North America
+							<input id="f05" type="radio" name="filter" value="North America">
+						</label>
+						<label for="f06" class="main-slider__filter-btn add-active">
+							South America
+							<input id="f06" type="radio" name="filter" value="South America">
+						</label>
+						<label for="f07" class="main-slider__filter-btn add-active">
+							Antarctica
+							<input id="f07" type="radio" name="filter" value="Antarctica">
+						</label>
+						<label for="f08" class="main-slider__filter-btn add-active">
+							Australia
+							<input id="f08" type="radio" name="filter" value="Australia">
+						</label>
+					</fieldset>
+				</div>
+				<div class="main-slider__slider slider">
+						<div class="main-slider__slider-container slider-container">
+							<button class="main-slider__slider-btn prev btn_1 slider-prev hidden" type="button"></button>
+							<button class="main-slider__slider-btn next btn_1 slider-next" type="button"></button>
+							<div class="main-slider__slider-track slider-track"></div>
+						</div>
+					</div>
+			</section>
+
+			<div class="content-block__sub-block">
+				<div class="content-block__bg-beach"></div>
+
+				<section class="luxary">
+					<div class="luxary__container container-a">
+						<div class="luxary__content">
+						<div class="luxary__item-title">
+							<div class="luxary__title-wrapper">
+								<h2 class="luxary__title title_h3">Luxury Packages</h2>
+								<a href="" class="luxary__link text_h4">view all</a>
+							</div>
+						</div>
+
+						<div class="luxary__item trip-link">
+							<img src="images/main-page/catalog/luxary01.jpg" alt="luxary link" width="350" height="570">
+							<div class="trip-link__content">
+								<div class="trip-link__title title_h5">Best Winter Destinations</div>
+							</div>
+							<a href="" class="trip-link__link">
+								<span class="trip-link__link-wrapper">
+									<span>
+										<output>34</output>
+										<b>places</b>
+									</span>
+								</span>
+							</a>
+						</div>
+
+						<div class="luxary__item trip-link">
+							<img src="images/main-page/catalog/luxary02.jpg" alt="luxary link" width="350" height="570">
+							<div class="trip-link__content">
+								<div class="trip-link__title title_h5">The world's most extraordinary places</div>
+							</div>
+							<a href="" class="trip-link__link">
+								<span class="trip-link__link-wrapper">
+									<span>
+										<output>29</output>
+										<b>places</b>
+									</span>
+								</span>
+							</a>
+						</div>
+
+						<div class="luxary__item trip-link">
+							<img src="images/main-page/catalog/luxary03.jpg" alt="luxary link" width="350" height="570">
+							<div class="trip-link__content">
+								<div class="trip-link__title title_h5">New destinations for 2022</div>
+							</div>
+							<a href="" class="trip-link__link">
+								<span class="trip-link__link-wrapper">
+									<span>
+										<output>47</output>
+										<b>places</b>
+									</span>
+								</span>
+							</a>
+						</div>
+
+						<div class="luxary__item trip-link">
+							<img src="images/main-page/catalog/luxary04.jpg" alt="luxary link" width="350" height="570">
+							<div class="trip-link__content">
+								<div class="trip-link__title title_h5">Your health is matter</div>
+							</div>
+							<a href="" class="trip-link__link">
+								<span class="trip-link__link-wrapper">
+									<span>
+										<output>29</output>
+										<b>places</b>
+									</span>
+								</span>
+							</a>
+						</div>
+
+						<div class="luxary__item trip-link">
+							<img src="images/main-page/catalog/luxary05.jpg" alt="luxary link" width="350" height="570">
+							<div class="trip-link__content">
+								<div class="trip-link__title title_h5">Experiences Away From Crowd</div>
+							</div>
+							<a href="" class="trip-link__link">
+								<span class="trip-link__link-wrapper">
+									<span>
+										<output>168</output>
+										<b>places</b>
+									</span>
+								</span>
+							</a>
+						</div>
+						</div>
+						
+					</div>
+				</section>
+
+				<section class="book">
+					<div class="book__container container-a">
+						<h2 class="book__title title_h3">Book With Us</h2>
+						<div class="book__block">
+							<a href="" class="book__link"><img src="images/main-page/book/book01.jpg" alt="booking" width="540" height="190"><span class="book__link-title title_h6">Supercars</span></a>
+							<a href="" class="book__link"><img src="images/main-page/book/book02.jpg" alt="booking" width="540" height="190"><span class="book__link-title title_h6">Villas</span></a>
+							<a href="" class="book__link"><img src="images/main-page/book/book03.jpg" alt="booking" width="540" height="190"><span class="book__link-title title_h6">Private Helicopter</span></a>
+							<a href="" class="book__link"><img src="images/main-page/book/book04.jpg" alt="booking" width="540" height="190"><span class="book__link-title title_h6">Hotels</span></a>
+							<a href="" class="book__link"><img src="images/main-page/book/book05.jpg" alt="booking" width="540" height="190"><span class="book__link-title title_h6">Yachts</span></a>
+							<a href="" class="book__link"><img src="images/main-page/book/book06.jpg" alt="booking" width="540" height="190"><span class="book__link-title title_h6">Private Jet</span></a>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="content-block__sub-block01">
+				<div class="content-block__cloud01"></div>
+				<div class="content-block__cloud02"></div>
+				<div class="content-block__cloud03"></div>
+				<div class="content-block__cloud04"></div>
+				<div class="content-block__cloud05"></div>
+				<section class="why">
+					<div class="why__parallax">
+						<div class="why__parallax-container container-a">
+							<div class="why__parallax-pic"></div>
+							<div class="why__parallax-icon why__parallax-icon_01">
+								<div class="why__parallax-icon-wrapper">
+									<img src="images/main-page/why01.jpg" alt="why lux" width="145" height="325">
+								</div>
+								<img class="why__parallax-blur" src="images/main-page/why01.jpg" alt="why lux" width="145" height="325">
+							</div>
+							<div class="why__parallax-icon why__parallax-icon_02">
+								<div class="why__parallax-icon-wrapper">
+									<img src="images/main-page/why02.jpg" alt="why lux" width="145" height="325">
+								</div>
+								<img class="why__parallax-blur" src="images/main-page/why02.jpg" alt="why lux" width="145" height="325">
+							</div>
+							<div class="why__parallax-icon why__parallax-icon_03">
+								<div class="why__parallax-icon-wrapper">
+									<img src="images/main-page/why03.jpg" alt="why lux" width="145" height="325">
+								</div>
+								<img class="why__parallax-blur" src="images/main-page/why03.jpg" alt="why lux" width="145" height="325">
+							</div>
+						</div>
+					</div>
+					<div class="why__body">
+						<div class="why__container container-a">
+							<div class="why__title">
+								<h2 class="why__title-title title_h3">Why Lux Trips</h2>
+								<p class="why__title-text text_h5">As Travel Designer, we know the ins and outs of travel from who to work with, where to go, when to book, and which restaurant provides the most authentic cuisine. </p>
+							</div>
+							<div class="why__content">
+								<div class="why__content-text01 text_h6">Exclusive knowledge to provide the best of the best to clients</div>
+								<div class="why__content-text02 text_h5">Our area of expertise ranges from luxury resorts and villas/chalets holiday bookings, private yacht and jet charters, to exclusive tours and personalized journey planning. </div>
+								<div class="why__content-pic">
+									<div class="why__parallax-icon-wrapper">
+										<img src="images/main-page/why04.jpg" alt="why lux" width="245" height="545">
+									</div>
+									<img class="why__parallax-blur" src="images/main-page/why04.jpg" alt="why lux" width="145" height="325">
+								</div>
+								<div class="why__content-text03 text_h7">We craft and plan unique itineraries tailored to customers’ interests and with strong attention to detail.</div>
+								<a href="" class="why__content-link title_h7">help me plan a trip</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="customise">
+					<div class="customise__container container-a">
+						<div class="customise__block">
+							<h2 class="customise__title title_h3">Customise your trip with us</h2>
+							<div class="customise__item">
+								<div class="customise__item-romb">1</div>
+								<div class="customise__item-title">Describe your dream trip</div>
+								<p class="customise__item-text text_h5">Let us know what your perfect vacation is. Destinations, preferences, and personal interests.</p>
+							</div>
+							<div class="customise__item">
+								<div class="customise__item-romb">2</div>
+								<div class="customise__item-title">Get matched</div>
+								<p class="customise__item-text text_h5">Our team connects you with up to two vetted travel specialists, who will compete for your business.</p>
+							</div>
+							<div class="customise__item">
+								<div class="customise__item-romb">3</div>
+								<div class="customise__item-title">Book your vacation</div>
+								<p class="customise__item-text text_h5">Get your itinerary customized to fit your needs and preferences. book only when you’re happy with the travel specialist and the itinerary.</p>
+							</div>
+							<div class="customise__link">
+								<a href="" class="customise__link-link btn__decor btn__decor_b"><span>Start a trip request</span></a>
+								<div class="customise__link-text text_h5">It’s Free! - no credit card required</div>
+							</div>
+						</div>
+						<div class="customise__form">
+							<img src="images/main-page/form-img.jpg" alt="form-img" width="1110" height="565" class="customise__form-blur">
+							<div class="customise__form-wrapper">
+								<h3 class="customise__form-title title_h3">Get weekly inspiration and expert advice</h3>
+								<p class="customise__form-text">Sign up for our Weekly Newsletter</p>
+								<form action="#" class="customise__form-form">
+									<label for="subscribe" class="customise__form-label">
+										<input type="email" id="subscribe" name="subscriber" placeholder="Email address" required>
+									</label>
+									<button class="customise__form-btn btn__decor btn__decor_w" type="submit"><span>Subscribe</span></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<section class="reviews">
+				<div class="reviews__container">
+					<h2 class="reviews__title main-slider__title title_h3">Customers reviews</h2>
+					<div class="reviews__slider slider slider-2">
+						<div class="reviews__slider-container slider-container">
+							<button class="main-slider__slider-btn prev btn_1 slider-prev hidden" type="button"></button>
+							<button class="main-slider__slider-btn next btn_1 slider-next" type="button"></button>
+							<div class="reviews__slider-track slider-track">
+
+								<div class="reviews__slider-item slider-item">
+									<fieldset class="review">
+										<legend class="review__legend"></legend>
+										<fieldset class="review__wrapper">
+											<legend class="review__wrapper-legend"></legend>
+											<div class="review__wrapper-img"><img src="images/main-page/customer01.jpg" alt="customer" width="100" height="100"></div>
+											<p class="review__wrapper-text text_h1">“Well organized trip, All arranged well by Arooz. Special thanks to Aijaz Bhai for the service and support given to us, all explained well and take us to all places as per our wish. It was a wonderful experience .... Thank you team”</p>
+											<div class="review__wrapper-wrapper">
+												<div class="review__wrapper-name">- Eduard Hand</div>
+												<div class="review__wrapper-place">Müller-Egerer</div>
+											</div>
+										</fieldset>
+									</fieldset>
+								</div>
+
+								<div class="reviews__slider-item slider-item">
+									<fieldset class="review">
+										<legend class="review__legend"></legend>
+										<fieldset class="review__wrapper">
+											<legend class="review__wrapper-legend"></legend>
+											<div class="review__wrapper-img"><img src="images/main-page/customer02.jpg" alt="customer" width="100" height="100"></div>
+											<p class="review__wrapper-text text_h1">“We want to visit Manali from long time. Abhishek from ideal tour give us the best quote for Manali tour. He was very supportive and approachable at any time. He made our trip hassle-free. Thanks for your great help Abhishek...Ideal Tour..!!!”</p>
+											<div class="review__wrapper-wrapper">
+												<div class="review__wrapper-name">- Marie Kähler</div>
+												<div class="review__wrapper-place">Lekkerland</div>
+											</div>
+										</fieldset>
+									</fieldset>
+								</div>
+
+								<div class="reviews__slider-item slider-item">
+									<fieldset class="review">
+										<legend class="review__legend"></legend>
+										<fieldset class="review__wrapper">
+											<legend class="review__wrapper-legend"></legend>
+											<div class="review__wrapper-img"><img src="images/main-page/customer01.jpg" alt="customer" width="100" height="100"></div>
+											<p class="review__wrapper-text text_h1">“Well organized trip, All arranged well by Arooz. Special thanks to Aijaz Bhai for the service and support given to us, all explained well and take us to all places as per our wish. It was a wonderful experience .... Thank you team”</p>
+											<div class="review__wrapper-wrapper">
+												<div class="review__wrapper-name">- Eduard Hand</div>
+												<div class="review__wrapper-place">Müller-Egerer</div>
+											</div>
+										</fieldset>
+									</fieldset>
+								</div>
+
+								<div class="reviews__slider-item slider-item">
+									<fieldset class="review">
+										<legend class="review__legend"></legend>
+										<fieldset class="review__wrapper">
+											<legend class="review__wrapper-legend"></legend>
+											<div class="review__wrapper-img"><img src="images/main-page/customer02.jpg" alt="customer" width="100" height="100"></div>
+											<p class="review__wrapper-text text_h1">“We want to visit Manali from long time. Abhishek from ideal tour give us the best quote for Manali tour. He was very supportive and approachable at any time. He made our trip hassle-free. Thanks for your great help Abhishek...Ideal Tour..!!!”</p>
+											<div class="review__wrapper-wrapper">
+												<div class="review__wrapper-name">- Marie Kähler</div>
+												<div class="review__wrapper-place">Lekkerland</div>
+											</div>
+										</fieldset>
+									</fieldset>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__contact-container container-a">
+					<div class="reviews__contact">
+						<form action="#" class="reviews__contact-form">
+							<h4 class="reviews__contact-title title_h3">Contact</h4>
+							<label for="name" class="reviews__contact-input">
+								<input id="name" type="text" name="user-name" required placeholder="Name">
+							</label>
+							<label for="email" class="reviews__contact-input">
+								<input id="email" type="tel" name="user-phone" required placeholder="Phone">
+							</label>
+							<div class="reviews__contact-btn">
+								<button class="btn__decor btn__decor_b" type="submit"><span>Call me back</span></button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+
 </body>
 </html>
