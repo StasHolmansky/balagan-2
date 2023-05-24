@@ -11,7 +11,7 @@
 }
 
 /* Track */
-:root::-webkit-scrollbar-track {clamp(1.8rem, 4vw, 2.4rem);
+:root::-webkit-scrollbar-track {
   background: var(--white-color);
 }
 
@@ -77,9 +77,6 @@
   line-height: var(--line-height);
 }
 
-.container-columns .col-1 .list {
-}
-
 .container-columns .col-1 .list ul {
   display: flex;
   flex-direction: column;
@@ -128,9 +125,6 @@
 }
 
 /*------------------------Column-2---------------------------*/
-
-.container-columns .col-2 {
-}
 
 .container-columns .col-2 form {
   background-color: var(--white-color);
