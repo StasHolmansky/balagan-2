@@ -101,15 +101,15 @@
 }
 
 .container-columns .col-1 .list ul li:nth-child(2)::before {
-  content: url(../images/svg/forms-villa/icon-2.svg);
+  content: url(../images/svg/forms-helicopter/icon-10.svg);
 }
 
 .container-columns .col-1 .list ul li:nth-child(3)::before {
-  content: url(../images/svg/forms-villa/icon-3.svg);
+  content: url(../images/svg/forms-helicopter/icon-11.svg);
 }
 
 .container-columns .col-1 .list ul li:nth-child(4)::before {
-  content: url(../images/svg/forms-villa/icon-4.svg);
+  content: url(../images/svg/forms-helicopter/icon-12.svg);
 }
 
 .container-columns .col-1 .list ul li:nth-child(5)::before {
@@ -137,7 +137,7 @@
 
 .container-columns .col-2 form > .container {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
   align-items: end;
 }
@@ -152,37 +152,9 @@
   grid-row: 1/2;
 }
 
-.container-columns .col-2 form > .container > p:nth-child(2) {
+.container-columns .col-2 form > .container > label:nth-child(2) {
   grid-column: 2/3;
   grid-row: 1/2;
-  align-self: center;
-  margin-top: 2rem;
-  font-size: 3rem;
-}
-
-.container-columns .col-2 form > .container > label:nth-child(3) {
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-
-.container-columns .col-2 form > .container > label:nth-child(4) {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-.container-columns .col-2 form > .container > label:nth-child(5) {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-
-.container-columns .col-2 form > .container > label:nth-child(6) {
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-
-.container-columns .col-2 form > .container > label:nth-child(7) {
-  grid-column: 3/4;
-  grid-row: 3/4;
 }
 
 .container-columns .col-2 form label {
