@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "Forum";
+  font-family: "Forum" sans-serif;
   background-color: #e2d3ce;
   background-image: url('../images/book/bg_top_inner.png');
   background-repeat: no-repeat;
