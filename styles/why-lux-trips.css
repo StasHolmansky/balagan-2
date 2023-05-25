@@ -1,0 +1,2077 @@
+@font-face {
+  font-family: "Forum";
+  src: url("../fonts/forum/Forum.eot");
+  src: local("Forum"), url("../fonts/forum/Forum.eot?#iefix") format("embedded-opentype"), url("../fonts/forum/Forum.woff2") format("woff2"), url("../fonts/forum/Forum.woff") format("woff"), url("../fonts/forum/Forum.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/Manrope-Regular.eot");
+  src: local("Manrope Regular"), local("Manrope-Regular"), url("../fonts/manrope/Manrope-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/manrope/Manrope-Regular.woff2") format("woff2"), url("../fonts/manrope/Manrope-Regular.woff") format("woff"), url("../fonts/manrope/Manrope-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.form-submit__btn:hover, .form-submit__btn, .luxtrips-btn:active, .luxtrips-btn:focus, .luxtrips-btn:hover, .luxtrips-btn {
+  transition: color 0.4s linear, background 0.4s ease-in-out;
+}
+
+.form-control::-moz-placeholder {
+  font-family: "Manrope", Arial, sans-serif;
+}
+
+.form-control::placeholder, .luxtrips-body {
+  font-family: "Manrope", Arial, sans-serif;
+}
+
+.subscription__title, .luxtrips-book-slide__title, .statistics-block__item > dd, .statistics-block__item > dt, .luxtrips-btn, .title, .title-main {
+  font-family: "Forum", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.luxtrips-body {
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  max-width: 1440px;
+  color: #000;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.luxtrips-body::before {
+  content: "";
+  background-color: #E2D3CE;
+  background-image: url(../images/why-lux-trips/img/mountains-bg-all.png);
+  background-repeat: no-repeat;
+  background-position: center -3px;
+  position: absolute;
+  max-width: 1440px;
+  width: 100%;
+  height: 1311px;
+  top: 0;
+}
+@media (max-width: 768px) {
+  .luxtrips-body::before {
+    background-position: center -84px;
+    background-position: center -58px;
+  }
+}
+@media (max-width: 375px) {
+  .luxtrips-body::before {
+    background-image: url(../images/why-lux-trips/img/mountains-bg-all-mob.png);
+    background-position: center 0px;
+  }
+}
+
+.luxtrips-wrapper {
+  background-color: #E2D3CE;
+}
+
+.luxtrips-container {
+  max-width: 90rem;
+  width: 100%;
+  padding: 0 2.8125rem;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .luxtrips-container {
+    padding: 0 2.1875rem;
+  }
+}
+@media (max-width: 768px) {
+  .luxtrips-container {
+    padding: 0 1.5625rem;
+  }
+}
+@media (max-width: 480px) {
+  .luxtrips-container {
+    padding: 0 0.9375rem;
+  }
+}
+
+.title-main {
+  font-size: 12.375rem;
+  line-height: 0.65;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  max-width: 51.3125rem;
+  padding-left: 2.125rem;
+  text-align: center;
+  margin: 0 auto;
+  color: #FCFCFC;
+}
+@media (max-width: 1024px) {
+  .title-main {
+    font-size: 9.375rem;
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .title-main {
+    font-size: 5.625rem;
+    letter-spacing: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .title-main {
+    font-size: 4.875rem;
+  }
+}
+@media (max-width: 375px) {
+  .title-main {
+    font-size: calc(4.25rem + 0.625 * (100vw - 20rem) / 3.4);
+  }
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 1.01;
+  font-weight: 400;
+  font-style: normal;
+  color: #0C0B10;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.1875rem;
+  }
+}
+@media (max-width: 375px) {
+  .title {
+    font-size: 1.875rem;
+    line-height: 1.07;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+.luxtrips-btn {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  display: block;
+  background: #0C0B10;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 74px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+.luxtrips-btn:hover {
+  background: #fff;
+  color: #0C0B10;
+  box-shadow: 5px 8px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.luxtrips-btn:focus {
+  background: #8eb0ca;
+  color: #040c20;
+  box-shadow: 5px 8px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.luxtrips-btn:active {
+  background: #63a9df;
+  box-shadow: none;
+}
+.luxtrips-btn::before {
+  content: "";
+  background-image: url(../../images/why-lux-trips/icons/btn-decor-top.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 234px;
+  height: 78px;
+  z-index: -1;
+}
+.luxtrips-btn::after {
+  content: "";
+  background-image: url(../../images/why-lux-trips/icons/btn-decor-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35px;
+  height: 14px;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .luxtrips-btn:hover {
+    background: #0C0B10;
+    color: #fff;
+    box-shadow: none;
+  }
+}
+
+.visualy-hidden {
+  display: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Swiper 8.3.1 */
+@font-face {
+  font-family: swiper-icons;
+  src: url("data:application/font-woff;charset=utf-8;base64, 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");
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --swiper-theme-color:#007aff;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.swiper-vertical > .swiper-wrapper {
+  flex-direction: column;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.swiper-android .swiper-slide, .swiper-wrapper {
+  transform: translate3d(0px, 0, 0);
+}
+
+.swiper-pointer-events {
+  touch-action: pan-y;
+}
+
+.swiper-pointer-events.swiper-vertical {
+  touch-action: pan-x;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.swiper-slide-invisible-blank {
+  visibility: hidden;
+}
+
+.swiper-autoheight, .swiper-autoheight .swiper-slide {
+  height: auto;
+}
+
+.swiper-autoheight .swiper-wrapper {
+  align-items: flex-start;
+  transition-property: transform, height;
+}
+
+.swiper-backface-hidden .swiper-slide {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.swiper-3d, .swiper-3d.swiper-css-mode .swiper-wrapper {
+  perspective: 1200px;
+}
+
+.swiper-3d .swiper-cube-shadow, .swiper-3d .swiper-slide, .swiper-3d .swiper-slide-shadow, .swiper-3d .swiper-slide-shadow-bottom, .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right, .swiper-3d .swiper-slide-shadow-top, .swiper-3d .swiper-wrapper {
+  transform-style: preserve-3d;
+}
+
+.swiper-3d .swiper-slide-shadow, .swiper-3d .swiper-slide-shadow-bottom, .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right, .swiper-3d .swiper-slide-shadow-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.swiper-3d .swiper-slide-shadow {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.swiper-3d .swiper-slide-shadow-left {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.swiper-3d .swiper-slide-shadow-top {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.swiper-3d .swiper-slide-shadow-bottom {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.swiper-css-mode > .swiper-wrapper {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.swiper-css-mode > .swiper-wrapper > .swiper-slide {
+  scroll-snap-align: start start;
+}
+
+.swiper-horizontal.swiper-css-mode > .swiper-wrapper {
+  scroll-snap-type: x mandatory;
+}
+
+.swiper-vertical.swiper-css-mode > .swiper-wrapper {
+  scroll-snap-type: y mandatory;
+}
+
+.swiper-centered > .swiper-wrapper::before {
+  content: "";
+  flex-shrink: 0;
+  order: 9999;
+}
+
+.swiper-centered.swiper-horizontal > .swiper-wrapper > .swiper-slide:first-child {
+  -webkit-margin-start: var(--swiper-centered-offset-before);
+          margin-inline-start: var(--swiper-centered-offset-before);
+}
+
+.swiper-centered.swiper-horizontal > .swiper-wrapper::before {
+  height: 100%;
+  min-height: 1px;
+  width: var(--swiper-centered-offset-after);
+}
+
+.swiper-centered.swiper-vertical > .swiper-wrapper > .swiper-slide:first-child {
+  -webkit-margin-before: var(--swiper-centered-offset-before);
+          margin-block-start: var(--swiper-centered-offset-before);
+}
+
+.swiper-centered.swiper-vertical > .swiper-wrapper::before {
+  width: 100%;
+  min-width: 1px;
+  height: var(--swiper-centered-offset-after);
+}
+
+.swiper-centered > .swiper-wrapper > .swiper-slide {
+  scroll-snap-align: center center;
+}
+
+.swiper-virtual .swiper-slide {
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.swiper-virtual.swiper-css-mode .swiper-wrapper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.swiper-virtual.swiper-css-mode.swiper-horizontal .swiper-wrapper::after {
+  height: 1px;
+  width: var(--swiper-virtual-size);
+}
+
+.swiper-virtual.swiper-css-mode.swiper-vertical .swiper-wrapper::after {
+  width: 1px;
+  height: var(--swiper-virtual-size);
+}
+
+:root {
+  --swiper-navigation-size:44px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - var(--swiper-navigation-size) / 2);
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-button-next.swiper-button-hidden, .swiper-button-prev.swiper-button-hidden {
+  opacity: 0;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-navigation-disabled .swiper-button-next, .swiper-navigation-disabled .swiper-button-prev {
+  display: none !important;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: 10px;
+  right: auto;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: "prev";
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: 10px;
+  left: auto;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: "next";
+}
+
+.swiper-button-lock {
+  display: none;
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.swiper-pagination.swiper-pagination-hidden {
+  opacity: 0;
+}
+
+.swiper-pagination-disabled > .swiper-pagination, .swiper-pagination.swiper-pagination-disabled {
+  display: none !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+.swiper-pagination-bullets-dynamic {
+  overflow: hidden;
+  font-size: 0;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transform: scale(0.33);
+  position: relative;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+  transform: scale(1);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
+  transform: scale(1);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
+  transform: scale(0.66);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
+  transform: scale(0.33);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
+  transform: scale(0.66);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
+  transform: scale(0.33);
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+  display: inline-block;
+  border-radius: 50%;
+  background: var(--swiper-pagination-bullet-inactive-color, #000);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+}
+
+button.swiper-pagination-bullet {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet:only-child {
+  display: none !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical > .swiper-pagination-bullets {
+  right: 10px;
+  top: 50%;
+  transform: translate3d(0px, -50%, 0);
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: var(--swiper-pagination-bullet-vertical-gap, 6px) 0;
+  display: block;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, .swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  display: inline-block;
+  transition: 0.2s transform, 0.2s top;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transition: 0.2s transform, 0.2s left;
+}
+
+.swiper-horizontal.swiper-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transition: 0.2s transform, 0.2s right;
+}
+
+.swiper-pagination-progressbar {
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transform-origin: left top;
+}
+
+.swiper-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  transform-origin: right top;
+}
+
+.swiper-horizontal > .swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  width: 100%;
+  height: 4px;
+  left: 0;
+  top: 0;
+}
+
+.swiper-horizontal > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite, .swiper-pagination-progressbar.swiper-pagination-horizontal.swiper-pagination-progressbar-opposite, .swiper-pagination-progressbar.swiper-pagination-vertical, .swiper-vertical > .swiper-pagination-progressbar {
+  width: 4px;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.swiper-pagination-lock {
+  display: none;
+}
+
+.swiper-scrollbar {
+  border-radius: 10px;
+  position: relative;
+  -ms-touch-action: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.swiper-scrollbar-disabled > .swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-disabled {
+  display: none !important;
+}
+
+.swiper-horizontal > .swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: absolute;
+  left: 1%;
+  bottom: 3px;
+  z-index: 50;
+  height: 5px;
+  width: 98%;
+}
+
+.swiper-scrollbar.swiper-scrollbar-vertical, .swiper-vertical > .swiper-scrollbar {
+  position: absolute;
+  right: 3px;
+  top: 1%;
+  z-index: 50;
+  width: 5px;
+  height: 98%;
+}
+
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  left: 0;
+  top: 0;
+}
+
+.swiper-scrollbar-cursor-drag {
+  cursor: move;
+}
+
+.swiper-scrollbar-lock {
+  display: none;
+}
+
+.swiper-zoom-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.swiper-zoom-container > canvas, .swiper-zoom-container > img, .swiper-zoom-container > svg {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.swiper-slide-zoomed {
+  cursor: move;
+}
+
+.swiper-lazy-preloader {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -21px;
+  margin-top: -21px;
+  z-index: 10;
+  transform-origin: 50%;
+  box-sizing: border-box;
+  border: 4px solid var(--swiper-preloader-color, var(--swiper-theme-color));
+  border-radius: 50%;
+  border-top-color: transparent;
+}
+
+.swiper-watch-progress .swiper-slide-visible .swiper-lazy-preloader, .swiper:not(.swiper-watch-progress) .swiper-lazy-preloader {
+  animation: swiper-preloader-spin 1s infinite linear;
+}
+
+.swiper-lazy-preloader-white {
+  --swiper-preloader-color:#fff;
+}
+
+.swiper-lazy-preloader-black {
+  --swiper-preloader-color:#000;
+}
+
+@keyframes swiper-preloader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.swiper .swiper-notification {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: -1000;
+}
+
+.swiper-free-mode > .swiper-wrapper {
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+}
+
+.swiper-grid > .swiper-wrapper {
+  flex-wrap: wrap;
+}
+
+.swiper-grid-column > .swiper-wrapper {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.swiper-fade.swiper-free-mode .swiper-slide {
+  transition-timing-function: ease-out;
+}
+
+.swiper-fade .swiper-slide {
+  pointer-events: none;
+  transition-property: opacity;
+}
+
+.swiper-fade .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+
+.swiper-fade .swiper-slide-active, .swiper-fade .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+}
+
+.swiper-cube {
+  overflow: visible;
+}
+
+.swiper-cube .swiper-slide {
+  pointer-events: none;
+  backface-visibility: hidden;
+  z-index: 1;
+  visibility: hidden;
+  transform-origin: 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-cube .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+
+.swiper-cube.swiper-rtl .swiper-slide {
+  transform-origin: 100% 0;
+}
+
+.swiper-cube .swiper-slide-active, .swiper-cube .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+}
+
+.swiper-cube .swiper-slide-active, .swiper-cube .swiper-slide-next, .swiper-cube .swiper-slide-next + .swiper-slide, .swiper-cube .swiper-slide-prev {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.swiper-cube .swiper-slide-shadow-bottom, .swiper-cube .swiper-slide-shadow-left, .swiper-cube .swiper-slide-shadow-right, .swiper-cube .swiper-slide-shadow-top {
+  z-index: 0;
+  backface-visibility: hidden;
+}
+
+.swiper-cube .swiper-cube-shadow {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.swiper-cube .swiper-cube-shadow:before {
+  content: "";
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  filter: blur(50px);
+}
+
+.swiper-flip {
+  overflow: visible;
+}
+
+.swiper-flip .swiper-slide {
+  pointer-events: none;
+  backface-visibility: hidden;
+  z-index: 1;
+}
+
+.swiper-flip .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+
+.swiper-flip .swiper-slide-active, .swiper-flip .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+}
+
+.swiper-flip .swiper-slide-shadow-bottom, .swiper-flip .swiper-slide-shadow-left, .swiper-flip .swiper-slide-shadow-right, .swiper-flip .swiper-slide-shadow-top {
+  z-index: 0;
+  backface-visibility: hidden;
+}
+
+.swiper-creative .swiper-slide {
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition-property: transform, opacity, height;
+}
+
+.swiper-cards {
+  overflow: visible;
+}
+
+.swiper-cards .swiper-slide {
+  transform-origin: center bottom;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.luxtrips-preview {
+  padding-top: 1.625rem;
+  position: relative;
+}
+.luxtrips-preview::after {
+  content: "";
+  background-image: url(../images/why-lux-trips/img/mountain.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-height: 461px;
+  height: 100%;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .luxtrips-preview::after {
+    top: 2%;
+  }
+}
+@media (max-width: 375px) {
+  .luxtrips-preview::after {
+    background-image: url(../images/why-lux-trips/img/mountain-mob.png);
+    top: 1%;
+    top: -5.5%;
+    left: 48.5%;
+  }
+}
+@media (max-width: 768px) {
+  .luxtrips-preview {
+    padding-bottom: 2.1875rem;
+  }
+}
+@media (max-width: 375px) {
+  .luxtrips-preview {
+    padding-top: 0;
+  }
+}
+
+.luxtrips-preview__container {
+  position: relative;
+}
+.luxtrips-preview__container::before {
+  content: "";
+  background-image: url(../images/why-lux-trips/img/preview-cloude-left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -257px;
+  left: 0;
+  max-width: 343px;
+  width: 100%;
+  max-height: 459px;
+  height: 100%;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .luxtrips-preview__container::before {
+    background-image: url(../images/why-lux-trips/img/preview-cloude-left-mob.png);
+    width: 138px;
+    height: 178px;
+    bottom: 397px;
+  }
+}
+.luxtrips-preview__container::after {
+  content: "";
+  background-image: url(../images/why-lux-trips/img/preview-cloude-right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -46px;
+  right: 0px;
+  max-width: 411px;
+  width: 100%;
+  max-height: 354px;
+  height: 100%;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .luxtrips-preview__container::after {
+    background-image: url(../images/why-lux-trips/img/preview-cloude-right-mob.png);
+    width: 151px;
+    height: 117px;
+    bottom: 330px;
+  }
+}
+
+.luxtrips-preview-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  -moz-column-gap: 3.5625rem;
+       column-gap: 3.5625rem;
+  max-width: 64.4375rem;
+  list-style: none;
+  margin: -35px auto 0;
+}
+@media (max-width: 1024px) {
+  .luxtrips-preview-cards {
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .luxtrips-preview-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -moz-column-gap: 0.75rem;
+         column-gap: 0.75rem;
+    list-style: none;
+  }
+}
+@media (max-width: 375px) {
+  .luxtrips-preview-cards {
+    padding-top: 45px;
+  }
+}
+
+.luxtrips-preview-card {
+  max-width: 17.75rem;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  z-index: 3;
+}
+@media (max-width: 768px) {
+  .luxtrips-preview-card {
+    max-width: 5.1875rem;
+  }
+}
+
+.preview-card-center {
+  max-width: 21.8125rem;
+  width: 100%;
+  padding-top: 16.25rem;
+}
+@media (max-width: 768px) {
+  .preview-card-center {
+    padding-top: 1.25rem;
+    max-width: 9.4375rem;
+  }
+}
+
+.luxtrips-preview-card__picture {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: 100%;
+  min-height: 385px;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .luxtrips-preview-card__picture-left,
+  .luxtrips-preview-card__picture-right {
+    min-height: 212px;
+  }
+}
+
+.luxtrips-preview-card__image-block {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+}
+.luxtrips-preview-card__image-block img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.luxtrips-preview-card__image-block::before {
+  content: "";
+  border: 1px solid #d6d8dc;
+  position: absolute;
+  bottom: -23px;
+  left: 50%;
+  width: 49px;
+  height: 49px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.31);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  transform: translate(-50%) rotate(45deg) skew(20deg, 20deg);
+}
+
+@media (max-width: 768px) {
+  .luxtrips-preview-card__image-block-left::before {
+    width: 28px;
+    height: 28px;
+    bottom: -12px;
+  }
+}
+.luxtrips-preview-card__image-block-left:after {
+  content: "";
+  border: 1px solid #d6d8dc;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.31);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  transform: translate(-50%) rotate(45deg) skew(20deg, 20deg);
+}
+@media (max-width: 480px) {
+  .luxtrips-preview-card__image-block-left:after {
+    width: 17px;
+    height: 17px;
+    right: -40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .luxtrips-preview-card__image-block-right::before {
+    width: 28px;
+    height: 28px;
+    bottom: -12px;
+  }
+}
+
+.luxtrips-preview-card__image-wrapper {
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.preview-card__img-blur {
+  position: absolute;
+  top: 32px;
+  left: 10px;
+  z-index: 0;
+  opacity: 0.67;
+  filter: blur(15px);
+}
+@media (max-width: 768px) {
+  .preview-card__img-blur {
+    top: 20px;
+    left: 4px;
+  }
+}
+
+.preview-card__img-blur-right {
+  left: -10px;
+}
+@media (max-width: 768px) {
+  .preview-card__img-blur-right {
+    left: -4px;
+  }
+}
+
+.preview-card__image {
+  margin-bottom: 4.0625rem;
+}
+
+.preview-card__image-center {
+  margin-bottom: 3.25rem;
+}
+
+@media (max-width: 768px) {
+  .luxtrips-preview-card__content {
+    display: none;
+  }
+}
+
+.preview-card__title {
+  margin-bottom: 20px;
+}
+
+.preview-card__text-center {
+  max-width: 17.75rem;
+  margin: 0 auto;
+}
+
+.luxtrips-preview-card__content-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .luxtrips-preview-card__content-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .luxtrips-preview-cards-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 2.1875rem;
+    padding-top: 0.625rem;
+  }
+}
+
+.luxtrips-preview-card-mobile {
+  position: relative;
+  text-align: center;
+  z-index: 3;
+  max-width: 21.625rem;
+}
+
+.preview-card-mobile-center {
+  padding-top: 0;
+}
+
+@media (max-width: 768px) {
+  .preview-card__image-mobile {
+    display: block;
+  }
+}
+
+.experience {
+  background: #E2D3CE;
+  padding-top: 3.4375rem;
+  padding-bottom: 9.0625rem;
+}
+@media (max-width: 375px) {
+  .experience {
+    padding-top: 0.625rem;
+  }
+}
+
+.experience__container {
+  position: relative;
+}
+.experience__container::before {
+  content: "";
+  background-image: url(../images/why-lux-trips/img/experience-cloude-left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 367px;
+  max-width: 30.375rem;
+  width: 100%;
+  max-height: 32.375rem;
+  height: 100%;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .experience__container::before {
+    background-image: url(../images/why-lux-trips/img/experience-cloude-left-mob.png);
+    width: 133px;
+    height: 304px;
+    top: 211px;
+  }
+}
+.experience__container::after {
+  content: "";
+  background-image: url(../images/why-lux-trips/img/experience-cloude-right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 0px;
+  top: -184px;
+  max-width: 37.375rem;
+  width: 100%;
+  height: 74.9375rem;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .experience__container::after {
+    background-image: url(../images/why-lux-trips/img/experience-cloude-right-mob.png);
+    width: 10.9375rem;
+    height: 20.4375rem;
+    top: -57px;
+  }
+}
+
+.experience-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 1.5625rem;
+  position: relative;
+  z-index: 3;
+}
+.experience-box__info {
+  max-width: 33.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
+}
+@media (max-width: 768px) {
+  .experience-box__info {
+    flex-direction: column;
+    max-width: 17.75rem;
+    row-gap: 0.625rem;
+    text-align: center;
+    padding-bottom: 2.1875rem;
+  }
+}
+
+.experience__title {
+  flex: 0 1 46%;
+  margin: 0;
+  text-align: start;
+}
+@media (max-width: 768px) {
+  .experience__title {
+    text-align: center;
+  }
+}
+
+.experience__text {
+  flex: 0 1 49%;
+}
+
+.experience-box__statistics {
+  position: relative;
+  max-width: 49.25rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
+  padding-top: 11.0625rem;
+}
+@media (max-width: 768px) {
+  .experience-box__statistics {
+    padding-top: 15.0625rem;
+  }
+}
+
+.statistics-block {
+  flex: 0 1 32%;
+  min-height: 5.3125rem;
+  position: relative;
+}
+.statistics-block::before {
+  content: "";
+  background-image: url(../images/why-lux-trips/icons/experience-decor.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 192px;
+  height: 365px;
+}
+@media (max-width: 768px) {
+  .statistics-block::before {
+    background-size: contain;
+    width: 153px;
+    height: 293px;
+  }
+}
+@media (max-width: 768px) {
+  .statistics-block {
+    min-height: 4.8125rem;
+    flex: 0 1 44%;
+  }
+  .statistics-block:nth-child(odd) {
+    padding-top: 51px;
+  }
+}
+
+@media (max-width: 768px) {
+  .statistics-block-left::before,
+  .statistics-block-right::before {
+    top: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .statistics-block-center {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+}
+
+.statistics-block__item {
+  position: relative;
+  text-align: center;
+}
+.statistics-block__item > dt {
+  font-size: 2.75rem;
+  line-height: 0.985;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+@media (max-width: 768px) {
+  .statistics-block__item > dt {
+    font-size: 2.1875rem;
+  }
+}
+.statistics-block__item > dd {
+  font-size: 1.3125rem;
+  line-height: 0.985;
+  font-weight: 400;
+  font-style: normal;
+}
+@media (max-width: 768px) {
+  .statistics-block__item > dd {
+    font-size: 1rem;
+  }
+}
+
+.offers {
+  position: relative;
+  padding-top: 4.1875rem;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .offers {
+    padding-top: 3.4375rem;
+  }
+}
+@media (max-width: 480px) {
+  .offers {
+    padding-top: 1.1875rem;
+  }
+}
+
+.offers__title {
+  max-width: 33.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.offers__text {
+  max-width: 21.875rem;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .offers__text {
+    margin-bottom: 4.1875rem;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 360px) {
+  .offers__text {
+    margin-bottom: 1.875rem;
+  }
+}
+
+.offers-box__wrapper {
+  max-width: 39.6875rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.offers-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
+  max-width: 39.6875rem;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+@media (max-width: 480px) {
+  .offers-box {
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+}
+@media (max-width: 360px) {
+  .offers-box {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 412px;
+  }
+}
+
+.offers-box__item-left {
+  position: relative;
+  max-width: 100%;
+  width: 43%;
+}
+
+.offers-box__image-block {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+}
+.offers-box__image-block img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.offers-box__image-block::before {
+  content: "";
+  border: 1px solid #d6d8dc;
+  position: absolute;
+  bottom: -48px;
+  left: 50%;
+  width: 98px;
+  height: 98px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.31);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  transform: translate(-50%) rotate(45deg) skew(20deg, 20deg);
+}
+@media (max-width: 480px) {
+  .offers-box__image-block::before {
+    width: 66px;
+    height: 66px;
+    bottom: -31px;
+  }
+}
+.offers-box__image-block:after {
+  content: "";
+  border: 1px solid #d6d8dc;
+  position: absolute;
+  right: -62px;
+  top: 30%;
+  width: 62px;
+  height: 62px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.31);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  transform: translate(-50%) rotate(45deg) skew(20deg, 20deg);
+}
+@media (max-width: 480px) {
+  .offers-box__image-block:after {
+    width: 41px;
+    height: 41px;
+    right: -40px;
+  }
+}
+
+.offers-box__image-wrapper {
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.offers-box__image-blur {
+  position: absolute;
+  top: 32px;
+  left: 10px;
+  z-index: 0;
+  opacity: 0.67;
+  filter: blur(15px);
+}
+
+.offers-box__content {
+  max-width: 16.875rem;
+  padding-top: 1.25rem;
+}
+@media (max-width: 768px) {
+  .offers-box__content {
+    max-width: 15.9375rem;
+  }
+}
+@media (max-width: 480px) {
+  .offers-box__content {
+    max-width: 10.625rem;
+    padding-top: 0;
+  }
+}
+
+.offers-box__text {
+  margin-bottom: 3.75rem;
+}
+.offers-box__text:first-child {
+  margin-bottom: 1.875rem;
+}
+@media (max-width: 480px) {
+  .offers-box__text:first-child {
+    margin-bottom: 1.25rem;
+  }
+}
+@media (max-width: 480px) {
+  .offers-box__text {
+    line-height: 1.5;
+  }
+}
+
+.offers__btn {
+  width: 15.9375rem;
+  max-width: 100%;
+  padding: 0.90625rem 1.6875rem;
+}
+@media (max-width: 480px) {
+  .offers__btn {
+    width: 21.5rem;
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -130px;
+  }
+}
+@media (max-width: 375px) {
+  .offers__btn {
+    bottom: -34px;
+  }
+}
+
+.luxtrips-book {
+  position: relative;
+  background-image: url(../images/why-lux-trips/img/book-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 30.75rem;
+  margin-top: -22.25rem;
+  min-height: 77.6875rem;
+  height: 100%;
+  z-index: 1;
+}
+@media (max-width: 375px) {
+  .luxtrips-book {
+    background-image: url(../images/why-lux-trips/img/book-bg-mob.png);
+    padding-top: 13.3125rem;
+    margin-top: -6.25rem;
+    min-height: 47.875rem;
+  }
+}
+
+.luxtrips-book__title {
+  max-width: 33.75rem;
+  margin-bottom: 3.9375rem;
+  text-align: start;
+}
+@media (max-width: 480px) {
+  .luxtrips-book__title {
+    padding-top: 3.125rem;
+  }
+}
+@media (max-width: 375px) {
+  .luxtrips-book__title {
+    padding-top: 0;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.luxtrips-book-slider {
+  margin-bottom: 5.5rem;
+}
+
+.luxtrips-book-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  max-width: 33.75rem;
+  height: 11.9375rem;
+  text-transform: uppercase;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 12px;
+  position: relative;
+}
+.luxtrips-book-slide:before {
+  content: "";
+  border: 1px solid #79655E;
+  position: absolute;
+  left: 50%;
+  width: 75px;
+  height: 75px;
+  z-index: 2;
+  transform: translate(-50%) rotate(135deg) skew(20deg, 20deg);
+}
+@media (max-width: 480px) {
+  .luxtrips-book-slide:before {
+    width: 38px;
+    height: 38px;
+  }
+}
+.luxtrips-book-slide::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 65px;
+  height: 65px;
+  z-index: 2;
+  background: rgba(144, 144, 144, 0.14);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  transform: translate(-50%) rotate(135deg) skew(20deg, 20deg);
+}
+@media (max-width: 480px) {
+  .luxtrips-book-slide::after {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media (max-width: 375px) {
+  .luxtrips-book-slide {
+    width: 17.3125rem;
+    height: 6.125rem;
+  }
+}
+
+.slide-supercars {
+  background-image: url(../images/why-lux-trips/img/book-supercars.jpg);
+}
+
+.slide-hotels {
+  background-image: url(../images/why-lux-trips/img/book-hotels.jpg);
+}
+
+.slide-yachts {
+  background-image: url(../images/why-lux-trips/img/book-yachts.jpg);
+}
+
+.slide-helicopter {
+  background-image: url(../images/why-lux-trips/img/book-helicopter.jpg);
+}
+
+.slide-jet {
+  background-image: url(../images/why-lux-trips/img/book-jet.jpg);
+}
+
+.slide-villas {
+  background-image: url(../images/why-lux-trips/img/book-viilas.jpg);
+}
+
+.luxtrips-book-slide__title {
+  font-size: 2.75rem;
+  line-height: 0.985;
+  letter-spacing: 2px;
+  color: #fff;
+  position: relative;
+  z-index: 3;
+}
+@media (max-width: 768px) {
+  .luxtrips-book-slide__title {
+    font-size: 2.1875rem;
+  }
+}
+@media (max-width: 480px) {
+  .luxtrips-book-slide__title {
+    font-size: 1.375rem;
+  }
+}
+
+.luxtrips-book__btn {
+  width: 33.75rem;
+  max-width: 100%;
+  padding: 0.90625rem;
+  margin: 0 auto;
+}
+
+.luxtrips-mission {
+  position: relative;
+  background-image: url(../images/why-lux-trips/img/mission-bg.png);
+  background-repeat: no-repeat;
+  background-position: center 200px;
+  padding-top: 5.3125rem;
+  min-height: 80rem;
+  height: 100%;
+  z-index: 1;
+}
+@media (max-width: 1024px) {
+  .luxtrips-mission {
+    padding-top: 0;
+  }
+}
+@media (max-width: 375px) {
+  .luxtrips-mission {
+    background-image: url(../images/why-lux-trips/img/mission-bg-mob.png);
+    background-position: center 261px;
+    min-height: 55.5625rem;
+    padding-top: 1.0625rem;
+  }
+}
+
+.mission__content {
+  max-width: 33.75rem;
+  margin: 0 auto;
+}
+
+.mission__text {
+  margin-bottom: 3.125rem;
+}
+.mission__text:first-child {
+  margin-bottom: 2.0625rem;
+}
+@media (max-width: 375px) {
+  .mission__text:first-child {
+    margin-bottom: 1.0625rem;
+  }
+}
+@media (max-width: 375px) {
+  .mission__text {
+    line-height: 1.5;
+  }
+}
+
+.mission__title {
+  text-align: start;
+  margin-bottom: 2.0625rem;
+}
+
+.subscription {
+  position: relative;
+  top: -168px;
+  margin-bottom: -84px;
+  z-index: 1;
+}
+.subscription::before {
+  content: "";
+  background-image: url(../images/why-lux-trips/icons/form-border.svg);
+  background-position: center center;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  max-width: 1070px;
+  width: 100%;
+  min-height: 621px;
+  z-index: 0;
+}
+@media (max-width: 375px) {
+  .subscription {
+    top: -104px;
+    margin-bottom: -49px;
+  }
+}
+
+.subscription__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 565px;
+  position: relative;
+}
+
+.subscription__bg {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+}
+.subscription__bg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 565px;
+  height: 100%;
+  width: 100%;
+}
+
+.subscription__bg-wrapper {
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.subscription__bg-blur {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  z-index: 0;
+  opacity: 0.56;
+  filter: blur(15.5274px);
+}
+
+.subscription__content {
+  position: absolute;
+  top: 17%;
+  left: 17%;
+  z-index: 3;
+}
+@media (max-width: 1024px) {
+  .subscription__content {
+    left: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .subscription__content {
+    top: 11%;
+  }
+}
+@media (max-width: 480px) {
+  .subscription__content {
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 360px) {
+  .subscription__content {
+    top: 5%;
+  }
+}
+
+.subscription__info {
+  max-width: 32.5rem;
+  margin-bottom: 2.75rem;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .subscription__info {
+    max-width: 19.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .subscription__info {
+    margin-bottom: 3.75rem;
+  }
+}
+@media (max-width: 360px) {
+  .subscription__info {
+    margin-bottom: 1.875rem;
+    max-width: 16.25rem;
+  }
+}
+
+.subscription__title {
+  font-size: 3.75rem;
+  line-height: 0.96;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 2.4375rem;
+}
+@media (max-width: 1024px) {
+  .subscription__title {
+    font-size: 3.125rem;
+  }
+}
+@media (max-width: 768px) {
+  .subscription__title {
+    font-size: 2.75rem;
+    line-height: 1;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .subscription__title {
+    margin-bottom: 0.3125rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .subscription__text {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .subscription__text {
+    max-width: 9.875rem;
+    margin: 0 auto;
+  }
+}
+
+.subscription-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 45.625rem;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .subscription-form {
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 2.8125rem;
+  }
+}
+@media (max-width: 480px) {
+  .subscription-form {
+    row-gap: 2.5rem;
+  }
+}
+
+.form-control {
+  width: 486px;
+  padding: 0.8125rem 6.25rem 0.8125rem 1.875rem;
+  border-radius: 74px;
+  border: 1px solid #fff;
+  color: #0C0B10;
+  background: rgba(255, 255, 255, 0.31);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  transition: box-shadow 0.4s linear, background 0.4s ease-in-out;
+}
+.form-control::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-style: normal;
+  color: #0C0B10;
+}
+.form-control::placeholder {
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-style: normal;
+  color: #0C0B10;
+}
+.form-control:focus {
+  outline: 0;
+  border: 2px solid #368be6;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.4s linear, background 0.4s ease-in-out;
+}
+@media (max-width: 1024px) {
+  .form-control {
+    width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .form-control {
+    width: 19.5rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    text-align: center;
+  }
+}
+@media (max-width: 360px) {
+  .form-control {
+    width: 16.25rem;
+  }
+}
+
+.form-submit {
+  position: absolute;
+  right: -40%;
+}
+@media (max-width: 1024px) {
+  .form-submit {
+    right: -23%;
+  }
+}
+@media (max-width: 768px) {
+  .form-submit {
+    position: relative;
+    right: 0;
+  }
+}
+
+.form-submit__btn {
+  background: #fff;
+  color: #0C0B10;
+  padding: 0.90625rem 1.25rem;
+  width: 20.625rem;
+}
+.form-submit__btn:hover {
+  background: #0C0B10;
+  color: #fff;
+  box-shadow: 5px 8px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.form-submit__btn::before {
+  content: "";
+  background-image: url(../images/why-lux-trips/icons/btn-form-decor-top.svg);
+  background-repeat: no-repeat;
+  width: 17.5rem;
+}
+.form-submit__btn::after {
+  content: "";
+  background-image: url(../images/why-lux-trips/icons/btn-form-decor-bottom.svg);
+}
+@media (max-width: 768px) {
+  .form-submit__btn {
+    width: 19.5rem;
+  }
+  .form-submit__btn:hover {
+    background: #fff;
+    color: #0C0B10;
+    box-shadow: none;
+  }
+}
+@media (max-width: 360px) {
+  .form-submit__btn {
+    width: 16.25rem;
+  }
+}/*# sourceMappingURL=why-lux-trips.css.map */
