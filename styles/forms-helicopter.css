@@ -1,0 +1,263 @@
+.body-forms {
+  background-image: url("../images/contact/background-top.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #e2d3ce;
+}
+
+/* width */
+:root::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+/* Track */
+:root::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+
+/* Handle */
+:root::-webkit-scrollbar-thumb {
+  background: var(--brown-color);
+}
+
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  --white-color: white;
+  --brown-color: #79655e;
+  --black: #0c0b10;
+  --primary: #e2d3ce;
+  --border-radius: 1rem;
+  --line-height: 1.6;
+}
+
+/*-----------------------------main-----------------------------*/
+
+.main-forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: clamp(35rem, 80%, 130rem);
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Forum;
+  font-style: normal;
+  gap: 3rem;
+}
+
+.main-forms h1 {
+  font-size: clamp(4rem, 5vw, 6rem);
+  font-style: italic;
+}
+
+.container-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+/*------------------------Column-1---------------------------*/
+.container-columns .col-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.container-columns .col-1 img {
+  border-radius: var(--border-radius);
+}
+
+.container-columns .col-1 p:first-of-type {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.container-columns .col-1 p:last-of-type {
+  font-size: 1.6rem;
+  line-height: var(--line-height);
+}
+
+.container-columns .col-1 .list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.container-columns .col-1 .list ul li {
+  position: relative;
+}
+
+.container-columns .col-1 .list ul li span {
+  position: absolute;
+  top: 40%;
+}
+
+.container-columns .col-1 .list ul li::before {
+  margin-right: 3rem;
+}
+
+.container-columns .col-1 .list ul li:nth-child(1)::before {
+  content: url(../images/svg/forms-villa/icon-1.svg);
+}
+
+.container-columns .col-1 .list ul li:nth-child(2)::before {
+  content: url(../images/svg/forms-helicopter/icon-10.svg);
+}
+
+.container-columns .col-1 .list ul li:nth-child(3)::before {
+  content: url(../images/svg/forms-helicopter/icon-11.svg);
+}
+
+.container-columns .col-1 .list ul li:nth-child(4)::before {
+  content: url(../images/svg/forms-helicopter/icon-12.svg);
+}
+
+.container-columns .col-1 .list ul li:nth-child(5)::before {
+  content: url(../images/svg/forms-villa/icon-5.svg);
+}
+
+.container-columns .col-1 .list ul li:nth-child(6)::before {
+  content: url(../images/svg/forms-villa/icon-6.svg);
+}
+
+.container-columns .col-1 .list ul li:nth-child(7)::before {
+  content: url(../images/svg/forms-villa/icon-7.svg);
+}
+
+/*------------------------Column-2---------------------------*/
+
+.container-columns .col-2 form {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: clamp(2rem, 4vw, 5rem) clamp(2rem, 4vw, 4rem);
+}
+
+.container-columns .col-2 form > .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: end;
+}
+
+.container-columns .col-2 form label > span:first-of-type {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.container-columns .col-2 form > .container > label:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.container-columns .col-2 form > .container > label:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.container-columns .col-2 form label {
+  color: var(--brown-color);
+  position: relative;
+}
+
+.container-columns .col-2 form :is(select, input, textarea) {
+  display: block;
+  padding: 1rem;
+  border-radius: 4rem;
+  border: 1px solid var(--primary);
+  width: 100%;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.container-columns .col-2 form select {
+  appearance: none;
+  background: url(../images/svg/forms-villa/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.container-columns .col-2 form select:hover {
+  background-position: 85%;
+}
+
+.container-columns .col-2 form select option {
+  background-color: var(--primary);
+}
+
+.container-columns .col-2 form label[for="special-requests"] textarea {
+  border-radius: var(--border-radius);
+  resize: none;
+}
+
+.container-columns .col-2 form > p {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  align-self: center;
+}
+
+.container-button-2 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.container-button-2 button {
+  text-transform: uppercase;
+  border-radius: 4rem;
+  border: 1px solid var(--black);
+  padding: 1rem clamp(1rem, 10vw, 2rem);
+  font-size: clamp(1.2rem, 4vw, 1.8rem);
+}
+
+.container-columns input::placeholder {
+  padding-left: 1rem;
+}
+
+/*-------------------------Button Container---------------------------------*/
+
+.container-columns .container-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container-columns .container-button img:first-of-type {
+  width: clamp(4rem, 4vw, 6rem);
+}
+
+.container-columns .container-button img:last-of-type {
+  width: clamp(2rem, 4vw, 4rem);
+}
+
+.container-columns .container-button button {
+  width: 100%;
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  border-radius: 4rem;
+  letter-spacing: 2px;
+  font-size: clamp(1.8rem, 10vw, 2.4rem);
+  background-color: var(--black);
+  color: var(--white-color);
+}
+
+.container-columns :is(button, input, select, textarea) {
+  transition: 1s;
+}
+
+.container-columns :is(input:focus, select:focus, textarea:focus) {
+  box-shadow: 0 0 0.5rem 0.1rem black;
+}
+
+.container-columns button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 1rem 0.2rem black;
+}
+
+/*----------------------------------------------------------*/
+/* < 350px ниже нету адаптива*/

@@ -1,0 +1,401 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Forum" sans-serif;
+  background-color: #e2d3ce;
+  background-image: url('../images/book/bg_top_inner.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  max-width: 1130px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.head {
+  padding-bottom: 103px;
+}
+
+.head__title {
+  margin-bottom: 37px;
+  font-size: 60px;
+  line-height: 0.97;
+  text-align: center;
+  color: #0c0b10;
+}
+
+.head__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.card {
+  max-width: 540px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.card__img {
+  height: 191px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+}
+
+.card__img::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 141px;
+  height: 75px;
+  background-image: url("../images/book/romb_horiz.svg");
+  background-color: transparent;
+}
+
+.card__title {
+  font-size: 44px;
+  line-height: 0.98;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.card__content {
+  padding: 30px 65px;
+  text-align: center;
+}
+
+.card__descr {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2;
+  color: #000000;
+  max-width: 380px;
+  display: inline-block;
+  padding-bottom: 40px;
+}
+
+.card__btn {
+  font-family: "Forum";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #0c0b10;
+  border-radius: 74px;
+  padding: 14px 32px;
+  display: inline-block;
+  position: relative;
+}
+
+.card__btn::after,
+.card__btn::before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  background-repeat: no-repeat;
+}
+
+.card__btn::before {
+  width: 49px;
+  height: 20px;
+  top: -27px;
+  background-image: url('../images/book/layer-top.svg');
+}
+
+.card__btn::after {
+  width: 36px;
+  height: 15px;
+  bottom: -20px;
+  background-image: url('../images/book/layer-bottom.svg');
+}
+
+.card__btn span {
+  position: absolute;
+  width: 234px;
+  height: 61px;
+  top: -9px;
+  left: 10px;
+  background-image: url('../images/book/subtract.svg');
+}
+
+.subscribe {
+  position: relative;
+  z-index: 1;
+}
+
+.subscribe::before,
+.subscribe::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.subscribe::before {
+  max-width: 1070px;
+  width: 100%;
+  min-height: 602px;
+  background-image: url('../images/book/border.svg');
+  top: -19px;
+  background-position: center center;
+}
+
+.subscribe::after {
+  width: 48px;
+  height: 20px;
+  top: -40px;
+  background-image: url('../images/book/subscribe-layer.svg');
+}
+
+.subscribe__inner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 565px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.subscribe__inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/book/subscribe-bg.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(56px);
+  z-index: -1;
+}
+
+.subscribe__content {
+  max-width: 730px;
+  width: 100%;
+  position: relative;
+}
+
+.subscribe__title {
+  font-size: 60px;
+  line-height: 0.97;
+  color: #fff;
+  max-width: 520px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.subscribe__subtitle {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #FFFFFF;
+  padding-bottom: 60px;
+}
+
+.subscribe-form {
+  max-width: 730px;
+  width: 100%;
+  position: relative;
+}
+
+.subscribe-form__input {
+  height: 54px;
+  padding: 13px 30px;
+  max-width: 486px;
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  border-radius: 95px;
+  background-color: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(10px);
+}
+
+.subscribe-form__input::placeholder {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #0C0B10;
+}
+
+.subscribe-form__btn {
+  position: absolute;
+  right: 18px;
+  max-width: 330px;
+  width: 100%;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0C0B10;
+  background-color: #fff;
+  padding: 16px 0 12px;
+  border-radius: 74px;
+}
+
+.subscribe-form__btn::after,
+.subscribe-form__btn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+}
+
+.subscribe-form__btn::after {
+  top: -26px;
+  width: 49px;
+  height: 20px;
+  background-image: url('../images/book/form-top.svg');
+}
+
+.subscribe-form__btn::before {
+  bottom: -18px;
+  width: 36px;
+  height: 15px;
+  background-image: url('../images/book/form-bottom.svg');
+}
+
+.subscribe-form__btn span {
+  position: absolute;
+  top: -9px;
+  left: 25px;
+  width: 280px;
+  height: 61px;
+  background-image: url('../images/book/form-subtract.svg');
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /* Ваши стили для небольших десктопных экранов */
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  /* Ваши стили для планшетов */
+  .card__content {
+    padding: 25px 24px;
+  }
+
+  .card__descr {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 767px) {
+
+  /* Ваши стили для средних устройств */
+
+  .main{
+    padding-top: 80px;
+  }
+
+  .head__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card__title span {
+    display: none;
+  }
+
+  .card__content {
+    padding: 25px 24px;
+  }
+
+  .card__btn {
+    margin-bottom: 16px;
+  }
+
+  .subscribe__title,
+  .subscribe__subtitle {
+    text-align: center;
+  }
+
+  .subscribe__subtitle {
+    font-size: 18px;
+    max-width: 32%;
+    margin: 0 auto;
+  }
+
+  .subscribe__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+  }
+
+  .subscribe-form__input,
+  .subscribe-form__btn {
+    max-width: 322px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .subscribe-form__input {
+    margin-bottom: 36px;
+  }
+
+  .subscribe-form__input::placeholder {
+    text-align: center;
+  }
+
+  .subscribe-form__btn {
+    position: relative;
+    right: 0;
+    padding: 16px 0;
+  }
+}
+
+@media (max-width: 448px) {
+  /* Ваши стили для очень маленьких устройств */
+  .subscribe__inner{
+    padding: 64px 16px;
+  }
+  .subscribe__subtitle {
+    max-width: 50%;
+  }
+  .subscribe-form__btn span{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    left: 20px;
+    width: 280px;
+  }
+}
+
+@media (max-width: 340px){
+  .subscribe-form__input,
+  .subscribe-form__btn{
+    max-width: 312px;
+    width: 100%;
+  }
+  .subscribe-form__btn span{
+    left: 10px;
+    width: 270px;
+  }
+}
