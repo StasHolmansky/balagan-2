@@ -17,6 +17,9 @@
 	<script defer src="../js/header-footer.js"></script>
 	<script defer src="./js/main-page.js"></script>
     <script defer src="../js/client.js"></script>
+    <script defer src="../js/test.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/animate.min.css">
+    
 </head>
 <body>
 	<main>
@@ -33,7 +36,7 @@
                         <button class="client_btn" type="button" data-tab="#tab-5"">My documents</button>
                     </div>  
 
-                        <div class="client_block-content " id="tab-1">
+                        <div class="client_block-content active" id="tab-1">
                             <div class="client_block-list">
                                 <form class="client_form">
                                     <p class="client_text">Name</p>
@@ -172,21 +175,30 @@
 
                     <div class="client_block-content hidden" id="tab-5">
                         <div class="client_block-list another">
-                            <form class="client_form">
-                            <input type="file" id="file-2" class="client_input five" placeholder="American English">
-                            <input type="reset" class="client_link btn" value="Remove">
-                            </form>
+                            
+                       <div class="field__wrapper">
+                          <input name="file" type="file" name="file" id="field__file-2"                        class="field field__file" multiple>
+                          <label class="field__file-wrapper" for="field__file-2">
+                            <div class="field__file-fake">Файл не выбран</div>
+                            <div class="field__file-button">Выбрать</div>
+                          </label>
+                       </div>
+
                         </div>
                         <div class="client_block-list">
-                            <form class="client_form">
-                            <input type="file" id="file-2" class="client_input five" placeholder="American English">
-                            <input type="reset" class="client_link btn" value="Remove">
-                            </form>
+                            <div class="field__wrapper">
+                                <input name="file" type="file" name="file" id="field__file-2"                        class="field field__file" multiple>
+                                <label class="field__file-wrapper" for="field__file-2">
+                                  <div class="field__file-fake">Файл не выбран</div>
+                                  <div class="field__file-button">Выбрать</div>
+                                </label>
+                             </div>
                         </div>
                     </div>
 
             </div>
-
+        </div>
     </main>
+    
 </body>
 </html>

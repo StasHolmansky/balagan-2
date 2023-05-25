@@ -25,20 +25,15 @@ html{
   
   body {
     background-image: url(../images/client/client_bg.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-    background-color: #E2D3CE;
+    background-color: #e2d3ce;
     font-size: 18px;
     font-weight: 400;
     font-family: "Manrope";
-    height: 100%;
   }
   
   .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width:1140px;
     margin:0 auto;
     padding:0 15px;
@@ -79,15 +74,10 @@ html{
     border: 1px solid #FFFFFF;
     color: #79655E;
     cursor: pointer;
-  }
-  .client_btn:nth-child(2) {
-    border-bottom: 0;
-  }
-  .client_btn:nth-child(3) {
-    border-bottom: 0;
-  }
-  .client_btn:nth-child(4) {
-    border-bottom: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   .active {
@@ -121,15 +111,18 @@ html{
   .client_block-list {
     display: flex;
     position: relative;
-    padding: 0 95px;
+    margin: 0 95px;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 47px;
+    padding-bottom: 47px;
     max-width: 635px;
   }
 
   .client_block-list:first-child {
     margin-top: 47px;
+    margin-bottom: 0;
   }
+  
   .client_block-list:last-child::before {
     width: 0;
   }
@@ -182,9 +175,7 @@ html{
 
 
 
-  .client_block-list .client_form .client_input {
-    
-  }
+
   
 
   
@@ -192,6 +183,10 @@ html{
 
   .client_label {
     padding-left: 50px;
+  }
+
+  .another {
+    padding-bottom: 20px;
   }
 
   .another::before {
@@ -216,10 +211,9 @@ html{
   .client_wrapper-card {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 65px;
-    padding-left: 95px;
+    align-items: center;
     gap: 20px;
-    padding-bottom: 80px;
+    padding: 65px 70px 80px 70px;
   }
 
   .client_card-block {
@@ -247,7 +241,8 @@ html{
     margin-top: 135px;
     border-radius: 10px;
     transition: 0.5s;
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
   }
 
   .client_card-block:hover .client_card-item-inner {
@@ -269,13 +264,16 @@ html{
   }
 
   .client_card-button {
-    min-width: 160px;
+    max-width: 160px;
+    width: 80%;
     height: 40px;
     border-radius: 60px;
     border: 0;
     font-family: "Forum";
     font-size: 16px;
     margin-bottom: 20px;
+    color: #0C0B10;
+    text-transform: uppercase;
   }
 
   .client_block-content-5 {
@@ -301,27 +299,103 @@ html{
     border: 0;
     font-size: 18px;
   }
+
+  .field__wrapper {
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+  }
+   
+  .field__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+   
+  .field__file-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+   
+  .field__file-fake {
+    height: 60px;
+    width: calc(100% - 130px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 15px;
+    border: 1px solid #c7c7c7;
+    border-radius: 3px 0 0 3px;
+    border-right: none;
+    font-family: "Manrope";
+  }
+   
+  .field__file-button {
+    width: 130px;
+    height: 60px;
+    background: #e2d3ce;
+    color: #000000;
+    font-size: 1.125rem;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    font-family: "Manrope";
+  }
+  
+  
+  
+  .field__wrapper {
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+  }
   
 
-
-
-
-
-
-
-  @media (max-width: 1140px) {
-
-    .client_block-content {
-      max-width: 575px;
-    }
+/* ------------------------@media----------------------- */
+  
+  @media (min-width:1140px) {
 
     .client_block-list {
       display: flex;
       position: relative;
-      padding: 0 95px;
+      margin: 0 95px;
+      justify-content: space-between;
       align-items: center;
-      margin-bottom: 47px;
-      max-width: 100%;
+      max-width: 635px;
+      width: 100%;
+  }
+
+  
+
+  }
+
+  @media (max-width: 1140px) {
+
+    .client_block-list {
       align-items: flex-start;
     }
 
@@ -331,7 +405,6 @@ html{
 
   .client_block-list::before {
     top: 70px;
-    width: 67.5%;
    }
 
    .client_form {
@@ -340,23 +413,132 @@ html{
    }
 
    .client_input {
-    margin-right: ;
+    margin-right: 0;
+    margin-bottom: 10px;
    }
 
   }
-  
-  @media (max-width: 920px) and (min-width: 768px){
 
+  @media (max-width: 1120px) {
+
+    .client_wrapper-card {
+      justify-content: center;
+  }
+
+  }
+  
+  @media (max-width: 810px)  {
     
+    .client_btn  {
+      background-color: #FFFFFF;
+      border: 1px solid #e2d3ce;
+  }
 
+     .client_wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+    }
+
+    .client_block-content {
+      position: inherit;
+      max-width: 575px;
+  } 
+
+    .client_btn {
+      max-width: 575px;
+      width: 100%;
   }
+
+  .client_block-tabs {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+} 
+
+.client_block-content.active {
+  display: block;
+  min-height: 0;
+  position: relative;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  min-height: 475px;
+  height: 100%;
+}
+
+
+}
+
+@media (max-width: 960px) {
+
+  .client_card-item-inner {
+    opacity: 1;
+  }
+
+  .client_text {
+    margin-right: 0;
+  }
+
+  .client_input {
+    max-width: 180px;
+}
+
+}
+
+@media (max-width: 455px) {
+
+  .field__file-wrapper {
+    flex-direction: column;
+}
+
+  .field__file-fake {
+    border-bottom: none;
+    font-size: 16px;
+    border-right: 1px solid #c7c7c7;
+    max-width: 100px;
+    width: 100%;
+    max-height: 100px;
+    height: 100%;
+  }
+
+}
+
+@media (max-width: 425px) {
+
+  .client_text {
+    margin-right: 0;
+    text-align: center;
+    max-width: 170px;
+    width: 100%;
+  }
+
+  .client_input {
+    text-align: center;
+  }
+
+  .client_block-list {
+   flex-wrap: wrap;
+   max-width: 200px;
+   display: flex;
+   justify-content: center;
+  }
+
+  .client_block-list::before {
+    top: 80px;
+}
   
-  @media (min-width: 768px) and (max-width: 1023px) {
-    /* Ваши стили для планшетов */
-  }
-  @media (min-width: 480px) and (max-width: 767px) {
-    /* Ваши стили для средних устройств */
-  }
-  @media (max-width: 479px) {
-    /* Ваши стили для очень маленьких устройств */
-  }
+}
+
+
+
+
+
+
+
+
+
+
+  
