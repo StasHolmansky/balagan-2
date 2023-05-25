@@ -24,7 +24,7 @@ html{
   }
   
   body {
-    background-image: url(../images/client/client_bg.png);
+    background-image: url(../images/client/client_bg.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #e2d3ce;
