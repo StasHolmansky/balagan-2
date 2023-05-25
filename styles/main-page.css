@@ -970,21 +970,21 @@
 }
 
 .main-block__parallax-main {
-  background: url("../images/main-page/sand-sky.jpg") top/cover no-repeat;
+  background: url("../images/main-page/sand-sky.webp") top/cover no-repeat;
 }
 
 .main-block__parallax-tailand {
-  background: url("../images/main-page/tailand.png") bottom -100px center/auto 70vh no-repeat;
+  background: url("../images/main-page/tailand.webp") bottom -100px center/auto 70vh no-repeat;
 }
 
 .main-block__parallax-lackes {
   z-index: 2;
-  background: url("../images/main-page/mountain-lakes.png") bottom -100px center/auto 60vh no-repeat;
+  background: url("../images/main-page/mountain-lakes.webp") bottom -100px center/auto 60vh no-repeat;
 }
 
 .main-block__parallax-mountain {
   z-index: 4;
-  background: url("../images/main-page/mountain.png") bottom -150px center/auto 50vh no-repeat;
+  background: url("../images/main-page/mountain.webp") bottom -150px center/auto 50vh no-repeat;
 }
 
 .content-block {
@@ -1037,7 +1037,7 @@
   height: 980px;
   width: 100%;
   z-index: -1;
-  background: url("../images/main-page/bg-beach.jpg") center/auto no-repeat;
+  background: url("../images/main-page/bg-beach.webp") center/auto no-repeat;
 }
 
 .content-block__bg-beach:after,
@@ -1075,7 +1075,7 @@
   transform: rotate(5deg);
   -webkit-animation: cloud01 180s normal linear infinite;
   animation: cloud01 180s normal linear infinite;
-  background: url("../images/main-page/clouds/cloud01.png") center/auto no-repeat;
+  background: url("../images/main-page/clouds/cloud01.webp") center/auto no-repeat;
 }
 
 .content-block__cloud02 {
@@ -1090,7 +1090,7 @@
   transform: scale(-0.8,0.8) rotate(-6.26deg);
   -webkit-animation: cloud02 170s linear infinite;
   animation: cloud02 170s linear infinite;
-  background: url("../images/main-page/clouds/cloud05.png") center/auto no-repeat;
+  background: url("../images/main-page/clouds/cloud05.webp") center/auto no-repeat;
 }
 
 .content-block__cloud03 {
@@ -1105,7 +1105,7 @@
   transform: scale(-1.25,1.25) rotate(-16.5deg);
   -webkit-animation: cloud03 160s linear infinite;
   animation: cloud03 160s linear infinite;
-  background: url("../images/main-page/clouds/cloud05.png") center/auto no-repeat;
+  background: url("../images/main-page/clouds/cloud05.webp") center/auto no-repeat;
 }
 
 .content-block__cloud04 {
@@ -1120,7 +1120,7 @@
   transform: scale(0.9,0.9) rotate(10.5deg);
   -webkit-animation: cloud04 150s linear infinite;
   animation: cloud04 150s linear infinite;
-  background: url("../images/main-page/clouds/cloud05.png") center/auto no-repeat;
+  background: url("../images/main-page/clouds/cloud05.webp") center/auto no-repeat;
 }
 
 .content-block__cloud05 {
@@ -1135,7 +1135,7 @@
   transform: scale(0.9,0.9) rotate(-5deg);
   -webkit-animation: cloud05 190s linear infinite;
   animation: cloud05 190s linear infinite;
-  background: url("../images/main-page/clouds/cloud05.png") center/auto no-repeat;
+  background: url("../images/main-page/clouds/cloud05.webp") center/auto no-repeat;
 }
 
 @-webkit-keyframes cloud05 {
@@ -1870,7 +1870,7 @@
   top: 0;
   width: 100%;
   height: 80%;
-  background: url("../images/main-page/mountains.png") center/auto no-repeat;
+  background: url("../images/main-page/mountains.webp") center/auto no-repeat;
   z-index: -1;
 }
 
@@ -1925,7 +1925,7 @@
 }
 
 .why__parallax-pic {
-  background: url("../images/main-page/mont.png") center/auto no-repeat;
+  background: url("../images/main-page/mont.webp") center/auto no-repeat;
   position: absolute;
   top: 41%;
   left: 56%;
@@ -2300,7 +2300,7 @@
 }
 
 .customise {
-  background: url("../images/main-page/bg-customise02.png") center/auto no-repeat;
+  background: url("../images/main-page/bg-customise02.webp") center/auto no-repeat;
 }
 
 .customise__title {
@@ -2432,7 +2432,7 @@
   padding-bottom: 130px;
   padding-left: 185px;
   border-radius: 10px;
-  background: url("../images/main-page/form-img.jpg") center/cover no-repeat;
+  background: url("../images/main-page/form-img.webp") center/cover no-repeat;
 }
 
 .customise__form-wrapper:before {
@@ -2559,7 +2559,7 @@
 }
 
 .reviews {
-  background: url("../images/main-page/bg-review.png") bottom 35% center/auto no-repeat;
+  background: url("../images/main-page/bg-review.webp") bottom 35% center/auto no-repeat;
 }
 
 .reviews__container {
@@ -3104,19 +3104,19 @@
   }
 
   .main-block__parallax-mountain {
-    background: url("../images/main-page/mountain.png") bottom -150px center/100% 50vh no-repeat;
+    background: url("../images/main-page/mountain.webp") bottom -150px center/100% 50vh no-repeat;
   }
 
   .main-block__parallax-lackes {
-    background: url("../images/main-page/mountain-lakes.png") bottom -100px center/100% 60vh no-repeat;
+    background: url("../images/main-page/mountain-lakes.webp") bottom -100px center/100% 60vh no-repeat;
   }
 
   .main-block__parallax-tailand {
-    background: url("../images/main-page/tailand.png") bottom -100px center/100% 70vh no-repeat;
+    background: url("../images/main-page/tailand.webp") bottom -100px center/100% 70vh no-repeat;
   }
 
   .main-block__parallax-main {
-    background: url("../images/main-page/sand-sky.jpg") top/100% 100vh no-repeat fixed;
+    background: url("../images/main-page/sand-sky.webp") top/100% 100vh no-repeat fixed;
   }
 
   .content-block__cloud01 {
@@ -3662,19 +3662,19 @@
 
 @media (min-width:1440px) {
   .content-block__bg-beach {
-    background: url("../images/main-page/bg-beach.jpg") center/100% auto no-repeat;
+    background: url("../images/main-page/bg-beach.webp") center/100% auto no-repeat;
   }
 
   .why__parallax {
-    background: url("../images/main-page/mountains.png") center/100% auto no-repeat;
+    background: url("../images/main-page/mountains.webp") center/100% auto no-repeat;
   }
 
   .customise {
-    background: url("../images/main-page/bg-customise02.png") center/100% auto no-repeat;
+    background: url("../images/main-page/bg-customise02.webp") center/100% auto no-repeat;
   }
 
   .reviews {
-    background: url("../images/main-page/bg-review.png") bottom 35% center/100% auto no-repeat;
+    background: url("../images/main-page/bg-review.webp") bottom 35% center/100% auto no-repeat;
   }
 }
 

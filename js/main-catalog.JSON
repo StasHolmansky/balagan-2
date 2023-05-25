@@ -60,7 +60,7 @@ const catalog = [
 		place: '07 Jordan',
 		filter: 'Australia',
 		rate: '2',
-		img: 'images/main-page/catalog/catalog07.png',
+		img: 'images/main-page/catalog/catalog07.jpg',
 	},
 	{
 		id: 'trip08',
@@ -213,7 +213,7 @@ const catalog = [
 		place: '24 Jordan',
 		filter: 'Australia',
 		rate: '4',
-		img: 'images/main-page/catalog/catalog07.png',
+		img: 'images/main-page/catalog/catalog07.jpg',
 	},
 	{
 		id: 'trip25',
