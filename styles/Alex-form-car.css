@@ -43,6 +43,9 @@ section {
   line-height: 24px;
   color: #000000;
 }
+.paragraph__text:not(:first-child) {
+  margin-top: 30px;
+}
 
 .deals__list {
   display: flex;
@@ -375,6 +378,14 @@ button + button {
   justify-content: center;
   align-items: center;
 }
+.button__box {
+  display: flex;
+  flex-direction: column;
+}
+section {
+  margin: -1px;
+  padding-bottom: 10px;
+}
 
 @media only screen and (min-width: 768px) {
   .container {
@@ -387,11 +398,7 @@ button + button {
     display: flex;
     justify-content: center;
   }
-  .paragraph {
-    width: 500px;
-    text-align: center;
-    margin: 0 auto;
-  }
+
   .form__accordion-box {
     display: flex;
     justify-content: center;
@@ -453,5 +460,207 @@ button + button {
   .outer-container {
     max-width: 100%;
     width: 300px;
+  }
+  .form__request {
+    max-width: 100%;
+  }
+  input {
+    max-width: 100%;
+    width: 625px;
+  }
+  .textarea__box {
+    width: 625px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  label {
+    margin-left: 21px;
+  }
+  .form__request {
+    display: flex;
+    justify-content: center;
+  }
+  .rectangle {
+    width: 625px;
+    margin: 30px auto;
+    font-size: 32px;
+    background-image: url("../images/Alex-form-car/rectangle-tablet.png");
+  }
+  .form__btn p {
+    font-size: 25px;
+  }
+  .button__box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-direction: row-reverse;
+  }
+  button + button {
+    margin: 0;
+  }
+  .form__btn {
+    padding-bottom: 32px;
+    margin-bottom: 0;
+  }
+  .element {
+    display: none;
+  }
+  .bg__img {
+    margin: 0 auto;
+    width: 625px;
+    background-image: url("../images/Alex-form-car/image-bg-tablet.png");
+  }
+  .bg__img h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  .bg__img p {
+    font-size: 30px;
+    width: 100%;
+  }
+  .paragraph {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  section {
+    background: none;
+    padding: 0;
+  }
+  .bg__container {
+    background: #e2d3ce;
+    background-image: url("../images/Alex-form-car/main-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .section__box-1 {
+    width: 540px;
+  }
+  .title {
+    text-align: center;
+  }
+
+  .sections__container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .car {
+    display: block;
+  }
+
+  .paragraph h3 {
+    width: 540px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .bg__img {
+    display: none;
+  }
+  .element__box {
+    display: none;
+  }
+  .deals__list {
+    display: block;
+  }
+  .deals__item {
+    display: block;
+  }
+  .form__location-box {
+    width: 540px;
+  }
+  .form__accordion-title {
+    width: 210px;
+  }
+  .dates-form {
+    width: unset; /* or width: initial; */
+  }
+  .form__accordion {
+    width: unset;
+  }
+  .form__model .form__accordion-title {
+    width: 445px;
+  }
+  .form__model .form-heading {
+    margin-left: 67px;
+  }
+  .Pick-up__box1 .form__accordion-title {
+    width: 286px;
+  }
+  .Pick-up__box1 .pick__up-time .form__accordion-title {
+    width: 141px;
+  }
+  .Pick-up__box2 .form__accordion-title {
+    width: 286px;
+  }
+  .Pick-up__box2 .pick__up-time .form__accordion-title {
+    width: 141px;
+  }
+  .outer-container {
+    width: 210px;
+  }
+  .form__number {
+    margin-top: 15px;
+  }
+
+  .input__container {
+    width: 445px;
+    margin: 15px auto;
+  }
+  textarea {
+    width: 445px;
+  }
+  .form__request {
+    display: block;
+  }
+  .textarea__box {
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .rectangle {
+    margin-top: 30px;
+    width: 445px;
+    font-size: 24px;
+    background-image: url("../images/Alex-form-car/svg/group-desctop.svg");
+  }
+  .paragraph h3 {
+    font-size: 40px;
+    line-height: 40px;
+    padding: 32px 0 30px 0;
+  }
+  .paragraph {
+    width: 500px;
+    margin: 0;
+  }
+  .paragraph__text {
+    line-height: 180%;
+  }
+  .form__btn button {
+    width: 217px;
+  }
+  .form__btn p {
+    font-size: 16px;
+  }
+  .deals__item {
+    display: flex;
+    flex-direction: row;
+    margin-top: 34px;
+  }
+  .deals__item p {
+    width: unset;
+  }
+  .deals__item svg {
+    margin-bottom: 0px;
+    margin-right: 38px;
+  }
+  .deals__list {
+    margin-top: 50px;
   }
 }
