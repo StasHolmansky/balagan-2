@@ -33,9 +33,7 @@ body{
     margin: 0px 0 86px 0;
 }
 
-.wrap_title {
-    margin: 3px 0 50px 0;
-}
+
 
 .luxury_packages_title {
     font-family: 'Forum';
@@ -80,21 +78,20 @@ body{
     top: -27px;
 }
 
-.form_wrap{
-    
-    min-height: 114px;
-    background: #FFFFFF;
-box-shadow: 0px 18px 38px rgba(0, 0, 0, 0.11);
-border-radius: 10px;
-}
+
 .tour_selection_form {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    gap: 15px;
-    padding-left: 37px;
-    padding-top: 36px;
+    gap: 20px;
+    max-width: 1110px;
+    width: 100%;
+    min-height: 114px;
+    background: #FFFFFF;
+    box-shadow: 0px 18px 38px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    justify-content: center;
+
 }
 
 .luxury {
@@ -495,10 +492,23 @@ background-image: url(../images/luxury-packages/border_Subscribe.svg);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
 border-radius: 10px;
 
 
+}
+.wrap_btn{
+    
+    max-width: 1100px;
+    width: 100%;
+    min-height: 565px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 2234px;
+   
+    background: linear-gradient(180deg, rgba(226, 211, 206, 0) 0%, rgba(226, 211, 206, 0.84) 52.77%, #E2D3CE 94.27%);
 }
 
 
@@ -509,7 +519,7 @@ border-radius: 10px;
 .subscribe_txt {
     max-width: 520px;
 margin-bottom: 40px;
-margin-left: 188px;
+
 
 
 }
@@ -575,7 +585,7 @@ color: #0C0B10;
       outline: 1px solid #F16D7F;;
   }
   
-  input[type="submit"] {
+  .subscribe_form_btn {
     max-width: 330px;
     width: 100%;
     height: 55px;
@@ -601,23 +611,12 @@ left: 400px;
 
   }
   
-  input[type="submit"]:hover {
+  .subscribe_form_btn:hover {
     background-color: #fff;  
     color: #F16D7F;
   }
   
-  .wrap_btn{
-    
-    max-width: 1100px;
-    width: 100%;
-    min-height: 565px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    top: 2234px;
-   
-    background: linear-gradient(180deg, rgba(226, 211, 206, 0) 0%, rgba(226, 211, 206, 0.84) 52.77%, #E2D3CE 94.27%);
-}
+
     
   
 
@@ -704,7 +703,9 @@ left: 400px;
     .directions_products {
         /* margin: 0px 0 55px 0; */
         padding-top: 57px;
+        padding-bottom: 55px;
     }
+    
 
     .directions_list {
       
@@ -739,7 +740,7 @@ left: 400px;
         max-width: 283px;
         
     }
-    input[type="submit"] {
+    .subscribe_form_btn {
         max-width: 213px;
                left: 225px;
     }
@@ -789,6 +790,7 @@ left: 400px;
         align-content: center;
         align-items: flex-start;
         justify-content: flex-start;
+        min-height: 464px;
     }
     .luxury_packages_button{
         display: flex;
@@ -935,8 +937,7 @@ color: #FFFFFF;
         display: flex;
         max-width: 312px;
         width: 100%;
-        min-height: 55px;
-        height: 100%;
+        
         flex-direction: column;
         justify-content: center;
         gap: 30px;
@@ -947,7 +948,7 @@ color: #FFFFFF;
         min-height: 55px;
        
     }
-    input[type="submit"] {
+    .subscribe_form_btn {
         max-width: 312px;
        
          position: static;
