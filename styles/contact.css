@@ -7,7 +7,7 @@ html {
 body {
     background-image: url('../images/contact/background-top.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-color: #E2D3CE;
 }
 
