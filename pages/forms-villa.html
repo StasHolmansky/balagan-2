@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Villa Page</title>
+    <link rel="stylesheet" href="../styles/null.css" />
+    <link rel="stylesheet" href="../fonts/manrope/stylesheet.css" />
+    <link rel="stylesheet" href="../fonts/forum/stylesheet.css" />
+    <link rel="stylesheet" href="../styles/header-footer.css" />
+    <link rel="stylesheet" href="../styles/forms-villa.css" />
+    <script defer src="../js/header-footer.js"></script>
+    <script defer src="../js/forms-villa.js"></script>
+  </head>
+  <body class="body-forms">
+    <main class="main-forms book">
+      <h1>Book Villas/Chalets</h1>
+      <div class="container-columns">
+        <div class="col-1">
+          <img src="../images/forms-villa/villa.png" alt="villa" />
+          <p>
+            Our handpicked prestigious villas and chalets meet the highest
+            standard of quality and design to satisfy your every wish.
+          </p>
+          <p>
+            Modern villas that offer breathtaking panoramic sea views with
+            endless deep blue waves or traditionally charming chalets with a
+            warm jacuzzi outside, set on top of a snowy mountain, looking out to
+            a lush countryside, are ready to welcome you at the destination of
+            your choice. <br /><br />
+            No location is outside of our reach! Whether you prefer the finest
+            luxury destinations like St. Moritz, Zermatt, Ibiza and Mykonos or
+            wish to explore exotic spots of South Africa, Thailand or Australia,
+            Lux Trips will tailor your accommodation with personalized services
+            to ensure an exceptional stay for each member of your group.
+          </p>
+          <div class="list"></div>
+        </div>
+        <div class="col-2">
+          <form action="#">
+            <label for="location">
+              <span>Location</span>
+              <select name="locations" id="locations">
+                <option value="" disabled selected>&#9826;&nbsp;Choose</option>
+                <option value="coast-west">&#9826;&nbsp;Coast-West</option>
+                <option value="coast-east">&#9826;&nbsp;Coast-East</option>
+                <option value="coast-north">&#9826;&nbsp;Coast-North</option>
+                <option value="coast-south">&#9826;&nbsp;Coast-South</option>
+              </select>
+            </label>
+
+            <div class="container">
+              <label for="date-start">
+                <span>Dates</span>
+                <select name="date-start" id="date-start">
+                  <option value="date-1">&#128467;&nbsp;14-04-22</option>
+                  <option value="date-1">&#128467;&nbsp;16-04-22</option>
+                </select>
+              </label>
+              <p>&#8594;</p>
+              <label for="date-end">
+                <select name="date-end" id="date-end">
+                  <option value="date-2">&#128467;&nbsp;26-04-22</option>
+                  <option value="date-2">&#128467;&nbsp;28-04-22</option>
+                </select>
+              </label>
+              <label for="guests">
+                <span>Guests</span>
+                <select name="guests" id="guests">
+                  <option value="adults">&#128100;&nbsp;Adults</option>
+                </select>
+              </label>
+              <label for="kids">
+                <select name="kids" id="kids">
+                  <option value="kids-age-1">
+                    &#128118;&nbsp;Kids (0-10 y.o)
+                  </option>
+                  <option value="kids-age-2">Kids (11-17 y.o)</option>
+                </select>
+              </label>
+              <label for="room-amount">
+                <span>Number of rooms</span>
+                <select name="room-amount" id="room-amount">
+                  <option value="rooms-2">2</option>
+                  <option value="rooms-3">3</option>
+                  <option value="rooms-4">4</option>
+                </select>
+              </label>
+              <label for="budget">
+                <span>Budget</span>
+                <input
+                  type="number"
+                  id="budget"
+                  name="budget"
+                  placeholder="1000$"
+                />
+              </label>
+            </div>
+
+            <label for="name">
+              <span>Name</span>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="John"
+                required
+              />
+            </label>
+
+            <label for="email">
+              <span>Email</span>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="john-konan@gmail.com"
+                required
+              />
+            </label>
+
+            <label for="special-requests">
+              <span>Special requests</span>
+              <textarea
+                name="special-requests"
+                id="special-requests"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </label>
+
+            <div class="container-button">
+              <img
+                src="../images/lux-p-p-light/button-decoration-top-black.png"
+                alt="button-decoration-top"
+              />
+              <button>make a request</button>
+              <img
+                src="../images/lux-p-p-light/button-decoration-bottom-black.png"
+                alt="button-decoration-bottom"
+              />
+            </div>
+
+            <p>or</p>
+
+            <div class="container-button-2">
+              <button class="call__btn">call me back</button>
+              <button>email me back</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
