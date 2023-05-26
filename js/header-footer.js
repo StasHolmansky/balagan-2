@@ -207,7 +207,7 @@ window.addEventListener("load", () => {
                 <form action="#" class="modal__form">
                     <input type="text" placeholder="Name" class="modal__text">
                     <input type="tel" placeholder="Phone" class="modal__tel">
-                    <input type="button" value="Call me back" class="modal__btn" id="modal__btn">
+                    <input type="submit" value="Call me back" class="modal__btn" id="modal__btn">
                 </form>
             </div>
 	    </div>       
@@ -413,13 +413,15 @@ window.addEventListener("load", () => {
                 <form action="#" class="modal__form">
                     <input type="text" placeholder="Name" class="modal__text">
                     <input type="tel" placeholder="Phone" class="modal__tel">
-                    <input type="button" value="Call me back" class="modal__btn" id="modal__btn">
+                    <input type="submit" value="Call me back" class="modal__btn" id="modal__btn">
                 </form>
             </div>
 	    </div>      
         `
         );
     }
+
+    /** script for burger menu */
 
     const navBurger = document.getElementById("nav__burger");
     const navMenu = document.getElementById("nav__menu");
@@ -432,6 +434,8 @@ window.addEventListener("load", () => {
         body.classList.toggle("_lock")
     });
 
+    /** script for active nav item */
+
     const currentPage = window.location.pathname;
     const menuItems = document.querySelectorAll('.nav__item');
 
@@ -441,6 +445,14 @@ window.addEventListener("load", () => {
             item.classList.add('_active');
         }
     });
+    if (currentPage.toLowerCase().indexOf("forms") >= 0) {
+        menuItems[2].classList.add('_active');
+    }
+    if (currentPage.toLowerCase().indexOf("lux-packages") >= 0) {
+        menuItems[1].classList.add('_active');
+    }
+
+    /** Modal window */
 
     const modal = document.getElementById("modal")
     const modalFrame = document.getElementById("modal__frame")
@@ -448,22 +460,83 @@ window.addEventListener("load", () => {
     const modalClose = document.getElementById("modal__close")
     const modalBtn = document.getElementById("modal__btn")
     const callBtn = document.querySelectorAll(".call__btn")
+    const callBtnMain = document.querySelectorAll(".call__btn-main")
+    const nav = document.getElementById("nav");
+    const scrollWidth = window.innerWidth - document.body.clientWidth;
 
-    document.addEventListener('click', (close) => {
-        if (close.target === modalClose || close.target === modal || close.target === modalBtn) {
-            modal.classList.remove("_active");
-            modalFrame.classList.remove("_active")
-            modalMenu.classList.remove('_active');
-            body.classList.remove("_lock");
-        }
-    })
-
-    callBtn.forEach((btn) => {
-        btn.addEventListener('click', () => {
-            modal.classList.add("_active");
-            modalFrame.classList.add("_active")
-            modalMenu.classList.add('_active');
-            body.classList.add("_lock");
+    if (window.location.pathname === '/index.html' || window.location.pathname === '/' || hasClass(main, 'index') === true) {
+        const mainPagePadding = document.querySelector(".main-block__body");
+        const mainPageWidth = mainPagePadding.offsetWidth;
+        document.addEventListener('click', (close) => {
+            if (close.target === modalClose || close.target === modal || close.target === modalBtn) {
+                body.style.padding = `0`;
+                nav.style.left = `50%`;
+                nav.style.width = `100%`;
+                mainPagePadding.style.width = `100%`;
+                modal.classList.remove("_active");
+                modalFrame.classList.remove("_active")
+                modalMenu.classList.remove('_active');
+                body.classList.remove("_lock");
+            }
         })
-    })
+        
+        callBtn.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                body.style.padding = `0 ${scrollWidth}px 0 0`
+                nav.style.left = `${nav.offsetLeft + scrollWidth / 2}px`
+                mainPagePadding.style.width = `${mainPageWidth}px`;
+                modal.classList.add("_active");
+                modalFrame.classList.add("_active")
+                modalMenu.classList.add('_active');
+                body.classList.add("_lock");
+            })
+        })
+    
+        callBtnMain.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                body.style.padding = `0 ${scrollWidth}px 0 0`
+                nav.style.left = `${nav.offsetLeft}px`
+                modal.classList.add("_active");
+                modalFrame.classList.add("_active")
+                modalMenu.classList.add('_active');
+                body.classList.add("_lock");
+            })
+        })
+    } else {
+        document.addEventListener('click', (close) => {    
+            if (close.target === modalClose || close.target === modal || close.target === modalBtn) {
+                body.style.padding = `0`;
+                nav.style.left = `50%`;
+                nav.style.width = `100%`;
+                modal.classList.remove("_active");
+                modalFrame.classList.remove("_active");
+                modalMenu.classList.remove('_active');
+                body.classList.remove("_lock");
+            }
+        })
+    
+        callBtn.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                nav.style.width = `${nav.offsetWidth}px`;
+                body.style.padding = `0 ${scrollWidth}px 0 0`;
+                nav.style.left = `${nav.offsetLeft}px`;
+                modal.classList.add("_active");
+                modalFrame.classList.add("_active")
+                modalMenu.classList.add('_active');
+                body.classList.add("_lock");
+            })
+        })
+    
+        callBtnMain.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                nav.style.width = `${nav.offsetWidth}px`;
+                body.style.padding = `0 ${scrollWidth}px 0 0`
+                nav.style.left = `${nav.offsetLeft}px`
+                modal.classList.add("_active");
+                modalFrame.classList.add("_active")
+                modalMenu.classList.add('_active');
+                body.classList.add("_lock");
+            })
+        })
+    }
 });

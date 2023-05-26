@@ -647,6 +647,7 @@
   height: 55px;
   text-transform: uppercase;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 @media (max-width: 550px) {
   .forms__right-cta {
