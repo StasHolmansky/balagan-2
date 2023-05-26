@@ -1,10 +1,15 @@
 body{
     background-image: url(..//images/luxury-packages/bg_top_inner.png);
-    background-position: 0px -152px;
+    /* background-position: 0px -152px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: auto 100%;
+    background-size: auto 100%; */
+    background-color: #e2d3ce;
+   
+    background-repeat: no-repeat;
+    background-size: contain;
     
+
 }
 
 
@@ -14,10 +19,12 @@ body{
     padding-right: calc(50% - 555px);
 }
 .main_luxury_packages{
-    padding-top: 100px;
-    background:linear-gradient(180deg, #E2D3CE -6%, #C9C8D8 16.73%, #D4D8C6 30.37%, #E2D3CE 61%);
-    background-repeat: no-repeat;
-    background-position: 0px 329px;
+    
+        padding-top: 100px;
+        background: linear-gradient(180deg, #E2D3CE 0%, #C9C8D8 12.73%, #D4D8C6 26.37%, #E2D3CE 50%);
+        background-repeat: no-repeat;
+        background-position: 0px 400px;
+    
 
    
 }
@@ -78,6 +85,24 @@ body{
     top: -27px;
 }
 
+.luxury_packages_form_title::before {
+    content: "";
+    position: absolute;
+    width: 49px;
+    height: 19px;
+    top: -24px;
+    left: 133px;
+    background-image: url(../images/luxury-packages/frame_top.svg);
+}
+
+.luxury_packages_form_title span {
+    position: absolute;
+    top: -9px;
+    left: 17px;
+    width: 280px;
+    height: 61px;
+    background-image: url(../images/luxury-packages/frame.svg);
+}
 
 .tour_selection_form {
     display: flex;
@@ -182,6 +207,9 @@ body{
 
 .quantity_tеravellers_subtitle {
     grid-column: 2 / -1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 
 }
 
@@ -603,8 +631,16 @@ background: #FFFFFF;
 border-radius: 74px;
 position: absolute;
 left: 400px;
-   
+
   }
+  .subscribe_form_btn span {
+    position: absolute;
+    top: -9px;
+    left: 25px;
+    width: 280px;
+    height: 61px;
+    background-image: url(../images/luxury-packages/frame.svg);
+}
   
   input[type="email"]:focus ~ input[type="submit"] {
     outline: 1px solid #F16D7F;;
@@ -615,6 +651,25 @@ left: 400px;
     background-color: #fff;  
     color: #F16D7F;
   }
+
+.subscribe_form_btn::before {
+    content: "";
+    position: absolute;
+    width: 49px;
+    height: 19px;
+    top: -24px;
+    left: 143px;
+    background-image: url(../images/luxury-packages/frame_top.svg);
+}
+.subscribe_form_btn::after {
+    content: "";
+    position: absolute;
+    width: 37px;
+    height: 17px;
+    top: 59px;
+    left: 150px;
+    background-image: url(../images/luxury-packages/frame_bottom.svg);
+}
   
 
     
@@ -640,6 +695,32 @@ left: 400px;
 
 
   }
+  .btn_products::before {
+    content: "";
+    position: absolute;
+    width: 49px;
+    height: 19px;
+    top: -24px;
+    left: 143px;
+    background-image: url(../images/luxury-packages/frame_top.svg);
+}
+.btn_products::after {
+    content: "";
+    position: absolute;
+    width: 37px;
+    height: 17px;
+    top: 59px;
+    left: 150px;
+    background-image: url(../images/luxury-packages/frame_bottom.svg);
+}
+.btn_products span {
+    position: absolute;
+    top: -9px;
+    left: 25px;
+    width: 280px;
+    height: 61px;
+    background-image: url(../images/luxury-packages/frame.svg);
+}
 
   @media (min-width: 767px) and (max-width: 1120px) {
     .container {
@@ -723,6 +804,26 @@ left: 400px;
         left: 0px;
         position: static;
     }
+    .btn_products::before {
+        
+        top: 225px;
+        left: 357px;
+       
+    }
+    .btn_products span {
+       
+        top: 243px;
+        left: 242px;
+        
+        
+    }
+    .btn_products::after {
+        
+        
+        top: 311px;
+        left: 364px;
+       
+    }
     .wrap_btn {
         max-width: 765px;
         justify-content: center;
@@ -744,10 +845,23 @@ left: 400px;
         max-width: 213px;
                left: 225px;
     }
+    .subscribe_form_btn span {
+        display: none;
+    }
+    .subscribe_form_btn::after {
+        
+        left: 84px;
+        
+    }
+    .subscribe_form_btn::before {
+        
+        left: 78px;
+       
+    }
     
   }
 
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 335px) and (max-width: 767px) {
     .container {
 
         /* padding-left: calc(50% -172px);
@@ -889,9 +1003,9 @@ color: #FFFFFF;
     }
 
     .btn_products {
-         padding-top: 0px;
-         
-         position: static;
+        padding-top: 0px;
+        position: sticky;
+        left: 3px;
     }
 
     .subscribe {
@@ -950,8 +1064,22 @@ color: #FFFFFF;
     }
     .subscribe_form_btn {
         max-width: 312px;
-       
-         position: static;
+        position: sticky;
         left: 0px;
+    }
+    .subscribe_form_btn span {
+       
+        left: 17px;
+  
+    }
+    .subscribe_form_btn::before {
+       
+        left: 132px;
+        
+    }
+    .subscribe_form_btn::after {
+        
+        left: 140px;
+        
     }
   }

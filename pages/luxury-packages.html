@@ -32,7 +32,7 @@
             <h1 class="luxury_packages_title">Luxury packages</h1>
 
             <div class="luxury_packages_form">
-                <h2 class="luxury_packages_form_title">Find your journey</h2>
+                <h2 class="luxury_packages_form_title"><span></span> Find your journey</h2>
 
                 <form class="tour_selection_form" action="#" method="get">
                     <div class="luxury">
@@ -62,9 +62,17 @@
                         <div class="luxury_img_quantity"></div>
 
                         <label class="form_description" for="tеravellers_counter">Travellers</label>
-                        <p class="form_txt quantity_tеravellers_subtitle"><input class="tеravellers_counter_input"
+                        <select class=" form_txt quantity_tеravellers_subtitle" name="num" id="tеravellers_counter">
+                            <option value="1">1 Person</option>
+                            <option value="2">2 Persons</option>
+                            <option value="3">3 Persons</option>
+                            <option value="4">4 Persons</option>
+                            <option value="5">5 Persons</option>
+                            <option value="6">6 Persons</option>
+                        </select>
+                        <!-- <p class="form_txt quantity_tеravellers_subtitle"><input class="tеravellers_counter_input"
                                 id="tеravellers_counter" type="number" size="1" name="num" min="1" max="10" value="1"
-                                min="1" max="9">Person</p>
+                                min="1" max="9">Person</p> -->
 
 
                     </div>
@@ -473,7 +481,7 @@
 
                 </li>
                 <div class="wrap_btn">
-                    <button class="btn_products hidden" type="button">Load more</button>
+                    <button class="btn_products hidden" type="button"><span></span> Load more</button>
                 </div>
 
             </ul>
@@ -489,7 +497,7 @@
                 
                     <form class="subscribe_form"  action="#">
                         <input type="email" placeholder="Email address" required>
-                        <button class="subscribe_form_btn">Subscribe</button>
+                        <button class="subscribe_form_btn"><span></span> Subscribe</button>
 
                     </form>
                 
