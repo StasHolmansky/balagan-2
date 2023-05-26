@@ -1,0 +1,110 @@
+@font-face {
+	font-family: "Forum";
+	src: local("Forum Regular"), url("../../fonts/forum/Forum.woff2") format("woff2"),
+		url("../../fonts/forum/Forum.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Manrope";
+	src: local("Manrope Light"), url("../../fonts/manrope/Manrope-Light.woff2") format("woff2"),
+		url("../../fonts/manrope/Manrope-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Manrope";
+	src: local("Manrope Regular"), url("../../fonts/manrope/Manrope-Regular.woff2") format("woff2"),
+		url("../../fonts/manrope/Manrope-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Manrope";
+	src: local("Manrope Medium"), url("../../fonts/manrope/Manrope-Medium.woff2") format("woff2"),
+		url("../../fonts/manrope/Manrope-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Manrope";
+	src: local("Manrope Semibold"), url("../../fonts/manrope/Manrope-Semibold.woff2") format("woff2"),
+		url("../../fonts/manrope/Manrope-Semibold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-family: "Forum", "Manrope", sans-serif;
+	color: var(--color-silver);
+}
+
+.list-reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.btn-reset {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.section-title {
+	margin: 0;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 59px;
+	color: var(--color-black);
+}
+
+.flex {
+	display: flex;
+}
+
+.main {
+	max-width: 1920px;
+}
+.wrapper {
+	background-color: #E2D3CE;
+	background-image: url(../../images/customise-img/bg_top_inner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 475px;
+	max-width: 1440px;
+	margin:  auto;
+}
+
+.form {
+	max-width: 730px;
+	min-height: 1562;
+	background-color: #fff;
+}
