@@ -32,6 +32,9 @@ html{
     font-weight: 400;
     font-family: "Manrope";
   }
+  body._lock {
+    overflow: hidden;
+  }
   
   .container {
     max-width:1140px;
