@@ -207,7 +207,7 @@ window.addEventListener("load", () => {
                 <form action="#" class="modal__form">
                     <input type="text" placeholder="Name" class="modal__text">
                     <input type="tel" placeholder="Phone" class="modal__tel">
-                    <input type="button" value="Call me back" class="modal__btn" id="modal__btn">
+                    <input type="submit" value="Call me back" class="modal__btn" id="modal__btn">
                 </form>
             </div>
 	    </div>       
@@ -413,7 +413,7 @@ window.addEventListener("load", () => {
                 <form action="#" class="modal__form">
                     <input type="text" placeholder="Name" class="modal__text">
                     <input type="tel" placeholder="Phone" class="modal__tel">
-                    <input type="button" value="Call me back" class="modal__btn" id="modal__btn">
+                    <input type="submit" value="Call me back" class="modal__btn" id="modal__btn">
                 </form>
             </div>
 	    </div>      
@@ -463,25 +463,29 @@ window.addEventListener("load", () => {
     const callBtnMain = document.querySelectorAll(".call__btn-main")
     const nav = document.getElementById("nav");
     const scrollWidth = window.innerWidth - document.body.clientWidth;
+    const bodyWidth = body.offsetWidth - scrollWidth;
 
-    if (window.location.pathname === '/index.html') {
+    if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
         const mainPagePadding = document.querySelector(".main-block__body");
+        const mainPageWidth = mainPagePadding.offsetWidth;
         document.addEventListener('click', (close) => {
             if (close.target === modalClose || close.target === modal || close.target === modalBtn) {
                 body.style.padding = `0`;
                 nav.style.left = `50%`;
-                mainPagePadding.style.left = `0`;
+                nav.style.width = `100%`;
+                mainPagePadding.style.width = `100%`;
                 modal.classList.remove("_active");
                 modalFrame.classList.remove("_active")
                 modalMenu.classList.remove('_active');
                 body.classList.remove("_lock");
             }
         })
-    
+        
         callBtn.forEach((btn) => {
             btn.addEventListener('click', () => {
-                body.style.padding = `0 ${scrollWidth}px 0 0`;
-                mainPagePadding.style.left = `-7px`
+                body.style.padding = `0 ${scrollWidth}px 0 0`
+                nav.style.left = `${nav.offsetLeft + scrollWidth / 2}px`
+                mainPagePadding.style.width = `${mainPageWidth}px`;
                 modal.classList.add("_active");
                 modalFrame.classList.add("_active")
                 modalMenu.classList.add('_active');
@@ -491,8 +495,8 @@ window.addEventListener("load", () => {
     
         callBtnMain.forEach((btn) => {
             btn.addEventListener('click', () => {
-                body.style.padding = `0 ${scrollWidth}px 0 0`;
-                mainPagePadding.style.left = `-7px`
+                body.style.padding = `0 ${scrollWidth}px 0 0`
+                nav.style.left = `${nav.offsetLeft}px`
                 modal.classList.add("_active");
                 modalFrame.classList.add("_active")
                 modalMenu.classList.add('_active');
@@ -500,12 +504,13 @@ window.addEventListener("load", () => {
             })
         })
     } else {
-        document.addEventListener('click', (close) => {
+        document.addEventListener('click', (close) => {    
             if (close.target === modalClose || close.target === modal || close.target === modalBtn) {
                 body.style.padding = `0`;
                 nav.style.left = `50%`;
+                nav.style.width = `100%`;
                 modal.classList.remove("_active");
-                modalFrame.classList.remove("_active")
+                modalFrame.classList.remove("_active");
                 modalMenu.classList.remove('_active');
                 body.classList.remove("_lock");
             }
@@ -513,8 +518,9 @@ window.addEventListener("load", () => {
     
         callBtn.forEach((btn) => {
             btn.addEventListener('click', () => {
+                nav.style.width = `${nav.offsetWidth}px`;
                 body.style.padding = `0 ${scrollWidth}px 0 0`;
-                nav.style.left = `49.5%`;
+                nav.style.left = `${nav.offsetLeft}px`;
                 modal.classList.add("_active");
                 modalFrame.classList.add("_active")
                 modalMenu.classList.add('_active');
@@ -524,8 +530,9 @@ window.addEventListener("load", () => {
     
         callBtnMain.forEach((btn) => {
             btn.addEventListener('click', () => {
-                body.style.padding = `0 ${scrollWidth}px 0 0`;
-                nav.style.left = `49.5%`;
+                nav.style.width = `${nav.offsetWidth}px`;
+                body.style.padding = `0 ${scrollWidth}px 0 0`
+                nav.style.left = `${nav.offsetLeft}px`
                 modal.classList.add("_active");
                 modalFrame.classList.add("_active")
                 modalMenu.classList.add('_active');
