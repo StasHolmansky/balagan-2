@@ -463,9 +463,8 @@ window.addEventListener("load", () => {
     const callBtnMain = document.querySelectorAll(".call__btn-main")
     const nav = document.getElementById("nav");
     const scrollWidth = window.innerWidth - document.body.clientWidth;
-    const bodyWidth = body.offsetWidth - scrollWidth;
 
-    if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
+    if (window.location.pathname === '/index.html' || window.location.pathname === '/' || hasClass(main, 'index') === true) {
         const mainPagePadding = document.querySelector(".main-block__body");
         const mainPageWidth = mainPagePadding.offsetWidth;
         document.addEventListener('click', (close) => {
