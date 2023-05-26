@@ -1,0 +1,957 @@
+body{
+    background-image: url(..//images/luxury-packages/bg_top_inner.png);
+    background-position: 0px -152px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto 100%;
+    
+}
+
+
+.container {
+
+    padding-left: calc(50% - 555px);
+    padding-right: calc(50% - 555px);
+}
+.main_luxury_packages{
+    padding-top: 100px;
+    background:linear-gradient(180deg, #E2D3CE -6%, #C9C8D8 16.73%, #D4D8C6 30.37%, #E2D3CE 61%);
+    background-repeat: no-repeat;
+    background-position: 0px 329px;
+
+   
+}
+
+.hidden{
+    display: none !important;
+}
+
+
+
+
+.luxury_packages {
+    margin: 0px 0 86px 0;
+}
+
+
+
+.luxury_packages_title {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    text-align: center;
+    color: #0C0B10;
+    margin: 0 0 63px 0;
+}
+
+.svg_destinations {
+    max-width: 272px;
+    width: 100%;
+}
+
+.luxury_packages_form {
+  position: relative;
+  top: 13px;
+}
+
+.luxury_packages_form_title {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #79655E;
+    margin: 0 0 25px 391px;
+    background: #FFFFFF;
+    border-radius: 67px;
+   max-width: 330px;
+   width: 100%;
+   min-height: 55px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -27px;
+}
+
+
+.tour_selection_form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    max-width: 1110px;
+    width: 100%;
+    min-height: 114px;
+    background: #FFFFFF;
+    box-shadow: 0px 18px 38px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    justify-content: center;
+
+}
+
+.luxury {
+    display: grid;
+    grid-template-columns: 10px 272px;
+    grid-template-rows: 25px 25px;
+    gap: 2px 8px;
+}
+
+.luxury_img {
+    width: 9px;
+    height: 17px;
+    background-image: url(../images/luxury-packages/luxury_tours.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.form_description {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #79655E;
+}
+
+.luxury_options {
+    grid-column: 2 / -1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form_txt {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #0C0B10;
+}
+
+.Romantic {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #0C0B10;
+}
+
+.tour_date {
+    display: grid;
+    grid-template-columns: 17px 235px;
+    grid-template-rows: 25px 25px;
+    gap: 2px 8px;
+}
+
+.luxury_img_tour_date {
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/luxury-packages/Union.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.calendar_input {
+    grid-column: 2 / -1;
+}
+
+.quantity_tеravellers {
+    display: grid;
+    grid-template-columns: 15px 92px;
+    grid-template-rows: 25px 25px;
+    gap: 2px 8px;
+}
+
+.luxury_img_quantity {
+    width: 15px;
+    height: 16px;
+    background-image: url(../images/luxury-packages/user.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.quantity_tеravellers_subtitle {
+    grid-column: 2 / -1;
+
+}
+
+.tеravellers_counter_input::-webkit-inner-spin-button,
+.tеravellers_counter_input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.tеravellers_counter_input {
+    max-width: 18px;
+}
+
+.type_tour {
+    display: grid;
+    grid-template-columns: 152px 184px;
+    grid-template-rows: 25px 25px;
+    gap: 2px 8px;
+
+}
+
+.wrap_type_tour {
+    grid-row: 2 / -1;
+
+}
+
+
+.type_tour_input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #79655E;
+    border-radius: 3px;
+    outline: none;
+    margin-right: 5px;
+}
+
+.type_tour_input:checked {
+
+    background-image: url(..//images/luxury-packages/checkbox.svg);
+    background-size: 18px 13px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.luxury_packages_button{
+    display: none;
+}
+
+/* --directions_products-- */
+
+.directions_products {
+    margin: 0 0 130px 0;
+
+}
+
+.directions_list {
+    max-width: 1100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30%, 350px));
+    grid-template-rows: repeat(4, min(31%, 570px));
+    gap: 30px 30px;
+}
+
+.directions_item {
+    max-width: 350px;
+    width: 100%;
+    min-height: 565px;
+    height: 99%;
+    /* outline: 1px solid red; */
+    background-image: url(../images/luxury-packages/Winter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    border-radius: 8px;
+}
+
+.machu {
+    background-image: url(../images/luxury-packages/Machu.png);
+}
+
+.hvar {
+    background-image: url(../images/luxury-packages/Hvar.png);
+
+}
+
+.wadi {
+    background-image: url(../images/luxury-packages/Wadi.png);
+
+}
+
+.musa {
+    background-image: url(../images/luxury-packages/Musa.png);
+
+}
+
+.wadi_musa {
+    background-image: url(../images/luxury-packages/Wadi_Musa.png);
+
+}
+
+.wadi2 {
+    background-image: url(../images/luxury-packages/Wadi2.png);
+
+}
+
+.musa2 {
+    background-image: url(../images/luxury-packages/Musa2.png);
+
+}
+
+.wadi_musa2 {
+    background-image: url(../images/luxury-packages/Wadi_Musa2.png);
+
+}
+
+.winter2 {
+    background-image: url(../images/luxury-packages/Winter2.png);
+
+}
+
+.machu2 {
+    background-image: url(../images/luxury-packages/Machu2.png);
+
+}
+
+.hvar2 {
+    background-image: url(../images/luxury-packages/Hvar2.png)
+}
+
+.products-assortment {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 34px;
+    padding-bottom: 35px;
+    padding-top: 141px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0B2034 100%);
+    position: relative;
+/* z-index: -1; */
+border-radius: 8px;
+
+}
+
+
+
+
+
+.products-assortment-content {
+    max-width: 251px;
+    min-height: 89px;
+    margin-bottom: 30px;
+
+}
+
+.products-map-svg {
+    background-image: url(../images/luxury-packages/map.svg);
+    background-repeat: no-repeat;
+    padding-left: 13px;
+    /* background-position: center;
+    background-size: contain; */
+}
+
+.products-map {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.product-description {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 98.5%;
+    color: #FFFFFF;
+}
+
+
+
+.products-title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.products-price {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 98.5%;
+
+
+    color: #FFFFFF;
+}
+
+.rating-products {
+    /* background-image: url(../images/luxury-packages/map.svg); */
+    /* background-repeat: no-repeat; */
+    position: absolute;
+    left: 299px;
+    top: 184px;
+}
+
+.products-btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    min-width: 149px;
+    height: 38px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border: 0.624428px solid #FFFFFF;
+    border-radius: 62px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 122px;
+    top: 260px;
+     
+    
+}
+
+
+.directions_item .products-btn {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.directions_item:hover .products-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+   
+}
+
+.directions_item:hover .products-btn:hover {
+    background-color: #ccc;
+    opacity: 0.7;
+    color: #000;
+    
+}
+
+.directions_item:hover .products-btn:active {
+    background-color: transparent;
+    color: #FFFFFF;
+    
+}
+
+
+
+/* --Subscribe-- */
+
+.subscribe{
+min-height: 622px;
+display: flex;
+align-items: center;
+background-image: url(../images/luxury-packages/border_Subscribe.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.subscribe_wrapper {
+    max-width: 1110px;
+    width: 100%;
+    height:565px;
+
+    background-image: url(../images/luxury-packages/Subscribe.png);
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+border-radius: 10px;
+
+
+}
+.wrap_btn{
+    
+    max-width: 1100px;
+    width: 100%;
+    min-height: 565px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 2234px;
+   
+    background: linear-gradient(180deg, rgba(226, 211, 206, 0) 0%, rgba(226, 211, 206, 0.84) 52.77%, #E2D3CE 94.27%);
+}
+
+
+
+
+
+
+.subscribe_txt {
+    max-width: 520px;
+margin-bottom: 40px;
+
+
+
+}
+.subscribe_title {
+    font-family: 'Forum';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 0.97;
+color: #FFFFFF;
+margin-bottom: 40px;
+}
+.subscribe_subtitle {
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 179.8%;
+color: #FFFFFF;
+}
+.subscribe_form {
+    margin-left: 188px;
+position: relative;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 730px;
+    width: 100%;
+    min-height: 55px;
+    /* outline: 2px solid red; */
+  }
+  
+  input[type="email"] {
+    max-width: 486px;
+    width: 100%;
+    border-radius: 30px 0 0 30px;
+  padding-left: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Manrope';
+
+background: rgba(255, 255, 255, 0.14);
+border: 1px solid #FFFFFF;
+backdrop-filter: blur(10px);
+border-radius: 95px;
+   
+  }
+  input[type="email"]::placeholder {
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 179.8%;
+color: #0C0B10;
+/* padding-left: 30px; */
+}
+
+  
+  input[type="email"]:focus {
+      outline: 1px solid #F16D7F;;
+  }
+  
+  .subscribe_form_btn {
+    max-width: 330px;
+    width: 100%;
+    height: 55px;
+    font-family: 'Forum';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #0C0B10;
+background: #FFFFFF;
+border-radius: 74px;
+position: absolute;
+left: 400px;
+   
+  }
+  
+  input[type="email"]:focus ~ input[type="submit"] {
+    outline: 1px solid #F16D7F;;
+
+  }
+  
+  .subscribe_form_btn:hover {
+    background-color: #fff;  
+    color: #F16D7F;
+  }
+  
+
+    
+  
+
+  .btn_products{
+    max-width: 330px;
+    width: 100%;
+    min-height: 55px;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    border-radius: 74px;
+    grid-column: 2 / -1;
+    left: 384px;
+    position: absolute;
+
+
+  }
+
+  @media (min-width: 767px) and (max-width: 1120px) {
+    .container {
+        
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+        
+        /* padding-left: calc(50% - 400px);
+        padding-right: calc(50% - 400px); */
+    }
+   
+    .form_wrap {
+        min-height: 158px;
+        max-width: 800px;
+        width: 100%;
+       margin: 0 auto;
+    }
+    .luxury_packages_form {
+        
+        display: flex;
+        justify-content: center;
+    }
+    .luxury_packages_form_title {
+        
+        margin: 0 0 0px 0px;
+        
+    }
+    .tour_selection_form {
+        gap: 28px;
+            }
+    .tour_selection_form {
+         gap: 15px;
+        padding-left: 37px;
+        padding-top: 30px;
+        flex-wrap: nowrap;
+        display: grid;
+        grid-template-columns: 289px 341px;
+        grid-template-rows: 48px 37px;
+    }
+
+    .wrap_type_tour {
+        grid-row: 1 / -1;
+    }
+    .type_tour {
+       
+        grid-template-rows: none;
+      
+    }
+    
+    .quantity_tеravellers{
+       
+        grid-template-columns: 15px 92px; 
+        grid-template-rows: none;
+        gap: none;
+       
+    }
+    .quantity_tеravellers_subtitle {
+        grid-column:none;
+    }
+    .directions_products {
+        /* margin: 0px 0 55px 0; */
+        padding-top: 57px;
+        padding-bottom: 55px;
+    }
+    
+
+    .directions_list {
+      
+        grid-template-columns: repeat(2, minmax(30%, 350px));
+        grid-template-rows: repeat(8, min(31%, 570px));
+               justify-content: center;
+    }
+
+    .wrap_btn {
+        top: 2271px;
+       
+    }
+    .btn_products {
+       
+        left: 0px;
+        position: static;
+    }
+    .wrap_btn {
+        max-width: 765px;
+        justify-content: center;
+    }
+    /* .subscribe {
+        min-height: 622px;
+       max-width: 800px;
+       width: 100%;
+    } */
+
+    .subscribe {
+        background-size: auto;
+    }
+    input[type="email"] {
+        max-width: 283px;
+        
+    }
+    .subscribe_form_btn {
+        max-width: 213px;
+               left: 225px;
+    }
+    
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    .container {
+
+        /* padding-left: calc(50% -172px);
+        padding-right: calc(50% - 172px); */
+        max-width: 344px;
+        width: 100%;
+    margin: 0 auto;
+    }
+    .wrap_title {
+        margin: 3px 0 40px 0;
+    }
+   
+    .luxury_packages_form {
+        
+        top: 13px;
+        display: flex;
+        justify-content: center;
+    }
+    .luxury_packages_form_title {
+       
+        margin: 0px 0 17px 0px;
+       
+        max-width: 310px;
+       
+        min-height: 61px;
+        
+    }
+    .luxury_packages_title {
+       
+        font-size: 40px;
+        line-height: 1.1;
+    }
+    .tour_selection_form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding-left: 6px;
+        padding-top: 42px;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
+        min-height: 464px;
+    }
+    .luxury_packages_button{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        /* max-width: 312px; */
+        width: 100%;
+        top: 376px;
+        /* left: 15px; */
+       
+    }
+        
+    
+    .button_svg{
+        max-width: 19px;
+        max-height: 19px;
+    /* background-image: url(../images/luxury-packages/find.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;  */
+    }
+    .luxury_btn{
+        max-width: 312px;
+        width: 100%;
+        min-height: 70px;
+        background: #0C0B10;
+border-radius: 121px;
+        font-family: 'Forum';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #FFFFFF;
+ background-image: url(../images/luxury-packages/find.svg);
+ background-repeat: no-repeat;
+ background-position: 105px;
+ background-size: 19px 19px;
+ transition: all 0.3s ease;
+    }
+    
+.luxury_btn:hover {
+    background-color: #6e6b6b;
+    opacity: 0.7;
+    color: #FFFFFF;
+    
+}
+
+/* .luxury_btn:active {
+   
+    background: #0C0B10;
+    color: #FFFFFF;
+    
+} */
+
+    .form_wrap {
+        min-height: 464px;
+        max-width: 344px;
+        width: 100%;
+       
+    }
+
+    .type_tour {
+       
+        display: flex;
+        flex-direction: column;
+        gap: 29px;
+    }
+    .directions_products {
+        
+        padding: 32px 0 60px 0;
+    }
+    .directions_list {
+        max-width: 344px;
+                 gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .directions_item {
+        max-width: 344px;
+        min-height: 560px;
+        height: 100%;
+        
+    }
+    .wrap_btn {
+         max-width: none; 
+         width: 100%; 
+         min-height: 0px ; 
+         position: static; 
+         display: block; 
+         background:none;
+         padding-top: 52px;
+         
+    }
+
+    .btn_products {
+         padding-top: 0px;
+         
+         position: static;
+    }
+
+    .subscribe {
+        
+        background-size:auto;
+      
+    }
+    .subscribe_txt {
+        max-width: 332px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 71px;
+    }
+
+    .subscribe_title {
+            margin-bottom: 20px;
+        font-size: 44px;
+       
+        text-align: center;
+    }
+    .subscribe_subtitle {
+       
+        font-size: 18px;
+        line-height: 133%;
+       
+        text-align: center;
+        max-width: 158px;
+       
+    }
+
+    .subscribe_form {
+      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        position:static;
+    }
+    form {
+        display: flex;
+        max-width: 312px;
+        width: 100%;
+        
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+    input[type="email"] {
+        max-width: 312px;
+        width: 100%;
+        min-height: 55px;
+       
+    }
+    .subscribe_form_btn {
+        max-width: 312px;
+       
+         position: static;
+        left: 0px;
+    }
+  }
