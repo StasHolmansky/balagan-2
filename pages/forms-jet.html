@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Jet Page</title>
+    <link rel="stylesheet" href="../styles/null.css" />
+    <link rel="stylesheet" href="../fonts/manrope/stylesheet.css" />
+    <link rel="stylesheet" href="../fonts/forum/stylesheet.css" />
+    <link rel="stylesheet" href="../styles/header-footer.css" />
+    <link rel="stylesheet" href="../styles/forms-jet.css" />
+    <script defer src="../js/header-footer.js"></script>
+    <script defer src="../js/forms-jet.js"></script>
+  </head>
+  <body class="body-forms">
+    <main class="main-forms book">
+      <h1>Book Private Helicopter</h1>
+      <div class="container-columns">
+        <div class="col-1">
+          <img src="../images/forms-jet/jet.png" alt="jet" />
+          <p>Highest level of safety and comfort on the flight</p>
+          <p>
+            Our fully personalized private charters and jets will anticipate
+            your every wish. To fit your unique travel needs, we guarantee the
+            highest level of safety and comfort on the flight.
+            <br /><br />
+            Discrete services provided by the dedicated flight crew, bespoke
+            interior design and most advanced fleet are the signature qualities
+            of the Lux Trip flying experience. With the possibility of urgent
+            takeoffs and multi-stop journeys no destination will stay out of
+            your reach!
+          </p>
+          <div class="list"></div>
+        </div>
+        <div class="col-2">
+          <form action="#">
+            <label for="location">
+              <span>Place of departure</span>
+              <select name="locations" id="locations">
+                <option value="" disabled selected>&#9826;&nbsp;Choose</option>
+                <option value="coast-west">&#9826;&nbsp;Coast-West</option>
+                <option value="coast-east">&#9826;&nbsp;Coast-East</option>
+                <option value="coast-north">&#9826;&nbsp;Coast-North</option>
+                <option value="coast-south">&#9826;&nbsp;Coast-South</option>
+              </select>
+            </label>
+
+            <div class="container">
+              <label for="date">
+                <span>Departure date</span>
+                <select name="date" id="date">
+                  <option value="date-1">&#128467;&nbsp;14-04-22</option>
+                  <option value="date-2">&#128467;&nbsp;16-04-22</option>
+                </select>
+              </label>
+              <label for="time">
+                <span>Time of departure</span>
+                <select name="time" id="time">
+                  <option value="time-1">08:00</option>
+                  <option value="time-2">09:00</option>
+                </select>
+              </label>
+            </div>
+
+            <label for="location">
+              <span>Place of departure</span>
+              <select name="locations" id="locations">
+                <option value="" disabled selected>&#9826;&nbsp;Choose</option>
+                <option value="coast-west">&#9826;&nbsp;Coast-West</option>
+                <option value="coast-east">&#9826;&nbsp;Coast-East</option>
+                <option value="coast-north">&#9826;&nbsp;Coast-North</option>
+                <option value="coast-south">&#9826;&nbsp;Coast-South</option>
+              </select>
+            </label>
+
+            <div class="container">
+              <label for="date">
+                <span>Return date</span>
+                <select name="date" id="date">
+                  <option value="date-1">&#128467;&nbsp;15-04-22</option>
+                  <option value="date-2">&#128467;&nbsp;17-04-22</option>
+                </select>
+              </label>
+              <label for="time">
+                <span>Return time</span>
+                <select name="time" id="time">
+                  <option value="time-1">11:00</option>
+                  <option value="time-2">12:00</option>
+                </select>
+              </label>
+            </div>
+
+            <label for="guests">
+              <span>Number of guests</span>
+              <input
+                type="number"
+                id="guests"
+                name="guests"
+                placeholder="2"
+                min="1"
+                max="4"
+                required
+              />
+            </label>
+
+            <label for="name">
+              <span>Name</span>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="John"
+                required
+              />
+            </label>
+
+            <label for="email">
+              <span>Email</span>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="john-konan@gmail.com"
+                required
+              />
+            </label>
+
+            <label for="special-requests">
+              <span>Special requests</span>
+              <textarea
+                name="special-requests"
+                id="special-requests"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </label>
+
+            <div class="container-button">
+              <img
+                src="../images/lux-p-p-light/button-decoration-top-black.png"
+                alt="button-decoration-top"
+              />
+              <button>make a request</button>
+              <img
+                src="../images/lux-p-p-light/button-decoration-bottom-black.png"
+                alt="button-decoration-bottom"
+              />
+            </div>
+
+            <p>or</p>
+
+            <div class="container-button-2">
+              <button class="call__btn">call me back</button>
+              <button>email me back</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
