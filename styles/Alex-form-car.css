@@ -1,0 +1,668 @@
+.container {
+  width: 345px;
+  height: 100%;
+  margin: 0 auto;
+}
+.bg {
+  background: #e2d3ce;
+}
+.bg__container {
+  background: #e2d3ce;
+}
+
+/* Title */
+.title {
+  height: 77px;
+}
+.title h1 {
+  font-family: "Forum";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  color: #0c0b10;
+}
+
+/* Car */
+.car img {
+  border-radius: 5px;
+}
+
+/*Paragraph */
+.paragraph h3 {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 32px;
+  color: #0c0b10;
+  padding: 20px 0 30px 0;
+}
+.paragraph__text {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.paragraph__text:not(:first-child) {
+  margin-top: 30px;
+}
+
+.deals__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 35px;
+  padding-top: 30px;
+}
+.deals__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.deals__item svg {
+  margin-bottom: 10px;
+}
+.deals__item:nth-last-child(-n + 2) {
+  margin-bottom: 40px;
+}
+.deals__item p {
+  font-family: "Manrope";
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #000000;
+  width: 155px;
+}
+/* Form */
+.form__location-box {
+  display: flex;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.form-location {
+  margin-left: 21px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 179.8%;
+  color: #79655e;
+}
+.form-heading {
+  margin-left: 21px;
+  margin-bottom: 8px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 179.8%;
+  color: #79655e;
+}
+.form__accordion {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+}
+.form__accordion-icon {
+  display: flex;
+}
+.form__accordion-icon svg {
+  margin-right: 13px;
+}
+.form__accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1.60979px solid #e2d3ce;
+  border-radius: 74px;
+  height: 55px;
+  padding: 0 21px 0 29px;
+  width: 300px;
+}
+.form__accordion-icon {
+  display: flex;
+}
+.form__accordion-title span {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #79655e;
+  border-top: transparent;
+  border-right: transparent;
+  transform: rotate(-45deg);
+}
+
+.dates-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+}
+.form-dates {
+  margin-left: 21px;
+  margin-top: 25px;
+  margin-bottom: 8px;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 179.8%;
+  color: #79655e;
+}
+.form__model {
+  max-width: 300px;
+  width: 100%;
+  margin-top: 30px;
+}
+.form__pick-up {
+  max-width: 300px;
+  width: 100%;
+  margin-top: 30px;
+}
+.Pick-up__box1 {
+  margin-bottom: 39px;
+}
+
+.outer-container {
+  display: flex;
+  border: 1.60979px solid #e2d3ce;
+  border-radius: 74px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  border-radius: 74px;
+  height: 55px;
+  transition: transform 0.3s;
+  width: 50%;
+}
+
+.inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 74px;
+  height: 55px;
+  background: #e2d3ce;
+  width: 50%;
+  transition: transform 0.3s;
+}
+
+.inner.transition {
+  transition: background 0.3s;
+}
+
+.inner-container.transition {
+  transition: background 0.3s;
+}
+
+.form__request {
+  max-width: 300px;
+  width: 100%;
+}
+.inner-container .inner__text-1 {
+  color: #79655e;
+}
+
+.inner-container .inner__text-1.active {
+  color: #000000;
+}
+.inner .inner__text-2 {
+  color: #79655e;
+}
+.label {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 179.8%;
+  color: #79655e;
+}
+.inner .inner__text-2.active {
+  color: #000000;
+}
+input {
+  display: flex;
+  border: 1.60979px solid #e2d3ce;
+  border-radius: 74px;
+  max-width: 300px;
+  width: 100%;
+  height: 55px;
+  padding: 20px;
+}
+.textarea {
+  border: 1.60979px solid #e2d3ce;
+  border-radius: 20px;
+  padding: 20px;
+}
+.rectangle {
+  font-family: "Forum";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 300px;
+  height: 100px;
+  margin-top: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/Alex-form-car/rectangle.png");
+}
+
+.form__btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-bottom: 32px;
+}
+
+.form__btn p {
+  font-family: "Forum";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0c0b10;
+  margin-bottom: 22px;
+}
+
+.form__btn button {
+  font-family: "Forum";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0c0b10;
+  border: 1px solid #0c0b10;
+  border-radius: 62px;
+  width: 300px;
+  height: 55px;
+}
+.button + .button {
+  margin-top: 17px;
+}
+
+.element__box {
+  padding-top: 48px;
+}
+.element {
+  width: 100%;
+  height: 25px;
+  background-image: url("../images/Alex-form-car/layer.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.bg__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  height: 811px;
+  margin-top: 18px;
+  background-repeat: no-repeat;
+  background-image: url("../images/Alex-form-car/image-bg.png");
+}
+.bg__img h2 {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 44px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 74px;
+  margin-bottom: 10px;
+}
+
+.bg__img p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  width: 163px;
+  height: 77px;
+  margin-bottom: 40px;
+}
+.bg__img-btn1 {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 179.8%;
+  text-align: center;
+  color: #0c0b10;
+  width: 312px;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid #ffffff;
+  backdrop-filter: blur(10px);
+  border-radius: 95px;
+}
+.bg__img-subscribe {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background-image: url("../images/Alex-form-car/subscrible.png");
+  width: 312px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button__box {
+  display: flex;
+  flex-direction: column;
+}
+.bg {
+  margin: -1px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 708px;
+  }
+  .title h1 {
+    font-size: 60px;
+  }
+  .car {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form__accordion-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  .form__location-box {
+    display: block;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form__model {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .form__model-accordion {
+    display: flex;
+    justify-content: center;
+  }
+  .form__model .form__accordion-title {
+    width: 625px;
+  }
+  .form__model .form-heading {
+    margin-left: 56px;
+  }
+  .Pick-up__box1 {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  .Pick-up__box2 {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  .Pick-up__box1 .form__accordion-title {
+    width: 400px;
+  }
+  .Pick-up__box2 .form__accordion-title {
+    width: 400px;
+  }
+  .pick__up-time .form__accordion-title {
+    width: 200px;
+  }
+
+  .form__pick-up {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .form__number {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  .outer-container {
+    max-width: 100%;
+    width: 300px;
+  }
+  .form__request {
+    max-width: 100%;
+  }
+  input {
+    max-width: 100%;
+    width: 625px;
+  }
+  .textarea__box {
+    width: 625px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .label {
+    margin-left: 21px;
+  }
+  .form__request {
+    display: flex;
+    justify-content: center;
+  }
+  .rectangle {
+    width: 625px;
+    margin: 30px auto;
+    font-size: 32px;
+    background-image: url("../images/Alex-form-car/rectangle-tablet.png");
+  }
+  .form__btn p {
+    font-size: 25px;
+  }
+  .button__box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-direction: row-reverse;
+  }
+  .button + .button {
+    margin: 0;
+  }
+  .form__btn {
+    padding-bottom: 32px;
+    margin-bottom: 0;
+  }
+  .element {
+    display: none;
+  }
+  .bg__img {
+    margin: 0 auto;
+    width: 625px;
+    background-image: url("../images/Alex-form-car/image-bg-tablet.png");
+  }
+  .bg__img h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  .bg__img p {
+    font-size: 30px;
+    width: 100%;
+  }
+  .paragraph {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .bg {
+    background: none;
+    padding: 0;
+  }
+  .bg__container {
+    background: #e2d3ce;
+    background-image: url("../images/Alex-form-car/main-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .section__box-1 {
+    width: 540px;
+  }
+  .title {
+    text-align: center;
+  }
+
+  .sections__container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .car {
+    display: block;
+  }
+
+  .paragraph h3 {
+    width: 540px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .bg__img {
+    display: none;
+  }
+  .element__box {
+    display: none;
+  }
+  .deals__list {
+    display: block;
+  }
+  .deals__item {
+    display: block;
+  }
+  .form__location-box {
+    width: 540px;
+  }
+  .form__accordion-title {
+    width: 210px;
+  }
+  .dates-form {
+    width: unset; /* or width: initial; */
+  }
+  .form__accordion {
+    width: unset;
+  }
+  .form__model .form__accordion-title {
+    width: 445px;
+  }
+  .form__model .form-heading {
+    margin-left: 67px;
+  }
+  .Pick-up__box1 .form__accordion-title {
+    width: 286px;
+  }
+  .Pick-up__box1 .pick__up-time .form__accordion-title {
+    width: 141px;
+  }
+  .Pick-up__box2 .form__accordion-title {
+    width: 286px;
+  }
+  .Pick-up__box2 .pick__up-time .form__accordion-title {
+    width: 141px;
+  }
+  .outer-container {
+    width: 210px;
+  }
+  .form__number {
+    margin-top: 15px;
+  }
+
+  .input__container {
+    width: 445px;
+    margin: 15px auto;
+  }
+  .textarea {
+    width: 445px;
+  }
+  .form__request {
+    display: block;
+  }
+  .textarea__box {
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .rectangle {
+    margin-top: 30px;
+    width: 445px;
+    font-size: 24px;
+    background-image: url("../images/Alex-form-car/svg/group-desctop.svg");
+  }
+  .paragraph h3 {
+    font-size: 40px;
+    line-height: 40px;
+    padding: 32px 0 30px 0;
+  }
+  .paragraph {
+    width: 500px;
+    margin: 0;
+  }
+  .paragraph__text {
+    line-height: 180%;
+  }
+  .form__btn .button {
+    width: 217px;
+  }
+  .form__btn p {
+    font-size: 16px;
+  }
+  .deals__item {
+    display: flex;
+    flex-direction: row;
+    margin-top: 34px;
+  }
+  .deals__item p {
+    width: unset;
+  }
+  .deals__item svg {
+    margin-bottom: 0px;
+    margin-right: 38px;
+  }
+  .deals__list {
+    margin-top: 50px;
+  }
+}
