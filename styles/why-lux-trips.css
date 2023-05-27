@@ -12,6 +12,10 @@
   font-weight: normal;
   font-style: normal;
 }
+.luxtrips-book-slide:hover, .luxtrips-book-slide {
+  transition: all 0.5s ease-out;
+}
+
 .form-submit__btn:hover, .form-submit__btn, .luxtrips-btn:active, .luxtrips-btn:focus, .luxtrips-btn:hover, .luxtrips-btn {
   transition: color 0.4s linear, background 0.4s ease-in-out;
 }
@@ -156,7 +160,7 @@ html {
 }
 .luxtrips-btn::before {
   content: "";
-  background-image: url(../../images/why-lux-trips/icons/btn-decor-top.svg);
+  background-image: url(../images/why-lux-trips/icons/btn-decor-top.svg);
   background-repeat: no-repeat;
   position: absolute;
   bottom: 5px;
@@ -168,7 +172,7 @@ html {
 }
 .luxtrips-btn::after {
   content: "";
-  background-image: url(../../images/why-lux-trips/icons/btn-decor-bottom.svg);
+  background-image: url(../images/why-lux-trips/icons/btn-decor-bottom.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -1738,11 +1742,21 @@ button.swiper-pagination-bullet {
     height: 28px;
   }
 }
+.luxtrips-book-slide:hover {
+  transform: scale(1.05);
+}
 @media (max-width: 375px) {
   .luxtrips-book-slide {
     width: 17.3125rem;
     height: 6.125rem;
   }
+}
+
+.luxtrips-book-slide__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
 }
 
 .slide-supercars {
@@ -1786,6 +1800,39 @@ button.swiper-pagination-bullet {
   .luxtrips-book-slide__title {
     font-size: 1.375rem;
   }
+}
+
+.slider__pagination {
+  display: none;
+}
+@media (max-width: 374px) {
+  .slider__pagination {
+    display: block;
+  }
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 210px;
+}
+@media (max-width: 360px) {
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 182px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 1px;
+  width: 7px;
+  height: 7px;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
 }
 
 .luxtrips-book__btn {
