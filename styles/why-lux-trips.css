@@ -1693,6 +1693,17 @@ button.swiper-pagination-bullet {
   margin-bottom: 5.5rem;
 }
 
+.luxtrips-book-slider__wrapper {
+  align-items: center;
+  height: 220px;
+}
+@media (max-width: 768px) {
+  .luxtrips-book-slider__wrapper {
+    align-items: flex-start;
+    height: 100%;
+  }
+}
+
 .luxtrips-book-slide {
   display: flex;
   align-items: center;
@@ -1744,6 +1755,11 @@ button.swiper-pagination-bullet {
 }
 .luxtrips-book-slide:hover {
   transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .luxtrips-book-slide:hover {
+    transform: unset;
+  }
 }
 @media (max-width: 375px) {
   .luxtrips-book-slide {
