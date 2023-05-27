@@ -1,4 +1,9 @@
 new Swiper('.luxtrips-book-slider', {
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+    },
     
     simulateTouch: true,
     touchRatio: 1,
