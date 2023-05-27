@@ -3,7 +3,10 @@
   height: 100%;
   margin: 0 auto;
 }
-section {
+.bg {
+  background: #e2d3ce;
+}
+.bg__container {
   background: #e2d3ce;
 }
 
@@ -222,7 +225,7 @@ section {
 .inner .inner__text-2 {
   color: #79655e;
 }
-label {
+.label {
   font-family: "Manrope";
   font-weight: 400;
   font-size: 16px;
@@ -241,7 +244,7 @@ input {
   height: 55px;
   padding: 20px;
 }
-textarea {
+.textarea {
   border: 1.60979px solid #e2d3ce;
   border-radius: 20px;
   padding: 20px;
@@ -298,7 +301,7 @@ textarea {
   width: 300px;
   height: 55px;
 }
-button + button {
+.button + .button {
   margin-top: 17px;
 }
 
@@ -317,7 +320,6 @@ button + button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   border-radius: 10px;
   height: 811px;
   margin-top: 18px;
@@ -382,7 +384,7 @@ button + button {
   display: flex;
   flex-direction: column;
 }
-section {
+.bg {
   margin: -1px;
   padding-bottom: 10px;
 }
@@ -474,7 +476,7 @@ section {
     flex-direction: column;
     justify-content: center;
   }
-  label {
+  .label {
     margin-left: 21px;
   }
   .form__request {
@@ -496,7 +498,7 @@ section {
     gap: 25px;
     flex-direction: row-reverse;
   }
-  button + button {
+  .button + .button {
     margin: 0;
   }
   .form__btn {
@@ -525,7 +527,7 @@ section {
   }
 }
 @media only screen and (min-width: 1440px) {
-  section {
+  .bg {
     background: none;
     padding: 0;
   }
@@ -611,7 +613,7 @@ section {
     width: 445px;
     margin: 15px auto;
   }
-  textarea {
+  .textarea {
     width: 445px;
   }
   .form__request {
@@ -642,7 +644,7 @@ section {
   .paragraph__text {
     line-height: 180%;
   }
-  .form__btn button {
+  .form__btn .button {
     width: 217px;
   }
   .form__btn p {

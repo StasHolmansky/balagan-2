@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="../styles/null.css" />
     <link rel="stylesheet" href="../fonts/manrope/stylesheet.css" />
     <link rel="stylesheet" href="../fonts/forum/stylesheet.css" />
-    <link rel="stylesheet" href="../styles/header-footer.css" />
+
     <link rel="stylesheet" href="../styles/main-page.css" />
     <link rel="stylesheet" href="../styles/Alex-form-car.css" />
     <link rel="stylesheet" href="../styles/header-footer.css" />
-    <script defer src="./js/header-footer.js"></script>
+
     <script defer src="./js/main-page.js"></script>
     <script defer src="../js/Alex-form-car.js"></script>
     <script defer src="../js/header-footer.js"></script>
@@ -31,7 +31,7 @@
                       srcset="../images/Alex-form-car/car-mobile.jpg"
                       media="(max-width:375px)"
                     />
-                    <img src="../images/Alex-form-car/car-img.jpg" alt="" />
+                    <img src="../images/Alex-form-car/car-img.jpg" alt="Car" />
                   </picture>
                 </div>
               </div>
@@ -267,16 +267,19 @@
                     <div class="form__request">
                       <form>
                         <div class="input__container">
-                          <label for="name"
+                          <label class="label" for="name"
                             >Name
                             <input type="text" id="name" />
                           </label>
-                          <label for="email">Email</label>
+                          <label class="label" for="email">Email</label>
                           <input type="text" id="email" />
                         </div>
                         <div class="textarea__box">
-                          <label for="text"> Special requests</label>
+                          <label class="label" for="text">
+                            Special requests</label
+                          >
                           <textarea
+                            class="textarea"
                             name=""
                             id="text"
                             cols="30"
@@ -289,8 +292,8 @@
                     <div class="form__btn">
                       <p>or</p>
                       <div class="button__box">
-                        <button>call me back</button>
-                        <button>email me back</button>
+                        <button class="button">call me back</button>
+                        <button class="button">email me back</button>
                       </div>
                     </div>
                   </div>
@@ -300,7 +303,7 @@
           </section>
         </div>
       </div>
-      <section>
+      <section class="bg">
         <div class="element"></div>
         <div class="container">
           <div class="bg__img">
