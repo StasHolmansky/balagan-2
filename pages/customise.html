@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Customise</title>
+	<link rel="stylesheet" href="../styles/null.css">
+	<link rel="stylesheet" href="../styles/header-footer.css">
+	<link rel="stylesheet" href="../styles/main-page.css">
+	<link rel="stylesheet" href="../styles/customise.css">
+	<script defer src="../js/header-footer.js"></script>
+</head>
+
+<body class="body">
+	<main class="main">
+		<div class="customise-cloud"></div>
+		<div class="wrapper">
+			<div class="wrapper-inner">
+				<h1 class="customise-title">
+					Customise trip
+				</h1>
+				<div class="section-img flex">
+					<img src="../images/customise-img/Layer 3.png" alt="layer" class="bg-top">
+					<img src="../images/customise-img/Subtract.png" alt="subtract" class="bg-wrapper">
+					<img src="../images/customise-img/Rectangle 30.png" alt="rectangle" class="bg-bottom">
+					<h2 class="forms-title">
+						customise
+					</h2>
+				</div>
+				<form action="https://jsonplaceholder.typicode.com/" method="post" class="form">
+					<div class="location">
+						<div class="name-countri">
+							<label class="name-countri-label" for="location">
+								Location from
+							</label>
+							<select name="countri" id="#" class="countri-select">
+								<option value>Choose</option>
+								<option value="Ankara">Ankara</option>
+								<option value="Moscow">Moscow</option>
+								<option value="Kiev">Kiev</option>
+							</select>
+						</div>
+						<div class="name-countri">
+							<label class="name-countri-label" for="location">
+								to
+							</label>
+							<select name="countri" id="" class="countri-select">
+								<option value>Choose</option>
+								<option value="Ankara">Ankara</option>
+								<option value="Moscow">Moscow</option>
+								<option value="Kiev">Kiev</option>
+							</select>
+						</div>
+					</div>
+					<div class="dates">
+						<div class="date-start">
+							<label class="date-1" for="location">
+								Dates
+							</label>
+							<select name="date" class="date-select">
+								<option value="date-1">&#128467;&nbsp;14-04-22</option>
+								<option value="date-2">&#128467;&nbsp;18-04-22</option>
+							</select>
+						</div>
+						<div class="date-end">
+							<label for="date-end">
+								<span class="span-wrapper"></span>
+							</label>
+							<select name="date" class="date-select">
+								<option value="date-3">&#128467;&nbsp;26-04-22</option>
+								<option value="date-4">&#128467;&nbsp;28-04-22</option>
+							</select>
+						</div>
+					</div>
+					<div class="car-selection flex">
+						<label for="cars" class="cars">
+							Model of supercar
+						</label>
+						<select name="model-of-car" class=" cars-option">
+							<option value="">Surprise me</option>
+							<option value="Lamborgini">Lamborgini</option>
+							<option value="Bentley">Bentley</option>
+							<option value="Aston-martin">Aston-martin</option>
+							<option value="Bugatti-veiron">Bugatti-veiron</option>
+						</select>
+					</div>
+					<div class="pick-up flex">
+						<div class="pick-up__location flex">
+							<label name="pick-up" class="pick-up-label">
+								Pick-up location
+							</label>
+							<select name="pick-up" class="pick-up-select pick-up-countri">
+								<option value>Choose</option>
+								<option value="Italy">Italy</option>
+								<option value="France">France</option>
+								<option value="Spain">Spain</option>
+							</select>
+						</div>
+						<div class="pick-up__time flex">
+							<label for="pick-up-time" class="pick-up-time">
+								Pick up time
+							</label>
+							<select name="pick-up-time" class="pick-up-select select-time">
+								<option value>09.00</option>
+								<option value="10.00">10.00</option>
+								<option value="11.00">11.00</option>
+								<option value="12.00">12.00</option>
+								<option value="13.00">13.00</option>
+								<option value="14.00">14.00</option>
+								<option value="15.00">15.00</option>
+								<option value="16.00">16.00</option>
+							</select>
+						</div>
+					</div>
+					<div class="drop-of-location flex">
+						<div class="pick-up__location flex">
+							<label name="pick-up" class="pick-up-label">
+								Drop off location
+							</label>
+							<select name="pick-up" class="pick-up-select pick-up-countri">
+								<option value>Choose</option>
+								<option value="Pome">Pome</option>
+								<option value="Paris">Paris</option>
+								<option value="Berlin">Berlin</option>
+							</select>
+						</div>
+						<div class="pick-up__time flex">
+							<label for="pick-up-time" class="pick-up-time">
+								Pick up time
+							</label>
+							<select name="pick-up-time" class="pick-up-select select-time">
+								<option value>09.00</option>
+								<option value="10.00">10.00</option>
+								<option value="11.00">11.00</option>
+								<option value="12.00">12.00</option>
+								<option value="13.00">13.00</option>
+								<option value="14.00">14.00</option>
+								<option value="15.00">15.00</option>
+								<option value="16.00">16.00</option>
+							</select>
+						</div>
+					</div>
+					<div class="number-of-people flex">
+						<div class="people flex">
+							<label for="number-of-people" class="number-people">
+								Number of people
+							</label>
+							<select name="number-people" class="number-people-label">
+								<option value>2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+							</select>
+						</div>
+						<div class="driver flex">
+							<label for="driver" class="driver-label">
+								Driver
+							</label>
+							<label class="switch">
+								<input type="checkbox">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+					<div class="name">
+						<label for="name" class="label-name">
+							Name
+						</label>
+						<input type="text" class="input-name">
+					</div>
+					<div class="email">
+						<label for="email" class="label-email">
+							Mail
+						</label>
+						<input type="mail" class="input-email">
+					</div>
+					<div class="text-area">
+						<label for="text" class="text-area-label">
+							Special requests
+							<textarea class="text-area-inner"></textarea>
+						</label>
+					</div>
+					<div class="form-img">
+						<p class="form-img-text">
+							Machu Picchu
+						</p>
+						<p class="form-img-price">
+							€ 2300
+						</p>
+					</div>
+					<div class="book-now flex">
+						<img src="../images/customise-img/Layer3-bottom.png" alt="img" class="book-now-layer3">
+						<img src="../images/customise-img/Subtract-bottom.png" alt="img" class="book-now-substract">
+						<img src="../images/customise-img/Rectangle-bottom.png" alt="img" class="book-now-rectangle">
+						<img src="../images/customise-img/Layer4-bottom.png" alt="img" class="book-now-layer4">
+						<p class="book-now-text">
+							book now
+						</p>
+					</div>
+					<div class="or-wrap">
+						<p class="or">
+							or
+						</p>
+					</div>
+					<div class="form-buttons flex">
+						<button class="call-me btn-reset">
+							call me back
+						</button>
+						<button class="email-me btn-reset">
+							<a href="mailto:virushmirus911@gmail.com">
+								email me back
+							</a>
+						</button>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</main>
+</body>
+
+</html>
