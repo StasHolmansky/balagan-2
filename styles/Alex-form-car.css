@@ -475,6 +475,9 @@ label {
   .form__right {
     width: 345px;
   }
+  .form__left {
+    width: 345px;
+  }
   .form__accordion {
     display: block;
   }
