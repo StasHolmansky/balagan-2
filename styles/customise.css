@@ -1,0 +1,641 @@
+@font-face {
+	font-family: "Forum";
+	src: local("Forum Regular"), url("../../fonts/forum/Forum.woff2") format("woff2"),
+		url("../../fonts/forum/Forum.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Manrope";
+	src: local("Manrope Light"), url("../../fonts/manrope/Manrope-Light.woff2") format("woff2"),
+		url("../../fonts/manrope/Manrope-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Manrope";
+	src: local("Manrope Regular"), url("../../fonts/manrope/Manrope-Regular.woff2") format("woff2"),
+		url("../../fonts/manrope/Manrope-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Manrope";
+	src: local("Manrope Medium"), url("../../fonts/manrope/Manrope-Medium.woff2") format("woff2"),
+		url("../../fonts/manrope/Manrope-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Manrope";
+	src: local("Manrope Semibold"), url("../../fonts/manrope/Manrope-Semibold.woff2") format("woff2"),
+		url("../../fonts/manrope/Manrope-Semibold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Forum", "Manrope", sans-serif;
+	color: var(--color-silver);
+}
+
+.btn-reset {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.flex {
+	display: flex;
+}
+
+.customise-cloud {
+	position: absolute;
+	background-image: url(../../images/customise-img/bg_top_inner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 475px;
+	width: 100%;
+	top: 0;
+	z-index: -1;
+}
+.wrapper {
+	width: 100%;
+	position: relative;
+	background-color: #e2d3ce;
+	z-index: 1;
+}
+
+.customise-title {
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 58px;
+	color: #0c0b10;
+	text-align: center;
+	margin-bottom: 38px;
+}
+.section-img {
+	margin: 0 auto;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 419px;
+	height: 103px;
+}
+.bg-top {
+	position: absolute;
+	top: 30px;
+}
+.bg-wrapper {
+	position: absolute;
+	top: 55px;
+}
+.bg-bottom {
+	position: absolute;
+	top: 68px;
+}
+.forms-title {
+	position: absolute;
+	top: 85px;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #0c0b10;
+}
+
+.form {
+	padding: 70px 143px 0 143px;
+	padding-top: 100px;
+	margin: 0 auto;
+	max-width: 730px;
+	min-height: 1630px;
+	background-color: #fff;
+	border-radius: 10px;
+	top: 10%;
+}
+.location {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.name-countri {
+	display: flex;
+	flex-direction: column;
+}
+
+.name-countri:first-child {
+	margin-right: 20px;
+}
+.name-countri-label {
+	padding-left: 30px;
+	align-items: baseline;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 179.8%;
+	color: #79655e;
+}
+.countri-select {
+	padding: 15px 60px 15px 51px;
+	border: 1.60979px solid #e2d3ce;
+	border-radius: 74px;
+	width: 210px;
+	height: 55px;
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	background-image: url(../images/customise-img/Vector.png);
+	background-repeat: no-repeat;
+	background-position: top 17px left 23px;
+}
+.dates {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 14px;
+}
+.date-start,
+.date-end {
+	display: flex;
+	flex-direction: column;
+}
+.span-wrapper {
+	display: inline-block;
+	height: 25px;
+}
+.date-select {
+	padding-left: 20px;
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	color: #0c0b10;
+	border: 1.60979px solid #e2d3ce;
+	border-radius: 74px;
+	width: 210px;
+	height: 55px;
+}
+.date-1 {
+	padding-left: 27px;
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 179.8%;
+	color: #79655e;
+}
+.car-selection {
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+.cars {
+	padding-left: 26px;
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 179.8%;
+	color: #79655e;
+}
+.cars-option {
+	padding-left: 29px;
+	border: 1.60979px solid #e2d3ce;
+	border-radius: 74px;
+	width: 445px;
+	height: 55px;
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	color: #0c0b10;
+}
+.pick-up,
+.drop-of-location {
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.pick-up__location,
+.pick-up__time {
+	flex-direction: column;
+}
+.pick-up-label,
+.pick-up-time {
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 179.8%;
+	color: #79655e;
+}
+.pick-up-label {
+	padding-left: 30px;
+}
+.pick-up-time {
+	padding-left: 23px;
+}
+.pick-up-select {
+	border: 1.60979px solid #e2d3ce;
+	border-radius: 74px;
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	color: #0c0b10;
+}
+.pick-up-countri {
+	padding-left: 51px;
+	width: 286px;
+	height: 55px;
+	background-image: url(../images/customise-img/Vector.png);
+	background-repeat: no-repeat;
+	background-position: top 16px left 27px;
+}
+
+.select-time {
+	padding-left: 17px;
+	width: 141px;
+	height: 55px;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 210px;
+	height: 55px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	display: none;
+}
+
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 2px;
+	/* background-color: #ccc; */
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	border: 1.60979px solid #e2d3ce;
+	border-radius: 74px;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 49px;
+	width: 104px;
+	left: 1px;
+	bottom: 1px;
+	background-color: #e2d3ce;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+input:checked + .slider {
+	background-color: #fff;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #fff;
+}
+
+input:checked + .slider:before {
+	transform: translateX(100%);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 74px;
+}
+
+.slider.round:before {
+	border-radius: 74px;
+}
+/* --------- */
+.number-of-people {
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.people,
+.driver {
+	flex-direction: column;
+}
+.number-people-label {
+	padding-left: 29px;
+	width: 210px;
+	height: 55px;
+	border: 1.60979px solid #e2d3ce;
+	border-radius: 74px;
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	color: #0c0b10;
+}
+.number-people,
+.driver-label {
+	padding-left: 25px;
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 179.8%;
+	color: #79655e;
+}
+.name {
+	margin-bottom: 15px;
+}
+.label-name {
+	padding-left: 25px;
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 179.8%;
+	color: #79655e;
+}
+.input-name {
+	padding-left: 10px;
+	width: 445px;
+	height: 55px;
+	border: 1.60979px solid #e2d3ce;
+	border-radius: 74px;
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	color: #0c0b10;
+}
+.email {
+	margin-bottom: 15px;
+}
+
+.label-email {
+	padding-left: 25px;
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 179.8%;
+	color: #79655e;
+}
+.input-email {
+	padding-left: 10px;
+	width: 445px;
+	height: 55px;
+	border: 1.60979px solid #e2d3ce;
+	border-radius: 74px;
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	color: #0c0b10;
+}
+.text-area {
+	margin-bottom: 27px;
+}
+.text-area-label {
+	padding-left: 20px;
+	font-family: "Manrope";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 179.8%;
+	color: #79655e;
+}
+.text-area-inner {
+	width: 445px;
+	height: 129px;
+	border: 1.60979px solid #e2d3ce;
+	border-radius: 20px;
+}
+.form-img {
+	margin-bottom: 26px;
+	padding-top: 70px;
+	width: 100%;
+	min-height: 232px;
+	background-image: url(../images/customise-img/Mask\ Group.png);
+	background-repeat: no-repeat;
+}
+.form-img-text {
+	font-family: "Forum";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 58px;
+	text-align: center;
+	color: #ffffff;
+}
+.form-img-price {
+	font-family: "Forum";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 44px;
+	line-height: 98.5%;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: center;
+}
+.book-now {
+	margin-bottom: 110px;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+}
+.book-now-layer3 {
+	position: absolute;
+}
+
+.book-now-substract {
+	position: absolute;
+	top: 18px;
+}
+
+.book-now-rectangle {
+	position: absolute;
+	top: 27px;
+}
+
+.book-now-layer4 {
+	position: absolute;
+	top: 88px;
+}
+.book-now-text {
+	position: absolute;
+	top: 43px;
+	font-family: "Forum";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.or {
+	font-family: "Forum";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #0c0b10;
+}
+
+.form-buttons {
+	justify-content: space-between;
+}
+.call-me {
+	width: 217px;
+	height: 55px;
+	border: 0.624428px solid #0c0b10;
+	border-radius: 61.3171px;
+	font-family: "Forum";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #0c0b10;
+}
+
+.email-me {
+	width: 217px;
+	height: 55px;
+	border: 0.624428px solid #0c0b10;
+	border-radius: 61.3171px;
+	font-family: "Forum";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #0c0b10;
+}
+@media (max-width: 768px) {
+	.form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 50px 100px 0 100px;
+	}
+	.customise-title {
+		font-family: "Forum";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 44px;
+		text-align: center;
+		color: #0c0b10;
+	}
+	.section-img {
+		display: none;
+	}
+	.location {
+		flex-direction: column;
+	}
+	.countri-select {
+		width: 444px;
+	}
+	.name-countri:first-child {
+		margin: 0;
+	}
+	.dates {
+		flex-direction: column;
+	}
+	.date-select {
+		width: 444px;
+	}
+	.pick-up {
+		flex-direction: column;
+	}
+	.pick-up-countri {
+		width: 444px;
+		margin-bottom: 10px;
+	}
+	.select-time {
+		width: 444px;
+	}
+	.drop-of-location {
+		flex-direction: column;
+	}
+	.form-img-text {
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 32px;
+	}
+	.form-img-price {
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 32px;
+	}
+	.number-of-people {
+		flex-direction: column;
+	}
+	.number-people-label {
+		width: 444px;
+	}
+	.switch {
+		width: 444px;
+	}
+	.name {
+		display: flex;
+		flex-direction: column;
+	}
+	.email {
+		display: flex;
+		flex-direction: column;
+	}
+	.text-area-inner {
+		display: block;
+	}
+	.form-img {
+		background-position: center;
+	}
+	.img {
+		max-width: 300px;
+	}
+}

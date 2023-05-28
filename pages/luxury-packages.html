@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luxury-packages</title>
+    <link rel="stylesheet" href="../styles/null.css">
+    <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/main-page.css">
+    <link rel="stylesheet" href="../fonts/manrope/stylesheet.css">
+    <link rel="stylesheet" href="../fonts/forum/stylesheet.css">
+    <link rel="stylesheet" href="../styles/luxury-packages.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script defer src="../js/header-footer.js"></script>
+    <!-- <script defer src="../js/main-page.js"></script> -->
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <script defer src="../js/luxury-packages.js"></script>
+</head>
+
+<body>
+
+    <main class="main_luxury_packages lux__package">
+
+        <section class="luxury_packages container">
+
+            <h1 class="luxury_packages_title">Luxury packages</h1>
+
+            <div class="luxury_packages_form">
+                <h2 class="luxury_packages_form_title"><span></span> Find your journey</h2>
+
+                <form class="tour_selection_form" action="#" method="get">
+                    <div class="luxury">
+                        <div class="luxury_img desckription"></div>
+
+                        <label class="form_description" for="destinations_tour">Luxury Tours</label>
+                        <select class=" form_txt luxury_options" name="destinations" id="destinations_tour">
+                            <option value="Romantic">Romantic Winter Destinations</option>
+                            <option value="New">New destinations for 2022</option>
+                            <option value="Best Winter">Best Winter Destinations</option>
+                            <option value="healt">Your health is matter</option>
+                            <option value="extraordinary places">The world's most extraordinary places
+                            </option>
+                            <option value="Experiences">Experiences Away From Crowd</option>
+                        </select>
+                    </div>
+
+                    <div class="tour_date">
+
+                        <div class="luxury_img_tour_date"></div>
+                        <label class="form_description" for="calendar">When</label>
+                        <input class="form_txt calendar_input" id="calendar" type="text" name="daterange"
+                            value="14 Dec 2022 - 28 Dec 2022" />
+                    </div>
+                    <div class="quantity_tеravellers">
+
+                        <div class="luxury_img_quantity"></div>
+
+                        <label class="form_description" for="tеravellers_counter">Travellers</label>
+                        <select class=" form_txt quantity_tеravellers_subtitle" name="num" id="tеravellers_counter">
+                            <option value="1">1 Person</option>
+                            <option value="2">2 Persons</option>
+                            <option value="3">3 Persons</option>
+                            <option value="4">4 Persons</option>
+                            <option value="5">5 Persons</option>
+                            <option value="6">6 Persons</option>
+                        </select>
+                        <!-- <p class="form_txt quantity_tеravellers_subtitle"><input class="tеravellers_counter_input"
+                                id="tеravellers_counter" type="number" size="1" name="num" min="1" max="10" value="1"
+                                min="1" max="9">Person</p> -->
+
+
+                    </div>
+
+                    <div class="type_tour">
+                        <div class="wrap_type_tour">
+                            <input class="type_tour_input group" id="group_type" type="checkbox" name="group"
+                                value="yes">
+                            <label class="form_txt  type_tour_label" for="tour_type">Group tours</label>
+                        </div>
+
+                        <div class="wrap_type_tour">
+                            <input class="type_tour_input customise" id="customise_type" checked type="checkbox"
+                                name="customise" value="yes">
+                            <label class="form_txt  type_tour_label" for="customise_type">Customise
+                                tours</label>
+                        </div>
+
+
+                    </div>
+                </form>
+                <div class="luxury_packages_button">
+                    <!-- <div class="button_svg">
+                                    <img src="../images/luxury-packages/find.svg" alt="">
+                                </div> -->
+                    <button class="luxury_btn" type="button">Find</button>
+                </div>
+
+
+            </div>
+        </section>
+        <div class="directions_products container ">
+            <ul class="directions_list ">
+                <li class="directions_item">
+                    <a class="luxury_packages_packages" href="lux-packages-package-light.html">
+                        <div class="products-assortment">
+
+                            <img class="rating-products" src="..//images/luxury-packages/rating.svg" alt="Winter Park Ski Holiday">
+
+                            <div class="products-assortment-content">
+                                <div class="products-map-svg">
+                                    <p class="products-map">Austria</p>
+                                </div>
+
+                                <h3 class="product-description">Winter Park Ski Holiday</h3>
+                            </div>
+                               <p class="products-title">From</p>
+                                <p class="products-price">€ 1490</p>
+                            
+
+                            <a class="products-btn" href="../pages/lux-packages-package-light.html">customise
+                            </a>
+
+                        </div>
+                    </a>
+
+                </li>
+                <li class="directions_item machu">
+                    <a class="luxury_packages_packages" href="#">
+                        <div class="products-assortment">
+                            
+                                <img class="rating-products" src="..//images/luxury-packages/Machu_rating.svg" alt="Machu Picchu">
+                            
+                            <div class="products-assortment-content">
+                                <div class="products-map-svg">
+                                    <p class="products-map">Peru</p>
+                                </div>
+
+                                <h3 class="product-description">Machu Picchu</h3>
+                            </div>
+                            
+                                <p class="products-title">From</p>
+                                <p class="products-price">€ 2300</p>
+                           
+
+                            <a class="products-btn " href="../pages/lux-packages-package-light.html">customise
+                            </a>
+
+                        </div>
+                    </a>
+
+                </li>
+                <li class="directions_item hvar">
+                    <a class="luxury_packages_packages" href="lux-packages-package-light.html">
+                        <div class="products-assortment">
+                            
+                                <img class="rating-products" src="..//images/luxury-packages/rating.svg" alt="Hvar">
+                            
+                            <div class="products-assortment-content">
+                                <div class="products-map-svg">
+                                    <p class="products-map">Croatia</p>
+                                </div>
+
+                                <h3 class="product-description">Hvar</h3>
+                            </div>
+                            
+                                <p class="products-title">From</p>
+                                <p class="products-price">€ 4500</p>
+                            
+
+                            <a class="products-btn " href="../pages/lux-packages-package-light.html">customise
+                            </a>
+
+                        </div>
+                    </a>
+
+                </li>
+                <li class="directions_item wadi">
+                    <a class="luxury_packages_packages" href="#">
+                        <div class="products-assortment">
+                            
+                                <img class="rating-products" src="..//images/luxury-packages/rating.svg" alt="Wadi Musa">
+                            
+                            <div class="products-assortment-content">
+                                <div class="products-map-svg">
+                                    <p class="products-map">Jordan</p>
+                                </div>
+
+                                <h3 class="product-description">Wadi Musa</h3>
+                            </div>
+                            
+                                <p class="products-title">From</p>
+                                <p class="products-price">€ 4500</p>
+                            
+
+                            <a class="products-btn " href="../pages/lux-packages-package-light.html">customise
+                            </a>
+
+                        </div>
+                    </a>
+
+                </li>
+                <li class="directions_item musa">
+                    <a class="luxury_packages_packages" href="lux-packages-package-light.html">
+                        <div class="products-assortment">
+                            
+                                <img class="rating-products" src="..//images/luxury-packages/rating.svg" alt="Wadi Musa">
+                            
+                            <div class="products-assortment-content">
+                                <div class="products-map-svg">
+                                    <p class="products-map">Jordan</p>
+                                </div>
+
+                                <h3 class="product-description">Wadi Musa</h3>
+                            </div>
+                            
+                                <p class="products-title">From</p>
+                                <p class="products-price">€ 4500</p>
+                            
+
+                            <a class="products-btn " href="../pages/lux-packages-package-light.html">customise
+                            </a>
+
+                        </div>
+                    </a>
+
+                </li>
+                <li class="directions_item wadi_musa">
+                    <a class="luxury_packages_packages" href="#">
+                        <div class="products-assortment">
+                            
+                                <img class="rating-products" src="..//images/luxury-packages/rating.svg" alt="Wadi Musa">
+                           
+                            <div class="products-assortment-content">
+                                <div class="products-map-svg">
+                                    <p class="products-map">Jordan</p>
+                                </div>
+
+                                <h3 class="product-description">Wadi Musa</h3>
+                            </div>
+                            
+                                <p class="products-title">From</p>
+                                <p class="products-price">€ 4500</p>
+                            
+
+                            <a class="products-btn " href="../pages/lux-packages-package-light.html">customise
+                            </a>
+
+                        </div>
+                    </a>
+
+                </li>
+                <li class="directions_item wadi2">
+                    <a class="luxury_packages_packages" href="lux-packages-package-light.html">
+                        <div class="products-assortment">
+                            
+                                <img class="rating-products" src="..//images/luxury-packages/rating.svg" alt="Wadi Musa">
+                            
+                            <div class="products-assortment-content">
+                                <div class="products-map-svg">
+                                    <p class="products-map">Jordan</p>
+                                </div>
+
+                                <h3 class="product-description">Wadi Musa</h3>
+                            </div>
+                            
+                                <p class="products-title">From</p>
+                                <p class="products-price">€ 4500</p>
+                            
+
+                            <a class="products-btn " href="../pages/lux-packages-package-light.html">customise
+                            </a>
+
+                        </div>
+                    </a>
+
+                </li>
+                <li class="directions_item musa2">
+                    <a class="luxury_packages_packages" href="lux-packages-package-light.html">
+                        <div class="products-assortment">
+                          
+                                <img class="rating-products" src="..//images/luxury-packages/rating.svg" alt="Wadi Musa">
+                            
+                            <div class="products-assortment-content">
+                                <div class="products-map-svg">
+                                    <p class="products-map">Jordan</p>
+                                </div>
+
+                                <h3 class="product-description">Wadi Musa</h3>
+                            </div>
+                            
+                                <p class="products-title">From</p>
+                                <p class="products-price">€ 4500</p>
+                           
+
+                            <a class="products-btn " href="../pages/lux-packages-package-light.html">customise
+                            </a>
+
+                        </div>
+                    </a>
+
+                </li>
+                <li class="directions_item wadi_musa2">
+                    <a class="luxury_packages_packages" href="#">
+                        <div class="products-assortment">
+                            
+                                <img class="rating-products" src="..//images/luxury-packages/rating.svg" alt="Wadi Musa">
+                            
+                            <div class="products-assortment-content">
+                                <div class="products-map-svg">
+                                    <p class="products-map">Jordan</p>
+                                </div>
+
+                                <h3 class="product-description">Wadi Musa</h3>
+                            </div>
+                            
+                                <p class="products-title">From</p>
+                                <p class="products-price">€ 4500</p>
+                            
+
+                            <a class="products-btn " href="../pages/lux-packages-package-light.html">customise
+                            </a>
+
+                        </div>
+                    </a>
+
+                </li>
+                <li class="directions_item winter2">
+                    <a class="luxury_packages_packages" href="lux-packages-package-light.html">
+                        <div class="products-assortment">
+                            
+                                <img class="rating-products" src="..//images/luxury-packages/rating.svg" alt="Wadi Musa">
+                           
+                            <div class="products-assortment-content">
+                                <div class="products-map-svg">
+                                    <p class="products-map">Austria</p>
+                                </div>
+
+                                <h3 class="product-description">Winter Park Ski Holiday</h3>
+                            </div>
+                           
+                                <p class="products-title">From</p>
+                                <p class="products-price">€ 1490</p>
+                           
+
+                            <a class="products-btn " href="../pages/lux-packages-package-light.html">customise
+                            </a>
+
+                        </div>
+                    </a>
+
+                </li>
+                <li class="directions_item machu2">
+                    <a class="luxury_packages_packages" href="#">
+                        <div class="products-assortment">
+                            
+                                <img class="rating-products" src="..//images/luxury-packages/Machu_rating.svg" alt="Machu Picchu">
+                            
+                            <div class="products-assortment-content">
+                                <div class="products-map-svg">
+                                    <p class="products-map">Peru</p>
+                                </div>
+
+                                <h3 class="product-description">Machu Picchu</h3>
+                            </div>
+                            
+                                <p class="products-title">From</p>
+                                <p class="products-price">€ 2300</p>
+                           
+
+                            <a class="products-btn " href="../pages/lux-packages-package-light.html">customise
+                            </a>
+
+                        </div>
+                    </a>
+
+                </li>
+                <li class="directions_item hvar2">
+                    <a class="luxury_packages_packages" href="lux-packages-package-light.html">
+                        <div class="products-assortment">
+                            
+                                <img class="rating-products" src="..//images/luxury-packages/rating.svg" alt="Hvar">
+                            
+                            <div class="products-assortment-content">
+                                <div class="products-map-svg">
+                                    <p class="products-map">Croatia</p>
+                                </div>
+
+                                <h3 class="product-description">Hvar</h3>
+                            </div>
+                            
+                                <p class="products-title">From</p>
+                                <p class="products-price">€ 4500</p>
+                            
+
+                            <a class="products-btn " href="../pages/lux-packages-package-light.html">customise
+                            </a>
+
+                        </div>
+                    </a>
+
+                </li>
+                <li class="directions_item winter2">
+                    <a class="luxury_packages_packages" href="lux-packages-package-light.html">
+                        <div class="products-assortment">
+                            
+                                <img class="rating-products" src="..//images/luxury-packages/rating.svg" alt="Winter Park Ski Holiday">
+                            
+                            <div class="products-assortment-content">
+                                <div class="products-map-svg">
+                                    <p class="products-map">Austria</p>
+                                </div>
+
+                                <h3 class="product-description">Winter Park Ski Holiday</h3>
+                            </div>
+                            
+                                <p class="products-title">From</p>
+                                <p class="products-price">€ 1490</p>
+                            
+
+                            <a class="products-btn " href="../pages/lux-packages-package-light.html">customise
+                            </a>
+
+                        </div>
+                    </a>
+
+                </li>
+                <li class="directions_item machu2">
+                    <a class="luxury_packages_packages" href="#">
+                        <div class="products-assortment">
+                           
+                                <img class="rating-products" src="..//images/luxury-packages/Machu_rating.svg" alt="Machu Picchu">
+                           
+                            <div class="products-assortment-content">
+                                <div class="products-map-svg">
+                                    <p class="products-map">Peru</p>
+                                </div>
+
+                                <h3 class="product-description">Machu Picchu</h3>
+                            </div>
+                           
+                                <p class="products-title">From</p>
+                                <p class="products-price">€ 2300</p>
+                            
+
+                            <a class="products-btn " href="../pages/lux-packages-package-light.html">customise
+                            </a>
+
+                        </div>
+                    </a>
+
+                </li>
+                <li class="directions_item hvar2">
+                    <a class="luxury_packages_packages" href="lux-packages-package-light.html">
+                        <div class="products-assortment">
+                           
+                                <img class="rating-products" src="..//images/luxury-packages/rating.svg" alt="Hvar">
+                            
+                            <div class="products-assortment-content">
+                                <div class="products-map-svg">
+                                    <p class="products-map">Croatia</p>
+                                </div>
+
+                                <h3 class="product-description">Hvar</h3>
+                            </div>
+                            
+                                <p class="products-title">From</p>
+                                <p class="products-price">€ 4500</p>
+                            
+
+                            <a class="products-btn " href="../pages/lux-packages-package-light.html">customise
+                            </a>
+
+                        </div>
+                    </a>
+
+                </li>
+                <div class="wrap_btn">
+                    <button class="btn_products hidden" type="button"><span></span> Load more</button>
+                </div>
+
+            </ul>
+
+        </div>
+        <div class="subscribe container">
+            <div class="subscribe_wrapper">
+
+                <div class="subscribe_txt">
+                    <h2 class="subscribe_title">Get weekly inspiration and expert advice</h2>
+                    <p class="subscribe_subtitle">Sign up for our Weekly Newslette</p>
+                </div>
+                
+                    <form class="subscribe_form"  action="#">
+                        <input type="email" placeholder="Email address" required>
+                        <button class="subscribe_form_btn"><span></span> Subscribe</button>
+
+                    </form>
+                
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

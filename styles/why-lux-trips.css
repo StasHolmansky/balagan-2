@@ -12,6 +12,10 @@
   font-weight: normal;
   font-style: normal;
 }
+.luxtrips-book-slide:hover, .luxtrips-book-slide {
+  transition: all 0.5s ease-out;
+}
+
 .form-submit__btn:hover, .form-submit__btn, .luxtrips-btn:active, .luxtrips-btn:focus, .luxtrips-btn:hover, .luxtrips-btn {
   transition: color 0.4s linear, background 0.4s ease-in-out;
 }
@@ -30,44 +34,15 @@
 
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 .luxtrips-body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
-  max-width: 1440px;
+  background-color: #E2D3CE;
   color: #000;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-.luxtrips-body::before {
-  content: "";
-  background-color: #E2D3CE;
-  background-image: url(../images/why-lux-trips/img/mountains-bg-all.png);
-  background-repeat: no-repeat;
-  background-position: center -3px;
-  position: absolute;
-  max-width: 1440px;
-  width: 100%;
-  height: 1311px;
-  top: 0;
-}
-@media (max-width: 768px) {
-  .luxtrips-body::before {
-    background-position: center -84px;
-    background-position: center -58px;
-  }
-}
-@media (max-width: 375px) {
-  .luxtrips-body::before {
-    background-image: url(../images/why-lux-trips/img/mountains-bg-all-mob.png);
-    background-position: center 0px;
-  }
-}
-
-.luxtrips-wrapper {
-  background-color: #E2D3CE;
 }
 
 .luxtrips-container {
@@ -108,7 +83,6 @@ html {
 @media (max-width: 1024px) {
   .title-main {
     font-size: 9.375rem;
-    padding-left: 0;
   }
 }
 @media (max-width: 768px) {
@@ -120,6 +94,7 @@ html {
 @media (max-width: 480px) {
   .title-main {
     font-size: 4.875rem;
+    padding-left: 0;
   }
 }
 @media (max-width: 375px) {
@@ -185,7 +160,7 @@ html {
 }
 .luxtrips-btn::before {
   content: "";
-  background-image: url(../../images/why-lux-trips/icons/btn-decor-top.svg);
+  background-image: url(../images/why-lux-trips/icons/btn-decor-top.svg);
   background-repeat: no-repeat;
   position: absolute;
   bottom: 5px;
@@ -197,7 +172,7 @@ html {
 }
 .luxtrips-btn::after {
   content: "";
-  background-image: url(../../images/why-lux-trips/icons/btn-decor-bottom.svg);
+  background-image: url(../images/why-lux-trips/icons/btn-decor-bottom.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -884,34 +859,54 @@ button.swiper-pagination-bullet {
 }
 
 .luxtrips-preview {
-  padding-top: 1.625rem;
+  padding-top: 0.625rem;
+  margin-top: -10rem;
   position: relative;
+}
+.luxtrips-preview::before {
+  content: "";
+  background-image: url(../images/why-lux-trips/img/preview-cloude-left.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: -247px;
+  left: 0;
+  max-width: 343px;
+  width: 100%;
+  max-height: 459px;
+  height: 100%;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .luxtrips-preview::before {
+    background-image: url(../images/why-lux-trips/img/preview-cloude-left-mob.webp);
+    width: 138px;
+    height: 178px;
+    bottom: 397px;
+  }
 }
 .luxtrips-preview::after {
   content: "";
-  background-image: url(../images/why-lux-trips/img/mountain.png);
+  background-image: url(../images/why-lux-trips/img/preview-cloude-right.webp);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   position: absolute;
-  top: 7%;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: -30px;
+  right: 0px;
+  max-width: 411px;
   width: 100%;
-  max-height: 461px;
+  max-height: 354px;
   height: 100%;
   z-index: 2;
 }
 @media (max-width: 768px) {
   .luxtrips-preview::after {
-    top: 2%;
-  }
-}
-@media (max-width: 375px) {
-  .luxtrips-preview::after {
-    background-image: url(../images/why-lux-trips/img/mountain-mob.png);
-    top: 1%;
-    top: -5.5%;
-    left: 48.5%;
+    background-image: url(../images/why-lux-trips/img/preview-cloude-right-mob.webp);
+    width: 151px;
+    height: 117px;
+    bottom: 330px;
   }
 }
 @media (max-width: 768px) {
@@ -925,52 +920,83 @@ button.swiper-pagination-bullet {
   }
 }
 
+.luxtrips-preview-bg {
+  background-image: url(../images/why-lux-trips/img/mountains-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center -30px;
+  background-size: cover;
+}
+.luxtrips-preview-bg:before {
+  content: "";
+  background: linear-gradient(180deg, rgba(226, 211, 206, 0) 0%, rgba(226, 211, 206, 0.37) 42.71%, #E2D3CE 100%);
+  width: 100%;
+  height: 550px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media (max-width: 375px) {
+  .luxtrips-preview-bg:before {
+    height: 354px;
+  }
+}
+.luxtrips-preview-bg::after {
+  content: "";
+  background-image: url(../images/why-lux-trips/img/mountain.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 13%;
+  left: 46.5%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-height: 738px;
+  height: 100%;
+  z-index: 2;
+}
+@media (max-width: 1440px) {
+  .luxtrips-preview-bg::after {
+    max-height: 523px;
+    top: 17%;
+    left: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .luxtrips-preview-bg::after {
+    background-size: auto;
+    top: 10%;
+  }
+}
+@media (max-width: 480px) {
+  .luxtrips-preview-bg::after {
+    top: 9%;
+  }
+}
+@media (max-width: 375px) {
+  .luxtrips-preview-bg::after {
+    background-image: url(../images/why-lux-trips/img/mountain-mob.webp);
+    top: 13%;
+    left: 48%;
+    max-height: 299px;
+  }
+}
+@media (max-width: 768px) {
+  .luxtrips-preview-bg {
+    background-position: center -117px;
+  }
+}
+@media (max-width: 375px) {
+  .luxtrips-preview-bg {
+    background-image: url(../images/why-lux-trips/img/mountains-bg-mob.webp);
+    background-position: center 7px;
+    background-size: auto;
+  }
+}
+
 .luxtrips-preview__container {
   position: relative;
-}
-.luxtrips-preview__container::before {
-  content: "";
-  background-image: url(../images/why-lux-trips/img/preview-cloude-left.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  bottom: -257px;
-  left: 0;
-  max-width: 343px;
-  width: 100%;
-  max-height: 459px;
-  height: 100%;
-  z-index: 2;
-}
-@media (max-width: 768px) {
-  .luxtrips-preview__container::before {
-    background-image: url(../images/why-lux-trips/img/preview-cloude-left-mob.png);
-    width: 138px;
-    height: 178px;
-    bottom: 397px;
-  }
-}
-.luxtrips-preview__container::after {
-  content: "";
-  background-image: url(../images/why-lux-trips/img/preview-cloude-right.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  bottom: -46px;
-  right: 0px;
-  max-width: 411px;
-  width: 100%;
-  max-height: 354px;
-  height: 100%;
-  z-index: 2;
-}
-@media (max-width: 768px) {
-  .luxtrips-preview__container::after {
-    background-image: url(../images/why-lux-trips/img/preview-cloude-right-mob.png);
-    width: 151px;
-    height: 117px;
-    bottom: 330px;
-  }
+  padding-top: 157px;
 }
 
 .luxtrips-preview-cards {
@@ -1202,26 +1228,18 @@ button.swiper-pagination-bullet {
 
 .experience {
   background: #E2D3CE;
-  padding-top: 3.4375rem;
+  padding-top: 2.4375rem;
   padding-bottom: 9.0625rem;
-}
-@media (max-width: 375px) {
-  .experience {
-    padding-top: 0.625rem;
-  }
-}
-
-.experience__container {
   position: relative;
 }
-.experience__container::before {
+.experience::before {
   content: "";
-  background-image: url(../images/why-lux-trips/img/experience-cloude-left.png);
+  background-image: url(../images/why-lux-trips/img/experience-cloude-left.webp);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   left: 0;
-  top: 367px;
+  top: 375px;
   max-width: 30.375rem;
   width: 100%;
   max-height: 32.375rem;
@@ -1229,32 +1247,37 @@ button.swiper-pagination-bullet {
   z-index: 2;
 }
 @media (max-width: 768px) {
-  .experience__container::before {
-    background-image: url(../images/why-lux-trips/img/experience-cloude-left-mob.png);
+  .experience::before {
+    background-image: url(../images/why-lux-trips/img/experience-cloude-left-mob.webp);
     width: 133px;
     height: 304px;
     top: 211px;
   }
 }
-.experience__container::after {
+.experience::after {
   content: "";
-  background-image: url(../images/why-lux-trips/img/experience-cloude-right.png);
+  background-image: url(../images/why-lux-trips/img/experience-cloude-right.webp);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   right: 0px;
-  top: -184px;
+  top: -140px;
   max-width: 37.375rem;
   width: 100%;
   height: 74.9375rem;
   z-index: 2;
 }
 @media (max-width: 768px) {
-  .experience__container::after {
-    background-image: url(../images/why-lux-trips/img/experience-cloude-right-mob.png);
+  .experience::after {
+    background-image: url(../images/why-lux-trips/img/experience-cloude-right-mob.webp);
     width: 10.9375rem;
     height: 20.4375rem;
     top: -57px;
+  }
+}
+@media (max-width: 375px) {
+  .experience {
+    padding-top: 0.625rem;
   }
 }
 
@@ -1267,6 +1290,7 @@ button.swiper-pagination-bullet {
   position: relative;
   z-index: 3;
 }
+
 .experience-box__info {
   max-width: 33.75rem;
   display: flex;
@@ -1603,22 +1627,49 @@ button.swiper-pagination-bullet {
 
 .luxtrips-book {
   position: relative;
-  background-image: url(../images/why-lux-trips/img/book-bg.png);
+  background-image: url(../images/why-lux-trips/img/book-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding-top: 30.75rem;
-  margin-top: -22.25rem;
+  margin-top: -20.25rem;
   min-height: 77.6875rem;
-  height: 100%;
   z-index: 1;
+}
+.luxtrips-book:before {
+  content: "";
+  background: linear-gradient(0deg, rgba(226, 211, 206, 0) 0%, rgba(226, 211, 206, 0.71) 42.71%, #E2D3CE 100%);
+  height: 618px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.luxtrips-book:after {
+  content: "";
+  background: linear-gradient(180deg, rgba(226, 211, 206, 0) 0%, rgba(226, 211, 206, 0.71) 42.71%, #E2D3CE 100%);
+  height: 242px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media (max-width: 375px) {
+  .luxtrips-book:after {
+    height: 145px;
+  }
 }
 @media (max-width: 375px) {
   .luxtrips-book {
-    background-image: url(../images/why-lux-trips/img/book-bg-mob.png);
     padding-top: 13.3125rem;
     margin-top: -6.25rem;
     min-height: 47.875rem;
   }
+}
+
+.luxtrips-book__container {
+  position: relative;
+  z-index: 2;
 }
 
 .luxtrips-book__title {
@@ -1640,6 +1691,17 @@ button.swiper-pagination-bullet {
 
 .luxtrips-book-slider {
   margin-bottom: 5.5rem;
+}
+
+.luxtrips-book-slider__wrapper {
+  align-items: center;
+  height: 220px;
+}
+@media (max-width: 768px) {
+  .luxtrips-book-slider__wrapper {
+    align-items: flex-start;
+    height: 100%;
+  }
 }
 
 .luxtrips-book-slide {
@@ -1691,6 +1753,14 @@ button.swiper-pagination-bullet {
     height: 28px;
   }
 }
+.luxtrips-book-slide:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .luxtrips-book-slide:hover {
+    transform: unset;
+  }
+}
 @media (max-width: 375px) {
   .luxtrips-book-slide {
     width: 17.3125rem;
@@ -1698,28 +1768,35 @@ button.swiper-pagination-bullet {
   }
 }
 
+.luxtrips-book-slide__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+
 .slide-supercars {
-  background-image: url(../images/why-lux-trips/img/book-supercars.jpg);
+  background-image: url(../images/why-lux-trips/img/book-supercars.webp);
 }
 
 .slide-hotels {
-  background-image: url(../images/why-lux-trips/img/book-hotels.jpg);
+  background-image: url(../images/why-lux-trips/img/book-hotels.webp);
 }
 
 .slide-yachts {
-  background-image: url(../images/why-lux-trips/img/book-yachts.jpg);
+  background-image: url(../images/why-lux-trips/img/book-yachts.webp);
 }
 
 .slide-helicopter {
-  background-image: url(../images/why-lux-trips/img/book-helicopter.jpg);
+  background-image: url(../images/why-lux-trips/img/book-helicopter.webp);
 }
 
 .slide-jet {
-  background-image: url(../images/why-lux-trips/img/book-jet.jpg);
+  background-image: url(../images/why-lux-trips/img/book-jet.webp);
 }
 
 .slide-villas {
-  background-image: url(../images/why-lux-trips/img/book-viilas.jpg);
+  background-image: url(../images/why-lux-trips/img/book-viilas.webp);
 }
 
 .luxtrips-book-slide__title {
@@ -1741,6 +1818,39 @@ button.swiper-pagination-bullet {
   }
 }
 
+.slider__pagination {
+  display: none;
+}
+@media (max-width: 374px) {
+  .slider__pagination {
+    display: block;
+  }
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 210px;
+}
+@media (max-width: 360px) {
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 182px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 1px;
+  width: 7px;
+  height: 7px;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+}
+
 .luxtrips-book__btn {
   width: 33.75rem;
   max-width: 100%;
@@ -1750,13 +1860,43 @@ button.swiper-pagination-bullet {
 
 .luxtrips-mission {
   position: relative;
-  background-image: url(../images/why-lux-trips/img/mission-bg.png);
+  background-image: url(../images/why-lux-trips/img/mission-bg.webp);
   background-repeat: no-repeat;
-  background-position: center 200px;
+  background-position: center 0px;
+  background-size: cover;
   padding-top: 5.3125rem;
   min-height: 80rem;
   height: 100%;
   z-index: 1;
+}
+.luxtrips-mission:before {
+  content: "";
+  background: linear-gradient(0deg, rgba(226, 211, 206, 0) 0%, rgba(226, 211, 206, 0.91) 42.71%, #E2D3CE 100%);
+  height: 486px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media (max-width: 375px) {
+  .luxtrips-mission:before {
+    height: 278px;
+    top: 247px;
+  }
+}
+.luxtrips-mission:after {
+  content: "";
+  background: linear-gradient(180deg, rgba(226, 211, 206, 0) 0%, rgba(226, 211, 206, 0.71) 42.71%, #E2D3CE 100%);
+  height: 215px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media (max-width: 375px) {
+  .luxtrips-mission:after {
+    height: 123px;
+  }
 }
 @media (max-width: 1024px) {
   .luxtrips-mission {
@@ -1765,8 +1905,9 @@ button.swiper-pagination-bullet {
 }
 @media (max-width: 375px) {
   .luxtrips-mission {
-    background-image: url(../images/why-lux-trips/img/mission-bg-mob.png);
+    background-image: url(../images/why-lux-trips/img/mission-bg-mob.webp);
     background-position: center 261px;
+    background-size: contain;
     min-height: 55.5625rem;
     padding-top: 1.0625rem;
   }
@@ -1775,6 +1916,8 @@ button.swiper-pagination-bullet {
 .mission__content {
   max-width: 33.75rem;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 .mission__text {

@@ -1,4 +1,9 @@
 new Swiper('.luxtrips-book-slider', {
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+    },
     
     simulateTouch: true,
     touchRatio: 1,
@@ -13,7 +18,7 @@ new Swiper('.luxtrips-book-slider', {
         pageUpDown: true
     },
     
-    slidesPerView: 2.25,
+    slidesPerView: 3,
     spaceBetween: 30,
     slidesPerGroup: 1,
     centeredSlides: true,
@@ -33,7 +38,9 @@ new Swiper('.luxtrips-book-slider', {
         },
         769: {
             slidesPerView: 2.25
+        },
+        1440: {
+            slidesPerView: 3 
         }
     },
-
 });

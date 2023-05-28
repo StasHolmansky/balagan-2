@@ -107,6 +107,7 @@ body {
     border-radius: 74px;
     padding: 15px 59px;
     transition: all .3s ease;
+    cursor: pointer;
 }
 
 .block-btn:hover {
